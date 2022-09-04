@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Mercedes Sandu">
+    <meta name="description" content="My personal portfolio">
+    <meta name="keywords" content="Mercedes, Sandu">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mercedes Sandu</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="flex">
+            <div class="logo" onclick="location.href='index.html';" style="cursor: pointer;">
+                Mercedes Sandu
+            </div>
+            <nav>
+                <ul class="flex">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <span>
+                        <img src="./js/sun.svg" id="theme-mode-icon">
+                    </span>
+                </ul>
+                <script type="text/javascript" src="./js/toggleMode.js"></script>
+            </nav>
+        </header>
+
+        <div class="main flex">
+            <div class="main-one">
+                <h1>Hi! I'm Mercedes!</h1>
+                <span class="auto"></span>
+                <p>
+                    I'm a rising junior at Northwestern University with a passion for math,
+                    computer science, and software/video game development! Look around to
+                    learn more <a href="about.html" class="inline-link">about me</a> and
+                    my <a href="portfolio.html" class="inline-link">projects</a>!
+                </p>
+                <button onclick="window.open('https://www.linkedin.com/in/mercedes-sandu-5507671a3/')">
+                    <img src="./icons/linkedin.png">
+                </button>
+                <button onclick="window.open('https://github.com/mercedes-sandu')">
+                    <img src="./icons/github.png">
+                </button>
+                <button onclick="location.href='contact.html'">
+                    <img src="./icons/mail.png">
+                </button>
+            </div>
+            <div class="main-two">
+                <span class="circle-border">
+                    <img src="./pictures/tinywow_tinywow_me-removebg_4361191_4361529.webp"
+                        alt="A picture of me on my 20th birthday.">
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto", {
+            strings: ["Mathematician", "Computer Scientist", "Game Developer", "Undergrad Researcher"],
+            typeSpeed: 60,
+            backSpeed: 100,
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>
