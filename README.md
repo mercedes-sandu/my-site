@@ -9,6 +9,6 @@ This has not been set up yet, but the address will be [www.mercedessandu.com](ww
 * [x] Reformat projects
 * [ ] Write project HTML files
 * [ ] Debug filter buttons
-* [ ] Contact form frontend
+* [x] Contact form frontend
 * [ ] Contact form backend
 * [ ] Resume
