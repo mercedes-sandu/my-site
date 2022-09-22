@@ -328,20 +328,17 @@ nav ul li a.active {
     text-indent: 20px;
 }
 
-.row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 100px;
-    column-count: 2;
-    margin-left: 110px;
-    margin-right: 110px;
-}
-
 .projects {
     position: relative;
     width: 80%;
     height: 24%;
+}
+
+.portfolio-post {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .projects h1 {
@@ -372,17 +369,9 @@ nav ul li a.active {
     text-align: center;
     margin: 2px;
     display: none;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 100px;
-    column-count: 2; */
-    /* margin-left: 110px;
-    margin-right: 110px; */
 }
 
 .show {
-    /* display: block; */
     display: flex;
 }
 
@@ -390,7 +379,6 @@ nav ul li a.active {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-top: 20px; */
 }
 
 .filter-button {
@@ -413,7 +401,10 @@ nav ul li a.active {
 
 .project-entry {
     width: 400px;
+    margin-left: 40px;
+    margin-right: 40px;
     margin-bottom: 24px;
+    height: 160px;
     padding: 24px;
     background-color: var(--background-alternate);
     border-radius: 8px;
@@ -447,6 +438,8 @@ nav ul li a.active {
     color: var(--text-color);
     font-size: 13px;
     font-family: open-sans;
+    height: 4em;
+    text-align: justify;
 }
 
 .project-entry .tag {
