@@ -24,34 +24,6 @@
 }
 
 :root {
-    /* Light mode colors */
-
-    /* sunset theme */
-    /* --background-color: #f1f5ff;
-    --background-alternate: #d7dff3;
-    --background-alternate-2: #c2cce5;
-    --accent1: #462fbb;
-    --accent2: #c534c2;
-    --accent3: #ed6693;
-    --accent4: #f29e31;
-    --accent5: #f8be00;
-    --text-color: #000000; */
-
-    /* strawberry theme */
-    --background-color: #f8fff8;
-    --background-alternate: #d9ebd9;
-    --background-alternate-2: #c3dfc3;
-    --accent1: #1d5628;
-    --accent2: #48ab35;
-    --accent3: #ffb555;
-    --accent4: #ff7a85;
-    --accent5: #ff4262;
-    --text-color: #000000;
-
-    /* transition: 0.1s ease-in-out; */
-}
-
-.dark-theme {
     /* Dark mode colors */
 
     /* sunset theme */
@@ -75,6 +47,34 @@
     --accent4: #ee5865;
     --accent5: #ee3151;
     --text-color: #ffffff;
+
+    /* transition: 0.1s ease-in-out; */
+}
+
+.light-theme {
+    /* Light mode colors */
+
+    /* sunset theme */
+    /* --background-color: #f1f5ff;
+    --background-alternate: #d7dff3;
+    --background-alternate-2: #c2cce5;
+    --accent1: #462fbb;
+    --accent2: #c534c2;
+    --accent3: #ed6693;
+    --accent4: #f29e31;
+    --accent5: #f8be00;
+    --text-color: #000000; */
+
+    /* strawberry theme */
+    --background-color: #f8fff8;
+    --background-alternate: #d9ebd9;
+    --background-alternate-2: #c3dfc3;
+    --accent1: #1d5628;
+    --accent2: #48ab35;
+    --accent3: #ffb555;
+    --accent4: #ff7a85;
+    --accent5: #ff4262;
+    --text-color: #000000;
 
     /* transition: 0.1s ease-in-out; */
 }
