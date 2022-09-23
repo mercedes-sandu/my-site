@@ -2,7 +2,7 @@ const themeToggle = document.getElementById("theme-mode-icon");
 const lightThemeClass = 'light-theme';
 
 const toggleTheme = () => {
-  setTheme(document.body.classList.contains(darkThemeClass));
+  setTheme(document.body.classList.contains(lightThemeClass));
 }
 
 const setTheme = (theme) => {

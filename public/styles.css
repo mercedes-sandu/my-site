@@ -476,6 +476,40 @@ nav ul li a.active {
     margin-right: 110px;
 }
 
+.post {
+    position: relative;
+    width: 80%;
+}
+
+.post h1 {
+    font-size: 50px;
+    line-height: 49px;
+    font-weight: 800;
+    color: var(--accent1);
+    font-family: montserrat-extra-bold;
+    margin-left: 108px;
+}
+
+.post h1 span {
+    color: var(--accent2);
+}
+
+.post .text {
+    justify-content: center;
+    align-items: center;
+    margin-left: 130px;
+    margin-right: -110px;
+}
+
+.post p {
+    font-size: 18px;
+    font-family: open-sans;
+    color: var(--text-color);
+    width: 100%;
+    text-align: justify;
+    text-indent: 20px;
+}
+
 .contact {
     position: relative;
     width: 80%;
