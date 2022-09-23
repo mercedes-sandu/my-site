@@ -23,6 +23,16 @@
     src: url("./fonts/OpenSans-ExtraBold.ttf");
 }
 
+@font-face {
+    font-family: "open-sans-italic";
+    src: url("./fonts/OpenSans-LightItalic.ttf");
+}
+
+@font-face {
+    font-family: "open-sans-light";
+    src: url("./fonts/OpenSans-Light.ttf");
+}
+
 :root {
     /* Dark mode colors */
 
@@ -47,6 +57,7 @@
     --accent4: #ee5865;
     --accent5: #ee3151;
     --text-color: #ffffff;
+    --text-alternate: #bbbbbb;
 
     /* transition: 0.1s ease-in-out; */
 }
@@ -75,6 +86,7 @@
     --accent4: #ff7a85;
     --accent5: #ff4262;
     --text-color: #000000;
+    --text-alternate: #222222;
 
     /* transition: 0.1s ease-in-out; */
 }
@@ -492,6 +504,56 @@ nav ul li a.active {
 
 .post h1 span {
     color: var(--accent2);
+}
+
+.post h2 {
+    font-size: 16px;
+    color: var(--text-alternate);
+    font-family: open-sans-italic;
+    margin-left: 108px;
+    margin-top: -24px;
+}
+
+.post h3 {
+    font-size: 14px;
+    color: var(--text-color);
+    font-family: open-sans-light;
+    margin-left: 108px;
+    margin-bottom: 50px;
+}
+
+.post .image-container {
+    position: relative;
+    display: flex;
+    left: 0;
+    right: 0;
+}
+
+.post img.back {
+    position: relative;
+    display: block;
+    max-width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+    border: none;
+    border-radius: 8px;
+    filter: blur(16px);
+    z-index: 1;
+}
+
+.post img.front {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    max-width: 68%;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-radius: 8px;
+    z-index: 2;
 }
 
 .post .text {
