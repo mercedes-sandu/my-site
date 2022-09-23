@@ -11,4 +11,4 @@ This has not been set up yet, but the address will be [www.mercedessandu.com](ww
 * [ ] Debug filter buttons
 * [x] Contact form frontend
 * [ ] Contact form backend
-* [ ] Resume
+* [x] Resume
