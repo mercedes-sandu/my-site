@@ -130,8 +130,6 @@ h5 {
 }
 
 .container {
-    /* width: 100%; */
-    width: 1263px;
     overflow-x: hidden;
     background-color: var(--background-color);
     color: var(--text-color);
@@ -150,11 +148,12 @@ h5 {
 }
 
 header .logo {
+    position: absolute;
     font-size: 30px;
     font-weight: 600;
     width: 30%;
-    margin-left: 50px;
-    margin-top: 20px;
+    top: 5%;
+    left: 5%;
     font-family: montserrat-semi-bold;
 }
 
@@ -164,10 +163,10 @@ header .logo {
 }
 
 header nav {
-    width: 70%;
     display: flex;
-    margin-right: -180px;
-    margin-top: 10px;
+    position: absolute;
+    right: -5%;
+    top: 3%;
 }
 
 header nav ul {
@@ -489,8 +488,8 @@ nav ul li a.active {
 }
 
 .post {
-    position: relative;
-    width: 80%;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .post h1 {
@@ -524,43 +523,33 @@ nav ul li a.active {
 
 .post .image-container {
     position: relative;
-    display: flex;
-    left: 0;
-    right: 0;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .post img.back {
-    position: relative;
-    display: block;
-    max-width: 70%;
-    margin: auto;
-    margin-bottom: 40px;
-    border: none;
-    border-radius: 8px;
+    max-width: 100%;
     filter: blur(16px);
-    z-index: 1;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .post img.front {
+    max-width: 95%;
+    margin: auto;
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: block;
-    max-width: 68%;
-    margin: auto;
-    margin-left: auto;
-    margin-right: auto;
-    border: none;
-    border-radius: 8px;
-    z-index: 2;
+	transform: translateY(-50%);	
+	left: 0;
+	right: 0;
 }
 
 .post .text {
+    position: relative;
+    margin-left: 8%;
+    margin-right: 8%;
     justify-content: center;
     align-items: center;
-    margin-left: 130px;
-    margin-right: -110px;
 }
 
 .post p {
