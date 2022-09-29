@@ -33,10 +33,16 @@ function removeClass(element, name) {
 
 var btnContainer = document.getElementById("filter-button-container");
 var btns = btnContainer.getElementsByClassName("filter-button");
-for (var i = 0; i < btns.length; i++) {
+for (let i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function() {
         var current = document.getElementsByClassName("active");
         current[0].className = current[0].className.replace(" active", "");
         this.className += " active";
+
+        for (let j = 0; j < btns.length; j++) {
+            if (j != i) {
+                btns[j].className = btns[j].className.replace(" active", "");
+            }
+        }
     });
 }

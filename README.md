@@ -8,7 +8,7 @@ This is still a work in progress! I'm using this as a way to learn more about we
 * [x] About me page
 * [x] Reformat projects
 * [ ] Write project HTML files
-* [ ] Debug filter buttons
+* [x] Debug filter buttons
 * [x] Contact form frontend
 * [ ] Contact form backend
 * [x] Resume
