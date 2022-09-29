@@ -99,6 +99,7 @@ body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 h4 {
@@ -213,6 +214,18 @@ nav ul li a.active {
     background-size: 100% 2px;
 }
 
+footer {
+    width: 100%;
+    height: 5vh;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: open-sans;
+    font-size: 18px;
+    color: var(--text-color);
+}
+
 .container .main {
     width: 100%;
     height: 80vh;
@@ -227,23 +240,44 @@ nav ul li a.active {
 }
 
 .main-one h1 {
+    position: absolute;
     color: var(--accent1);
     font-family: montserrat-extra-bold;
-    font-size: 70px;
-    margin-top: -20px;
+    font-size: 4vw;
+    left: 10%;
+    top: 25%;
+}
+
+.main-one .typed {
+    position: absolute;
+    top: 40%;
+    left: 10%;
 }
 
 .main-one span {
     font-family: montserrat-semi-bold;
     font-weight: 600;
-    font-size: 45px;
+    font-size: 2.6vw;
     color: var(--accent2);
+    top: 50%;
 }
 
 .main-one p {
+    position: absolute;
     font-family: open-sans;
-    font-size: 17px;
+    font-size: 1.25vw;
     padding: 10px 0;
+    top: 48%;
+    left: 10%;
+    width: 40%;
+    line-height: 2em;
+    text-align: justify;
+}
+
+.main-one .buttons {
+    position: absolute;
+    bottom: 22%;
+    left: 10%;
 }
 
 .main-one button {
@@ -263,8 +297,8 @@ nav ul li a.active {
 
 .main-one button img {
     transform: translate(0%, 10%);
-    height: 24px;
-    width: 24px;
+    height: 32px;
+    width: 32px;
 }
 
 .main-one button:hover {
@@ -283,18 +317,20 @@ nav ul li a.active {
 }
 
 .main .main-two {
+    position: relative;
     width: 50%;
 }
 
 .main-two .circle-border {
-    margin-left: 52px;
-    margin-top: -210px;
     position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-35%, -40%);
     display: inline-block;
     border: 1px solid var(--text-color);
     border-radius: 50%;
-    width: 430px;
-    height: 430px;
+    width: 30vw;
+    height: 30vw;
 }
 
 .circle-border img {
@@ -328,6 +364,7 @@ nav ul li a.active {
     align-items: center;
     margin-left: 130px;
     margin-right: -110px;
+    line-height: 2em;
 }
 
 .about p {
@@ -488,6 +525,7 @@ nav ul li a.active {
 }
 
 .post {
+    position: relative;
     margin-left: 0;
     margin-right: 0;
 }
@@ -559,6 +597,29 @@ nav ul li a.active {
     width: 100%;
     text-align: justify;
     text-indent: 20px;
+    line-height: 2em;
+}
+
+.post h4 {
+    font-size: 28px;
+    font-family: open-sans-semibold;
+    color: var(--text-color);
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+.post ul {
+    list-style-type: circle;
+}
+
+.post ul li {
+    font-size: 18px;
+    font-family: open-sans;
+    color: var(--text-color);
+    width: 100%;
+    text-align: justify;
+    text-indent: 10px;
+    line-height: 2em;
 }
 
 .contact {
