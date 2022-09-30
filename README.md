@@ -13,4 +13,4 @@ This is still a work in progress! I'm using this as a way to learn more about we
 * [ ] Contact form backend
 * [x] Resume
 * [ ] Clean up CSS code
-* [ ] Create pixel strawberry icon
+* [x] Create pixel strawberry icon
