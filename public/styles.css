@@ -343,16 +343,17 @@ footer {
 
 .about {
     position: relative;
-    width: 80%;
 }
 
 .about h1 {
-    font-size: 50px;
-    line-height: 49px;
+    font-size: 5.5vh;
+    line-height: 5.5vh;
     font-weight: 800;
     color: var(--accent1);
     font-family: montserrat-extra-bold;
-    margin-left: 108px;
+    position: absolute;
+    left: 6%;
+    top: 25%;
 }
 
 .about h1 span {
@@ -360,18 +361,19 @@ footer {
 }
 
 .about .text {
-    justify-content: center;
-    align-items: center;
-    margin-left: 130px;
-    margin-right: -110px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 5%;
     line-height: 2em;
 }
 
 .about p {
-    font-size: 18px;
+    font-size: 2.5vh;
     font-family: open-sans;
     color: var(--text-color);
-    width: 100%;
     text-align: justify;
     text-indent: 20px;
 }
