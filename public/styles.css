@@ -346,8 +346,9 @@ footer {
 }
 
 .about h1 {
-    font-size: 5.5vh;
-    line-height: 5.5vh;
+    font-size: 50px;
+    line-height: 49px;
+    display: block;
     font-weight: 800;
     color: var(--accent1);
     font-family: montserrat-extra-bold;
@@ -371,7 +372,8 @@ footer {
 }
 
 .about p {
-    font-size: 2.5vh;
+    font-size: 22px;
+    display: block;
     font-family: open-sans;
     color: var(--text-color);
     text-align: justify;
@@ -380,11 +382,12 @@ footer {
 
 .projects {
     position: relative;
-    width: 80%;
-    height: 24%;
 }
 
 .portfolio-post {
+    position: absolute;
+    top: 40%;
+    left: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -394,23 +397,36 @@ footer {
 .projects h1 {
     font-size: 50px;
     line-height: 49px;
+    display: block;
     font-weight: 800;
     color: var(--accent1);
     font-family: montserrat-extra-bold;
-    margin-left: 108px;
+    position: absolute;
+    left: 6%;
+    top: 25%;
 }
 
 .projects h1 span {
     color: var(--accent2);
 }
 
+.projects .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 5%;
+    line-height: 2em;
+}
+
 .projects p {
-    width: 100%;
-    font-size: 17px;
-    font-weight: 400;
-    padding-top: 10px;
-    margin-left: 114px;
+    font-size: 22px;
+    display: block;
     font-family: open-sans;
+    color: var(--text-color);
+    text-align: justify;
+    text-indent: 20px;
 }
 
 .filter-div {
@@ -429,6 +445,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10%;
 }
 
 .filter-button {
@@ -457,7 +474,7 @@ footer {
     margin-left: 5vw;
     margin-right: 5vw;
     margin-bottom: 4vh;
-    height: 17vh;
+    height: auto;
     padding: 24px;
     background-color: var(--background-alternate);
     border-radius: 8px;
@@ -563,8 +580,8 @@ footer {
 
 .post .image-container {
     position: relative;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .post img.back {
@@ -622,6 +639,10 @@ footer {
     text-align: justify;
     text-indent: 10px;
     line-height: 2em;
+}
+
+.post ul li span.date {
+    color: var(--text-alternate);
 }
 
 .contact {
