@@ -367,12 +367,12 @@ footer {
     left: 0;
     margin-left: 6%;
     margin-right: 6%;
-    margin-top: 5%;
+    margin-top: 8%;
     line-height: 2em;
 }
 
 .about p {
-    font-size: 22px;
+    font-size: 20px;
     display: block;
     font-family: open-sans;
     color: var(--text-color);
