@@ -41,10 +41,10 @@ app.post("/", (req, res) => {
   })
 
   const mailOptions = {
-    from: req.body.email,
+    from: process.env.MY_EMAIL,
     to: process.env.MY_GMAIL,
     subject: `Message from ${req.body.name} via your website`,
-    text: req.body.message
+    text: `Name: ${req.body.name} | Email: ${req.body.email} | Message: ${req.body.message}`
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
