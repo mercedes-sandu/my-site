@@ -18,14 +18,44 @@ const app = express();
 
 app.use(connectLiveReload());
 
-const mongoose = require("mongoose");
 const { stringify } = require("querystring");
+const { info } = require("console");
 
 // Set static folder
 app.use(express.static(path.join(__dirname, "public")));
+app.use(express.json());
 
 app.get("/", (req, res) => {
-    res.sendFile(__dirname + "/public/index.html");
+  res.sendFile(__dirname + "/public/index.html");
+})
+
+app.post("/", (req, res) => {
+  console.log(req.body);
+
+  const transporter = nodemailer.createTransport({
+    service: "Outlook365",
+    auth: {
+      user: process.env.MY_EMAIL,
+      pass: process.env.MY_PASSWORD
+    }
+  })
+
+  const mailOptions = {
+    from: req.body.email,
+    to: process.env.MY_GMAIL,
+    subject: `Message from ${req.body.name} via your website`,
+    text: req.body.message
+  };
+
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.log(error);
+      res.send("error");
+    } else {
+      console.log("Email sent: " + info.response);
+      res.send("success");
+    }
+  })
 })
 
 const PORT = process.env.PORT || 5000;
