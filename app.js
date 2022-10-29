@@ -6,6 +6,7 @@ const bodyparser = require("body-parser");
 const fs = require("fs");
 const livereload = require("livereload");
 const connectLiveReload = require("connect-livereload");
+const dotenv = require('dotenv');
 
 const liveReloadServer = livereload.createServer();
 liveReloadServer.server.once("connection", () => {
@@ -17,6 +18,8 @@ liveReloadServer.server.once("connection", () => {
 const app = express();
 
 app.use(connectLiveReload());
+
+dotenv.config();
 
 const { stringify } = require("querystring");
 const { info } = require("console");
