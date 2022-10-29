@@ -585,6 +585,12 @@ footer {
     margin-right: 20%;
 }
 
+.post .image-container-vertical {
+    position: relative;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
 .post img.back {
     max-width: 100%;
     filter: blur(16px);
