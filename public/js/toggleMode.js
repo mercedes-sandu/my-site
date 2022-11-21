@@ -7,7 +7,7 @@ const toggleTheme = () => {
 
 const setTheme = (theme) => {
   localStorage.setItem('theme', theme ? ':root' : 'light');
-  themeToggle.src =  `./js/${theme ? 'moon.webp' : 'sun.svg'}`;
+  themeToggle.src =  `../js/${theme ? 'moon.webp' : 'sun.svg'}`;
   document.body.classList.toggle(lightThemeClass, !theme);
 }
 
