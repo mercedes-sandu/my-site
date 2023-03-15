@@ -65,12 +65,37 @@
             </div>
             <div class="text">
                 <p>
+                    In addition to generating entities, Imaginarium can also be used to generate relationships between said entities. If you were
+                    to generate characters, you could write something like "characters can love each other," and then generating at least two characters
+                    would result in a graph of characters with edges between them representing the relationship. Here's an example of such a relationship
+                    graph:
+                </p>
+            </div>
+            <div class="image-container">
+                <img class="back" src="../pictures/relationships.webp">
+                <img class="front" src="../pictures/relationships.webp">
+            </div>
+            <div class="text">
+                <p>
                     It happened to be the case that I was also starting to take interest in pursuing a combined degree
                     (B.A. and M.S. in Computer Science) at Northwestern University, and reached out to Dr. Horswill to see if I could
                     take a graduate-level research projects class with him as my advisor. Eventually, I decided I would work on expanding
                     Imaginarium's capabilities, in particular looking at the core of the code and the SAT solver that is used to generate
                     constraint-based models.
                 </p>
+                <h4>Features Implemented:</h4>
+                <ul>
+                    <li>Better gerund support (e.g., being able to say something like "happily being married is a way of knowing") for relationships</li>
+                    <li>Expanded domain and codomain for verbs in relationships to allow entities to relate to more than one other kind of entity</li>
+                </ul>
+                <h4>Features to Implement:</h4>
+                <ul>
+                    <li>An "exists" predicate</li>
+                    <li>An easier way to generate multiple different kinds of entities at the same time</li>
+                    <li>Negation of verbs (e.g., "cannot," "must not," etc.)</li>
+                    <li>Improved UI of the Unity implementation</li>
+                    <li>More robust documentation</li>
+                </ul>
                 <p>
                     If you'd like to browse the code, feel free to take a look at the 
                     <a class="inline-link" href="https://github.com/ianhorswill/ImaginariumCore" target="_blank">ImaginariumCore</a> and 
