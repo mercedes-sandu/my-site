@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Mercedes Sandu">
+        <meta name="description" content="My personal portfolio">
+        <meta name="keywords" content="Mercedes, Sandu">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="icon" type="image/png" href="../icons/favicon-16x16.png" sizes="16x16">
+        <title>Mercedes Sandu</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="flex">
+                <div class="logo" onclick="location.href='../index.html';" style="cursor: pointer;">
+                    Mercedes Sandu
+                </div>
+                <nav>
+                    <ul class="flex">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../portfolio.html" class="active">Portfolio</a></li>
+                        <!-- <li><a href="../contact.html">Contact</a></li> -->
+                        <li><a href="../resume-mercedes-sandu.pdf" target="_blank">Resume</a></li>
+                        <span>
+                            <img src="../js/moon.webp" id="theme-mode-icon">
+                        </span>
+                    </ul>
+                    <script type="text/javascript" src="../js/toggleMode.js"></script>
+                </nav>
+            </header>
+        </div>
+
+        <section class="post" id="CatSAT">
+            <div class="heading">
+                <h1>CatSAT</h1>
+                <h2>A SAT solver used for narrative and games.</h2>
+                <h3>March 2023 to Present | Computer Science Research</h3>
+            </div>
+            <!-- <div class="image-container">
+                <img class="back" src="../pictures/imaginarium.webp">
+                <img class="front" src="../pictures/imaginarium.webp">
+            </div> -->
+            <div class="text">
+                <p>
+                    <em>CatSAT</em> is a program created by 
+                    <a class="inline-link" href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/horswill-ian.html" target="_blank">Dr. Ian Horswill</a>
+                    designed to solve constraint satisfaction problems, particularly in the context of procedural content generation for games. It is a declarative language, 
+                    which means that the user specifies the state space of the problem and the constraints that must be satisfied, and the program will generate one or more models/solutions.
+                    I have primarily encountered CatSAT by working on Imaginarium, which does use CatSAT to generate models. 
+                </p>
+            </div>
+            <div class="text">
+                <p>
+                    After working with Imaginarium for a few months during my graduate research for my M.S. in Computer Science with Dr. Horswill, we had some discussions about what additional 
+                    types of constraints one would want to impose when using a program such as Imaginarium. In particular, Dr. Horswill was interested in imposing relationship/graph constraints. 
+                    This means that, when generating multiple entities and relationships between them, the user could specify constraints such as "these two people must have some sort of relationship," 
+                    "there must be a love triangle," or "these two people cannot be connected by any relationship." Imposing constraints like this involves the transitive closure, which due to being 
+                    a binary relation, cannot be expressed using first-order logic (like the rest of SAT solving). 
+                </p>
+                <p>
+                    I am currently working on creating a new graph constraint class to accomplish this. So far, I have programmed some basic classes for a graph and the union find data 
+                    structure, and I am taking the upcoming quarter to design and implement the new constraint class to function with the rest of the SAT solver. 
+                </p>
+                <p>
+                    If you'd like to browse the code, feel free to take a look at the 
+                    <a class="inline-link" href="https://github.com/ianhorswill/CatSAT" target="_blank">CatSAT</a> repository, to which I will be contributing.
+                </p>
+            </div>
+        </section>
+        <footer></footer>
+    </body>
+</html>
