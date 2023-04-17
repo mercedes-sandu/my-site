@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Mercedes Sandu">
+        <meta name="description" content="My personal portfolio">
+        <meta name="keywords" content="Mercedes, Sandu">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="icon" type="image/png" href="../icons/favicon-16x16.png" sizes="16x16">
+        <title>Mercedes Sandu</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="flex">
+                <div class="logo" onclick="location.href='../index.html';" style="cursor: pointer;">
+                    Mercedes Sandu
+                </div>
+                <nav>
+                    <ul class="flex">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../portfolio.html" class="active">Portfolio</a></li>
+                        <!-- <li><a href="../contact.html">Contact</a></li> -->
+                        <li><a href="../resume-mercedes-sandu.pdf" target="_blank">Resume</a></li>
+                        <span>
+                            <img src="../js/moon.webp" id="theme-mode-icon">
+                        </span>
+                    </ul>
+                    <script type="text/javascript" src="../js/toggleMode.js"></script>
+                </nav>
+            </header>
+        </div>
+
+        <section class="post" id="PapasWhatIsGoingOnEria">
+            <div class="heading">
+                <h1>Papa's What-Is-Going-On-Eria</h1>
+                <h2>A short cooking flash game about fulfilling restaurant orders with a twist.</h2>
+                <h3>October 2022 | COMP_SCI 376-0: Game Design and Development</h3>
+            </div>
+            <div class="image-container">
+                <img class="back" src="../pictures/papas what is going on eria.webp">
+                <img class="front" src="../pictures/papas what is going on eria.webp">
+            </div>
+            <div class="text">
+                <p>
+                    Papa's What-Is-Going-On-Eria is a game I made in a week for one of the freestyle projects in COMP_SCI 376-0. It is 
+                    largely inspired by <a class="inline-link" href="https://www.coolmathgames.com/0-papas-pizzeria" target="_blank">Papa's 
+                    Pizzeria</a>. You control a character in a top-down 2D kitchen, receiving randomized orders for burgers and soda. You 
+                    must go to each station in the kitchen to receive and then make the order. The basic game loop is as follows: (1) go to 
+                    the order counter to receive the ticket with all the order details, (2) go to the stove to prepare the meat that goes on 
+                    the burger, (3) go to the cutting board to assemble the burger with all of the proper addons and condiments, (4) go to the
+                    soda machine to pour the correct soda into the cup, and (5) go to the lunch tray to serve the order. This process repeats 
+                    over and over until your time runs out, so the goal is to complete as many orders as possible and thus maximize your score.
+                </p>
+                <p>
+                    As you complete orders, you may notice something slightly odd happening. It seems that every time you complete an order, 
+                    one of the ingredients randomly gets corrupted and you can no longer use it! The corrupted ingredients may still pop up on 
+                    the ticket, just try to carry on and ignore them. 
+                </p>
+                <p>
+                    The game was made using Unity and C#. For more details and specific instructions/controls, please see the <a class="inline-link"
+                    href="https://github.com/mercedes-sandu/Papas-What-Is-Going-On-Eria/blob/main/README.md" target="_blank">README file</a> for 
+                    the game. 
+                </p>
+                <h4>Features:</h4>
+                <ul>
+                    <li>Hand-drawn art using Procreate</li>
+                    <li>Randomized generation of orders using dynamic loading of prefabs from the Resources folder</li>
+                    <li>An interaction system that allows UI interfaces to popup when interacting with different kitchen stations</li>
+                    <li>Four different UI overlays for each station with specialized functionality</li>
+                    <li>A click-move-and-drop system to assemble the burger by placing items exactly where you wish them to be</li>
+                    <li>A timer that calls the end condition</li>
+                </ul>
+                <p>
+                    Below are some screenshots of the game.
+                </p>
+            </div>
+            <div class="image-container">
+                <img class="back" src="../pictures/order receipt.webp">
+                <img class="front" src="../pictures/order receipt.webp">
+            </div>
+            <div class="image-container">
+                <img class="back" src="../pictures/cooker.webp">
+                <img class="front" src="../pictures/cooker.webp">
+            </div>
+            <div class="image-container">
+                <img class="back" src="../pictures/assembler.webp">
+                <img class="front" src="../pictures/assembler.webp">
+            </div>
+            <div class="image-container">
+                <img class="back" src="../pictures/soda machine.webp">
+                <img class="front" src="../pictures/soda machine.webp">
+            </div>
+            <div class="text">
+                <p>
+                    If you'd like to browse the code, feel free to take a look at the 
+                    <a class="inline-link" href="https://github.com/mercedes-sandu/Papas-What-Is-Going-On-Eria" target="_blank">Papa's 
+                    What-Is-Going-On-Eria</a> repository.
+                </p>
+            </div>
+        </section>
+        <footer></footer>
+    </body>
+</html>
