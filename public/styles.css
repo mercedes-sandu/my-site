@@ -42,13 +42,26 @@
     --background-alternate-2: #212b44;
     --accent1: #583fd4;
     --accent2: #a33ea2;
-    --accent3: #fc85ad;
-    --accent4: #ffbc65;
-    --accent5: #ffdc6b;
-    --text-color: #ffffff; */
+    --accent3: #ff699b;
+    --accent4: #ff8a93;
+    --accent5: #ffa46b;
+    --text-color: #ffffff;
+    --text-alternate: #bbbbbb; */
+
+    /* space theme */
+    --background-color: #141823;
+    --background-alternate: #1b2132;
+    --background-alternate-2: #212b44;
+    --accent1: #2f3fe8;
+    --accent2: #7255ff;
+    --accent3: #e062de;
+    --accent4: #ff76a4;
+    --accent5: #ff939c;
+    --text-color: #ffffff;
+    --text-alternate: #bbbbbb;
 
     /* strawberry theme */
-    --background-color: #191a19;
+    /* --background-color: #191a19;
     --background-alternate: #202320;
     --background-alternate-2: #262b26;
     --accent1: #246030;
@@ -57,7 +70,7 @@
     --accent4: #ee5865;
     --accent5: #ee3151;
     --text-color: #ffffff;
-    --text-alternate: #bbbbbb;
+    --text-alternate: #bbbbbb; */
 
     /* transition: 0.1s ease-in-out; */
 }
@@ -71,13 +84,26 @@
     --background-alternate-2: #c2cce5;
     --accent1: #462fbb;
     --accent2: #c534c2;
-    --accent3: #ed6693;
-    --accent4: #f29e31;
-    --accent5: #f8be00;
-    --text-color: #000000; */
+    --accent3: #ff4583;
+    --accent4: #ff6b77;
+    --accent5: #ffa46b;
+    --text-color: #000000;
+    --text-alternate: #222222; */
+
+    /* space theme */
+    --background-color: #f1f5ff;
+    --background-alternate: #d7dff3;
+    --background-alternate-2: #c2cce5;
+    --accent1: #2937ca;
+    --accent2: #5b44d0;
+    --accent3: #ac49ab;
+    --accent4: #ff5f94;
+    --accent5: #ff848e;
+    --text-color: #000000;
+    --text-alternate: #222222;
 
     /* strawberry theme */
-    --background-color: #f8fff8;
+    /* --background-color: #f8fff8;
     --background-alternate: #d9ebd9;
     --background-alternate-2: #c3dfc3;
     --accent1: #1d5628;
@@ -86,7 +112,7 @@
     --accent4: #ff7a85;
     --accent5: #ff4262;
     --text-color: #000000;
-    --text-alternate: #222222;
+    --text-alternate: #222222; */
 
     /* transition: 0.1s ease-in-out; */
 }
@@ -457,6 +483,92 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+/* .arrangement-pictures-center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrangement-pictures-container {
+    position: relative;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrangement-picture {
+    display: block;
+    width: 20%;
+    margin: 2%;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.arrangement-picture:hover {
+    transform: scale(1.08);
+}
+
+.arrangement-picture-overlay {
+    position: asbolute;S
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0.2, 0.2, 0.2, 0.5);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.2s ease;
+} */
+
+.arrangement-pictures-center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.arrangement-picture-container {
+    position: relative;
+    width: 18%;
+    margin: 2%;
+}
+
+.arrangement-picture {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.arrangement-picture-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0.2, 0.2, 0.2, 0.7);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.2s ease;
+}
+
+.arrangement-picture-container:hover .arrangement-picture-overlay {
+    height: 100%;
+}
+
+.arrangement-picture-text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .filter-button {
