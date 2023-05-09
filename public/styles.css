@@ -530,13 +530,13 @@ footer {
 
 .arrangement-picture-text {
     color: var(--text-color);
-    font-family: open-sans;
-    position: absolute;
-    font-size: 20px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.arrangement-picture-text > .arrangement-picture-text-title {
+    font-size: 100%;
+    font-family: montserrat-extra-bold;
+    color: var(--text-color);
     text-align: center;
 }
 
