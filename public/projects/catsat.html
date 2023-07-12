@@ -63,7 +63,11 @@
                 </p>
                 <p>
                     I am currently working on creating a new graph constraint class to accomplish this. So far, I have programmed some basic classes for a graph and the union find data 
-                    structure, and I am taking the upcoming quarter to design and implement the new constraint class to function with the rest of the SAT solver. 
+                    structure. This past quarter, I have worked on developing a graph constraint class, which would be used to handle situations in which the SAT solver is attempting to 
+                    flip a variable (which, in this case, means either adding an edge to or removing an edge from the graph). The entire structure requires the maintenance of a spanning tree, 
+                    and since rebuilding a spanning tree after an edge removal is very expensive, we factor in a cost/risk function to avoid this situation as much as possible. In the coming months, 
+                    I hope to rigorously test these classes with a variety of different scenarios. Furthermore, I intend to apply this new graph constraint class to a video game that I will design 
+                    and develop as a part of my project.
                 </p>
                 <p>
                     If you'd like to browse the code, feel free to take a look at the 
