@@ -1,4 +1,9 @@
 @font-face {
+    font-family: "cement";
+    src: url("./fonts/CementpersonaluseExtrabold-K7g3X.otf");
+}
+
+@font-face {
     font-family: "montserrat-extra-bold";
     src: url("./fonts/Montserrat-ExtraBold.otf");
 }
@@ -117,6 +122,10 @@
     /* transition: 0.1s ease-in-out; */
 }
 
+* {
+    font-family: cement;
+}
+
 body {
     background-color: var(--background-color);
     color: var(--text-color);
@@ -160,6 +169,7 @@ h5 {
     overflow-x: hidden;
     background-color: var(--background-color);
     color: var(--text-color);
+    font-family: cement;
 }
 
 .container header {
@@ -167,11 +177,13 @@ h5 {
     height: 9vh;
     padding: 10px 60px;
     justify-content: space-between;
+    font-family: cement;
 }
 
 .flex {
     display: flex;
     align-items: center;
+    font-family: cement;
 }
 
 header .logo {
@@ -181,7 +193,8 @@ header .logo {
     width: 30%;
     top: 5%;
     left: 5%;
-    font-family: montserrat-semi-bold;
+    /* font-family: montserrat-semi-bold; */
+    font-family: cement;
 }
 
 .logo span {
@@ -206,7 +219,8 @@ nav ul li {
 }
 
 nav ul li a {
-    font-family: open-sans;
+    /* font-family: open-sans; */
+    font-family: cement;
     text-decoration: none;
     font-size: 18px;
     max-width: 400px;
@@ -265,11 +279,13 @@ footer {
 
 .main-one h1 {
     position: absolute;
-    color: var(--accent1);
-    font-family: montserrat-extra-bold;
+    /* color: var(--accent1); */
+    /* font-family: montserrat-extra-bold; */
+    font-family: cement;
     font-size: 4vw;
     left: 10%;
     top: 25%;
+    letter-spacing: 10px;
 }
 
 .main-one .typed {
@@ -279,7 +295,9 @@ footer {
 }
 
 .main-one span {
-    font-family: montserrat-semi-bold;
+    /* font-family: montserrat-semi-bold; */
+    font-family: cement;
+    letter-spacing: 10px;
     font-weight: 600;
     font-size: 2.6vw;
     color: var(--accent2);
@@ -288,7 +306,8 @@ footer {
 
 .main-one p {
     position: absolute;
-    font-family: open-sans;
+    /* font-family: open-sans; */
+    font-family: cement;
     font-size: 1.25vw;
     padding: 10px 0;
     top: 48%;

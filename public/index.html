@@ -79,6 +79,44 @@
             loop: true,
         });
     </script>
+    <script>
+        var pictureDiv = document.getElementsByClassName("main-two")[0];
+        pictureDiv.animate([
+            // keyframes
+            { transform: 'rotate(0deg)' },
+            { transform: 'rotate(180deg)' },
+            { transform: 'rotate(360deg)' }
+        ], {
+            // timing options
+            duration: 2000,
+            iterations: Infinity
+        });
+    </script>
+    <script>
+        var background = document.getElementsByClassName("container")[0];
+        var rainbow = [ "red", "orange", "yellow", "green", "cyan", "blue", "purple", "pink" ];
+        var i = 0;
+        setInterval(function() {
+            background.style.backgroundColor = rainbow[i];
+            i = (i + 1) % rainbow.length;
+        }, 70);
+    </script>
+    <script>
+        var buttonsDiv = document.getElementsByClassName("buttons")[0];
+        var children = buttonsDiv.children;
+        for (var i = 0; i < children.length; i++) {
+            children[i].animate([
+                // keyframes
+                { transform: 'scale(1)' },
+                { transform: 'scale(5)' },
+                { transform: 'scale(1)' }
+            ], {
+                // timing options
+                duration: 2000,
+                iterations: Infinity
+            });
+        }
+    </script>
 </body>
 
 </html>
