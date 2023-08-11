@@ -72,7 +72,7 @@ function NavBar() {
                             <NavLink to="/portfolio">Portfolio</NavLink>
                         </li>
                         <li>
-                            <a href={Resume} target="_blank">Resume</a>
+                            <a href={Resume} target="_blank" rel="noreferrer">Resume</a>
                         </li>
                     </ul>
                 </div>
