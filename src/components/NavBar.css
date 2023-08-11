@@ -35,6 +35,27 @@
     display: block;
     width: 100%;
     color: var(--text-color);
+    transition: color 0.2s ease-in-out;
+        background-image: linear-gradient(var(--accent-3), var(--accent-3));
+        background-position: 0 100%;
+        background-size: 0% 2px;
+        background-repeat: no-repeat;
+        transition:
+            color 0.3s,
+            background-size 0.3s,
+            background-position 0s 0.3s;
+}
+
+.navigation-menu li a:hover {
+    color: var(--accent-3);
+    background-position: 100% 100%;
+    background-size: 100% 2px;
+}
+
+.navigation-menu li a:active {
+    color: var(--accent-3);
+    background-position: 100% 100%;
+    background-size: 100% 2px;
 }
 
 .hamburger {
@@ -69,6 +90,7 @@
     }
 }
 
+/* todo: mobile nav menu stylings */
 @media screen and (max-width: 768px) {
     .navigation-menu ul {
         position: absolute;
@@ -78,26 +100,22 @@
         width: 100%;
         height: calc(100vh - 77px);
         background-color: var(--text-color);
-        border-top: 1px solid black;
         display: none;
     }
 
     .navigation-menu.expanded ul {
-        display: block;
+        display: flex;
     }
     
     .navigation-menu li {
         text-align: center;
+        color: var(--text-color);
         margin: 0;
     }
 
     .navigation-menu li a {
-        color: black;
+        color: var(--text-color);
         width: 100%;
         padding: 1.5rem 0;
-    }
-
-    .navigation-menu li:hover {
-        background-color: #eee;
     }
 }

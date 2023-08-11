@@ -38,3 +38,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10rem;
+  border: 1px solid #fff;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+}
+
+::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+}
