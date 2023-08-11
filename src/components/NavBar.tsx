@@ -2,8 +2,9 @@ import { Menu } from '@mui/icons-material';
 import { IconButton } from '@mui/material';
 import { LightMode, DarkMode } from '@mui/icons-material';
 import { useState } from 'react';
-import { Outlet, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import './NavBar.css';
+import Resume from "./resume-mercedes-sandu.pdf";
 
 function NavBar() {
     const [isNavExpanded, setIsNavExpanded] = useState(false);
@@ -71,7 +72,7 @@ function NavBar() {
                             <NavLink to="/portfolio">Portfolio</NavLink>
                         </li>
                         <li>
-                            <a href="/resume">Resume</a>
+                            <a href={Resume} target="_blank">Resume</a>
                         </li>
                     </ul>
                 </div>
