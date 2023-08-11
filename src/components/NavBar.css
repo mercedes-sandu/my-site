@@ -52,7 +52,7 @@
     background-size: 100% 2px;
 }
 
-.navigation-menu li a:active {
+.navigation-menu li a.active {
     color: var(--accent-3);
     background-position: 100% 100%;
     background-size: 100% 2px;
