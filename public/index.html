@@ -1,84 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
 
-<head>
-    <meta charset="utf-8">
-    <meta name="author" content="Mercedes Sandu">
-    <meta name="description" content="My personal portfolio">
-    <meta name="keywords" content="Mercedes, Sandu">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="./icons/favicon-16x16.png" sizes="16x16">
-    <link rel="stylesheet" href="https://meow.computer/meowcom.css">
-    <title>Mercedes Sandu</title>
-</head>
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
 
-<body>
-    <div class="container">
-        <header class="flex">
-            <div class="logo" onclick="location.href='index.html';" style="cursor: pointer;">
-                Mercedes Sandu
-            </div>
-            <nav>
-                <ul class="flex">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <!-- <li><a href="contact.html">Contact</a></li> -->
-                    <li><a href="resume-mercedes-sandu.pdf" target="_blank">Resume</a></li>
-                    <span>
-                        <img src="./js/moon.webp" id="theme-mode-icon">
-                    </span>
-                </ul>
-                <script type="text/javascript" src="./js/toggleMode.js"></script>
-            </nav>
-        </header>
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
 
-        <div class="main flex">
-            <div class="main-one">
-                <h1>Hi! I'm Mercedes!</h1>
-                <div class="typed">
-                    <span class="auto"></span>
-                </div>
-                <p>
-                    I'm a rising senior at Northwestern University with a passion for math,
-                    computer science, and software/video game development! Look around to
-                    learn more <a href="about.html" class="inline-link">about me</a> and
-                    my <a href="portfolio.html" class="inline-link">projects</a>!
-                </p>
-                <div class="buttons">
-                    <button onclick="window.open('https://www.linkedin.com/in/mercedes-sandu-5507671a3/')">
-                        <img src="./icons/linkedin.png">
-                    </button>
-                    <button onclick="window.open('https://github.com/mercedes-sandu')">
-                        <img src="./icons/github.png">
-                    </button>
-                    <button onclick="location.href='mailto:mxrcedes@gmail.com'">
-                        <img src="./icons/mail.png">
-                    </button>
-                </div>
-                <div class="meowcom-div" style="position: absolute;top: 81%;left: 10%;width: 40%;margin-left: 0px;margin-right: 0px;"><a href="/" class="meowcom-link" id="meowcom-prev"><- {name}</a><a href="https://meow.computer" class="meowcom-link">meow.computer </a><a href="/" class="meowcom-link" id="meowcom-next">{name} -></a></div>
-                <script src="https://meow.computer/meowcom.js"></script><script>meowcom_auto("mxrcedes");</script>
-            </div>
-            <div class="main-two">
-                <span class="circle-border">
-                    <img src="./pictures/mercedes profile-modified.png"
-                        alt="A picture of an Intervallic-style portrait of me.">
-                </span>
-            </div>
-        </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-        var typed = new Typed(".auto", {
-            strings: ["Mathematician", "Computer Scientist", "Game Developer", "Undergrad Researcher", "Artist", "Musician"],
-            typeSpeed: 60,
-            backSpeed: 100,
-            loop: true,
-        });
-    </script>
-</body>
-
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
 </html>
