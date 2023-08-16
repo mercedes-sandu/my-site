@@ -1,9 +1,9 @@
-import { Menu } from '@mui/icons-material';
-import { IconButton } from '@mui/material';
-import { LightMode, DarkMode } from '@mui/icons-material';
-import { useState } from 'react';
+import { Menu } from "@mui/icons-material";
+import { IconButton } from "@mui/material";
+import { LightMode, DarkMode } from "@mui/icons-material";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import './NavBar.css';
+import "./NavBar.css";
 import Resume from "./resume-mercedes-sandu.pdf";
 
 function NavBar() {
@@ -53,7 +53,7 @@ function NavBar() {
                         setIsNavExpanded(!isNavExpanded);
                     }}
                 >
-                    <Menu sx={{ color: 'var(--text-color)' }} />
+                    <Menu sx={{ color: "var(--text-color)" }} />
                 </button>
                 <div 
                     className={isNavExpanded 
