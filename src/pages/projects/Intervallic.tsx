@@ -1,4 +1,5 @@
-import { Grid, Link, List, ListItem, Typography } from "@mui/material";
+import { Grid, List, ListItem, Typography } from "@mui/material";
+import { StyledInlineLink, StyledDate } from "../../styles/StyledComponents";
 
 function Intervallic() {
     return (
@@ -48,24 +49,24 @@ function Intervallic() {
                         software development. It has been such a great experience to work with a small team and undergo the fast-paced 
                         development process. I am continuing to work part-time during the academic year to fulfill whatever will be needed 
                         for our early release, come Fall 2023. Our team has had many exciting opportunities to grow, such as partnering  
-                        with <Link href="">ASCAP</Link> to develop our pitch detection. Our demo is now out on <Link href="">itch.io</Link> and <Link href="">Steam</Link>!
+                        with <StyledInlineLink href="">ASCAP</StyledInlineLink> to develop our pitch detection. Our demo is now out on <StyledInlineLink href="">itch.io</StyledInlineLink> and <StyledInlineLink href="">Steam</StyledInlineLink>!
                     </Typography>
                     <Typography variant="body1">
-                        If you'd like to learn more about Overture Games and Intervallic, feel free to check out our <Link href="">website</Link> and 
-                        join our <Link href="">Discord server</Link>.
+                        If you'd like to learn more about Overture Games and Intervallic, feel free to check out our <StyledInlineLink href="">website</StyledInlineLink> and 
+                        join our <StyledInlineLink href="">Discord server</StyledInlineLink>.
                     </Typography>
                     <Typography variant="h4">
                         Media
                     </Typography>
                     <List>
-                        <ListItem sx={{ display: "list-item" }}>A podcast in <Link href="">Crain's Chicago business</Link>, 5/24/2023</ListItem>
-                        <ListItem sx={{ display: "list-item" }}>An audio story featured in <Link href="">The Daily NU</Link>, 5/15/2023</ListItem>
-                        <ListItem sx={{ display: "list-item" }}>An article featured on <Link href="">Scene + Heard</Link>, 5/5/2023</ListItem>
-                        <ListItem sx={{ display: "list-item" }}>Our <Link href="">Steam page</Link>, uploaded originally on 4/17/2023</ListItem>
-                        <ListItem sx={{ display: "list-item" }}>Our demo on <Link href="">itch.io</Link>, uploaded originally on 2/5/2023</ListItem>
-                        <ListItem sx={{ display: "list-item" }}>An article featured in <Link href="">The Daily NU</Link>, 11/21/2022</ListItem>
-                        <ListItem sx={{ display: "list-item" }}>Our success with <Link href="">Demo Day</Link> at Jumpstart at The Garage, 8/24/2022</ListItem>
-                        <ListItem sx={{ display: "list-item" }}>Our <Link href="">team interview</Link> from Jumpstart at The Garage, 8/15/2022</ListItem>
+                        <ListItem sx={{ display: "list-item" }}>A podcast in <StyledInlineLink href="">Crain's Chicago business</StyledInlineLink>, <StyledDate>5/24/2023</StyledDate></ListItem>
+                        <ListItem sx={{ display: "list-item" }}>An audio story featured in <StyledInlineLink href="">The Daily NU</StyledInlineLink>, <StyledDate>5/15/2023</StyledDate></ListItem>
+                        <ListItem sx={{ display: "list-item" }}>An article featured on <StyledInlineLink href="">Scene + Heard</StyledInlineLink>, <StyledDate>5/5/2023</StyledDate></ListItem>
+                        <ListItem sx={{ display: "list-item" }}>Our <StyledInlineLink href="">Steam page</StyledInlineLink>, <StyledDate>uploaded originally on 4/17/2023</StyledDate></ListItem>
+                        <ListItem sx={{ display: "list-item" }}>Our demo on <StyledInlineLink href="">itch.io</StyledInlineLink>, <StyledDate>uploaded originally on 2/5/2023</StyledDate></ListItem>
+                        <ListItem sx={{ display: "list-item" }}>An article featured in <StyledInlineLink href="">The Daily NU</StyledInlineLink>, <StyledDate>11/21/2022</StyledDate></ListItem>
+                        <ListItem sx={{ display: "list-item" }}>Our success with <StyledInlineLink href="">Demo Day</StyledInlineLink> at Jumpstart at The Garage, <StyledDate>8/24/2022</StyledDate></ListItem>
+                        <ListItem sx={{ display: "list-item" }}>Our <StyledInlineLink href="">team interview</StyledInlineLink> from Jumpstart at The Garage, 8/15/2022</ListItem>
                     </List>
                 </Grid>
             </Grid>

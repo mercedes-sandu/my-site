@@ -1,19 +1,24 @@
-import { Card, Grid, Link, Typography } from "@mui/material";
-import "../styles/PortfolioPage.css";
+import { Card, Grid, Link } from "@mui/material";
+import { 
+    StyledContainer,
+    StyledHeader,
+    StyledHeaderSpan,
+    StyledParagraph,
+} from "../styles/StyledComponents";
 
 function PortfolioPage() {
     return (
         <>
-            <Grid container spacing={2}>
+            <StyledContainer container spacing={2}>
                 <Grid item md={12}>
-                    <Typography variant="h2">
-                        My Projects
-                    </Typography>
-                    <Typography variant="body1">
+                    <StyledHeader variant="h2">
+                        My <StyledHeaderSpan>Projects</StyledHeaderSpan>
+                    </StyledHeader>
+                    <StyledParagraph variant="body1">
                         Below you'll find a collection of some projects I have completed and 
                         others that are still in progress. Feel free to use the filters to sort 
                         them by programming language or topic.
-                    </Typography>
+                    </StyledParagraph>
                     <Grid item md={12}>
 
                     </Grid>
@@ -55,7 +60,7 @@ function PortfolioPage() {
                         </Grid>
                     </Grid>
                 </Grid>
-            </Grid>
+            </StyledContainer>
         </>
     );
 }

@@ -1,4 +1,4 @@
-import "./App.css";
+// import "./App.css";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import PortfolioPage from "./pages/PortfolioPage";
@@ -11,34 +11,29 @@ import ZenDog from "./pages/projects/ZenDog";
 import CatSAT from "./pages/projects/CatSAT";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
-import { createContext, useContext } from "react";
-import { ThemeProvider, useTheme } from "@mui/material";
-
-const ColorModeContext = createContext({ toggleColorMode: () => {} });
+import { CssBaseline, ThemeProvider } from "@mui/material";
+import { darkTheme } from "./Theme";
 
 function App() {
-  const theme = useTheme();
-  const colorMode = useContext(ColorModeContext);
   return (
-    <ColorModeContext.Provider value={colorMode}>
-      <ThemeProvider theme={theme}>
-        <BrowserRouter>
-          <NavBar />
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="about" element={<AboutPage />} />
-            <Route path="portfolio" element={<PortfolioPage />} />
-            <Route path="polygonal-folding" element={<PolygonalFolding />} />
-            <Route path="imaginarium" element={<Imaginarium />} />
-            <Route path="intervallic" element={<Intervallic />} />
-            <Route path="songlybot" element={<SonglyBot />} />
-            <Route path="papas-what-is-going-on-eria" element={<PapasWhatIsGoingOnEria />} />
-            <Route path="zendog" element={<ZenDog />} />
-            <Route path="catsat" element={<CatSAT />} />
-          </Routes>
-        </BrowserRouter>
-      </ThemeProvider>
-    </ColorModeContext.Provider>
+    <ThemeProvider theme={darkTheme}>
+      <CssBaseline />
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="about" element={<AboutPage />} />
+          <Route path="portfolio" element={<PortfolioPage />} />
+          <Route path="polygonal-folding" element={<PolygonalFolding />} />
+          <Route path="imaginarium" element={<Imaginarium />} />
+          <Route path="intervallic" element={<Intervallic />} />
+          <Route path="songlybot" element={<SonglyBot />} />
+          <Route path="papas-what-is-going-on-eria" element={<PapasWhatIsGoingOnEria />} />
+          <Route path="zendog" element={<ZenDog />} />
+          <Route path="catsat" element={<CatSAT />} />
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
   )
 }
 

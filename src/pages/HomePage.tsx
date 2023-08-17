@@ -1,19 +1,35 @@
-// import { StyledHomePage } from "../styles/HomePage";
-import { Avatar, Grid, IconButton, Link, Typography } from "@mui/material";
-import { Email, GitHub, LinkedIn } from "@mui/icons-material";
+import { 
+    StyledContainer,
+    StyledHeader,
+    StyledInlineLink,
+} from "../styles/StyledComponents";
+import { 
+    Grid,
+    IconButton,
+    Typography,
+} from "@mui/material";
+import { 
+    Email,
+    GitHub,
+    LinkedIn,
+} from "@mui/icons-material";
 import Typewriter from "typewriter-effect";
-import "../styles/HomePage";
+import { StyledAvatar } from "../styles/HomePage";
 
 function HomePage() {
-    // const classes = useStyles();
     return (
-        // <StyledHomePage>
         <>
-            <Grid container spacing={2}>
-                <Grid item md={6}>
-                    <Typography variant="h2">
+            <StyledContainer 
+                container
+                spacing={12}
+            >
+                <Grid
+                    item
+                    md={6}
+                >
+                    <StyledHeader variant="h2">
                         Hi! I'm Mercedes!
-                    </Typography>
+                    </StyledHeader>
                     <Typewriter
                         options={{
                             strings: [
@@ -31,7 +47,8 @@ function HomePage() {
                     <Typography variant="body1">
                         I'm a rising senior at Northwestern University with a passion for math,
                         computer science, and software/video game development! Look around to
-                        learn more <Link href="/about">about me</Link> and my <Link href="/portfolio">projects</Link>!
+                        learn more <StyledInlineLink href="/about">about me</StyledInlineLink> and
+                        my <StyledInlineLink href="/portfolio">projects</StyledInlineLink>!
                     </Typography>
                     <Grid container spacing={2}>
                         <Grid item md={2}>
@@ -55,14 +72,13 @@ function HomePage() {
                 </Grid>
                 <Grid item md={6}>
                     <Grid item md={12}>
-                        <Avatar
+                        <StyledAvatar
                             alt="Mercedes Sandu"
                         />
                     </Grid>
                 </Grid>
-            </Grid>
+            </StyledContainer>
         </>
-        // </StyledHomePage>
     );
 }
 

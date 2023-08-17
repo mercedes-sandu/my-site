@@ -1,4 +1,4 @@
-import { Grid, Link, List, ListItem, Typography } from "@mui/material";
+import { Grid, Link, Typography } from "@mui/material";
 
 function CatSAT() {
     return (
