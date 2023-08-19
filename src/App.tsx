@@ -12,11 +12,18 @@ import CatSAT from "./pages/projects/CatSAT";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import { CssBaseline, ThemeProvider } from "@mui/material";
-import { darkTheme } from "./Theme";
+import { darkTheme, lightTheme } from "./Theme";
+import { useState } from "react";
 
 function App() {
+  const [mode, setMode] = useState<"light" | "dark">("dark");
+
+  function toggleMode() {
+    setMode(mode === "light" ? "dark" : "light");
+  }
+
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={mode === "light" ? lightTheme : darkTheme}>
       <CssBaseline />
       <BrowserRouter>
         <NavBar />

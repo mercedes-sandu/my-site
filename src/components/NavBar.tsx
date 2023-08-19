@@ -6,15 +6,7 @@ import { NavLink } from "react-router-dom";
 import "./NavBar.css";
 import Resume from "./resume-mercedes-sandu.pdf";
 
-function NavBar() {
-    const [isNavExpanded, setIsNavExpanded] = useState(false);
-    const [isLightMode, setIsLightMode] = useState(false);
-
-    function modeToggle(lightMode: boolean) {
-        setIsLightMode(lightMode);
-        console.log(`set mode to ${lightMode ? "light" : "dark"}`);
-    }
-
+function NavBar(toggleMode: Function) {
     return (
         <>
             <nav className="navigation">
@@ -30,7 +22,7 @@ function NavBar() {
                     },
                 }}
                 onClick={() => {
-                    modeToggle(!isLightMode);
+                    toggleMode();
                 }}>
                     {isLightMode ? (
                         <DarkMode 
