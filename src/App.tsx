@@ -1,4 +1,3 @@
-// import "./App.css";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import PortfolioPage from "./pages/PortfolioPage";
@@ -10,7 +9,7 @@ import PapasWhatIsGoingOnEria from "./pages/projects/PapasWhatIsGoingOnEria";
 import ZenDog from "./pages/projects/ZenDog";
 import CatSAT from "./pages/projects/CatSAT";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/navbar/NavBar";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { darkTheme } from "./Theme";
 
