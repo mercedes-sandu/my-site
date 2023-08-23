@@ -25,37 +25,37 @@ function PortfolioPage() {
                     <Grid container spacing={2}>
                         <Grid item md={6}>
                             <Card>
-                                <Link href="/catsat">CatSAT</Link>
+                                <Link href="/portfolio/catsat">CatSAT</Link>
                             </Card>
                         </Grid>
                         <Grid item md={6}>
                             <Card>
-                                <Link href="/zendog">ZenDog</Link>
+                                <Link href="/portfolio/zendog">ZenDog</Link>
                             </Card>
                         </Grid>
                         <Grid item md={6}>
                             <Card>
-                                <Link href="/papas-what-is-going-on-eria">Papa's What-Is-Going-On-Eria</Link>
+                                <Link href="/portfolio/papas-what-is-going-on-eria">Papa's What-Is-Going-On-Eria</Link>
                             </Card>
                         </Grid>
                         <Grid item md={6}>
                             <Card>
-                                <Link href="/songlybot">SonglyBot</Link>
+                                <Link href="/portfolio/songlybot">SonglyBot</Link>
                             </Card>
                         </Grid>
                         <Grid item md={6}>
                             <Card>
-                                <Link href="/intervallic">Intervallic</Link>
+                                <Link href="/portfolio/intervallic">Intervallic</Link>
                             </Card>
                         </Grid>
                         <Grid item md={6}>
                             <Card>
-                                <Link href="/imaginarium">Imaginarium</Link>
+                                <Link href="/portfolio/imaginarium">Imaginarium</Link>
                             </Card>
                         </Grid>
                         <Grid item md={6}>
                             <Card>
-                                <Link href="/polygonal-folding">Polygonal Folding</Link>
+                                <Link href="/portfolio/polygonal-folding">Polygonal Folding</Link>
                             </Card>
                         </Grid>
                     </Grid>

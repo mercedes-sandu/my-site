@@ -1,28 +1,29 @@
-import { AppBar, Box, IconButton, styled } from "@mui/material";
-import { DarkMode, LightMode, Menu } from "@mui/icons-material";
+import { 
+    AppBar,
+    IconButton,
+    styled,
+} from "@mui/material";
+import { 
+    DarkMode,
+    LightMode,
+    Menu,
+} from "@mui/icons-material";
 import { NavLink } from "react-router-dom";
 
 export const StyledNavBar = styled(AppBar)(({ theme }) => ({
-    // height: "60px",
-    // width: "100%",
-    // display: "flex",
-    // alignItems: "center",
-    // position: "relative",
-    // padding: "0 0.5rem 0",
-    // backgroundColor: theme.palette.primary.main,
-    // color: theme.palette.text.primary,
     position: "static",
-    backgroundColor: theme.palette.text.primary,
+    backgroundColor: theme.palette.primary.main,
+    color: theme.palette.text.primary,
 }));
 
 export const StyledIconButton = styled(IconButton)(({ theme }) => ({
-    margin: "0 1rem 0 1rem",
+    margin: "0 2rem 0 2rem",
     backgroundColor: theme.palette.primary[1],
     "&:hover": {
         backgroundColor: theme.palette.primary[2],
     },
     "&:focus": {
-        border: `2px solid ${theme.palette.text.primary}`,
+        outline: `2px solid ${theme.palette.text.primary}`,
     },
 }));
 
@@ -38,17 +39,15 @@ export const StyledMenu = styled(Menu)(({ theme }) => ({
     color: theme.palette.text.primary,
 }));
 
-export const StyledLogo = styled(NavLink)(({ theme }) => ({
-    textDecoration: "none",
-    color: theme.palette.text.primary,
-    marginLeft: "1rem",
-}));
-
 export const StyledNavLink = styled(NavLink)(({ theme }) => ({
     textDecoration: "none",
     color: theme.palette.text.primary,
-    marginLeft: "1rem",
+    alignSelf: "center",
+    marginLeft: "2rem",
+    "&:hover": {
+        color: theme.palette.secondary[2],
+    },
     "&.active": {
-        color: theme.palette.secondary.main,
+        color: theme.palette.secondary[2],
     },
 }));

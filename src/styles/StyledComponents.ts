@@ -4,6 +4,7 @@ export const StyledContainer = styled(Grid)(({ theme }) => ({
     backgroundColor: theme.palette.primary.main,
     color: theme.palette.text.primary,
     padding: "5rem 10rem 5rem 10rem",
+    height: "100vh",
 }));
 
 export const StyledHeader = styled(Typography)(({ theme }) => ({

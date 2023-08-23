@@ -58,3 +58,7 @@ code {
 ::-webkit-scrollbar-track-piece:end {
   background: transparent;
 }
+
+::selection {
+  background-color: var(--background-alternate-2);
+}

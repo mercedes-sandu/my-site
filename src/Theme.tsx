@@ -15,7 +15,7 @@ declare module "@mui/material/styles" {
         3?: string;
         4?: string;
     }
-}
+};
 
 const breakpoints = {
     xs: 0,

@@ -23,13 +23,13 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="portfolio" element={<PortfolioPage />} />
-          <Route path="polygonal-folding" element={<PolygonalFolding />} />
-          <Route path="imaginarium" element={<Imaginarium />} />
-          <Route path="intervallic" element={<Intervallic />} />
-          <Route path="songlybot" element={<SonglyBot />} />
-          <Route path="papas-what-is-going-on-eria" element={<PapasWhatIsGoingOnEria />} />
-          <Route path="zendog" element={<ZenDog />} />
-          <Route path="catsat" element={<CatSAT />} />
+          <Route path="portfolio/polygonal-folding" element={<PolygonalFolding />} />
+          <Route path="portfolio/imaginarium" element={<Imaginarium />} />
+          <Route path="portfolio/intervallic" element={<Intervallic />} />
+          <Route path="portfolio/songlybot" element={<SonglyBot />} />
+          <Route path="portfolio/papas-what-is-going-on-eria" element={<PapasWhatIsGoingOnEria />} />
+          <Route path="portfolio/zendog" element={<ZenDog />} />
+          <Route path="portfolio/catsat" element={<CatSAT />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
