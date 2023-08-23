@@ -1,10 +1,15 @@
-import { Card, Grid, Link } from "@mui/material";
+import { Grid, Link } from "@mui/material";
 import { 
     StyledContainer,
     StyledHeader,
     StyledHeaderSpan,
     StyledParagraph,
 } from "../styles/StyledComponents";
+import { 
+    StyledPortfolioCard,
+    StyledTitle
+} from "../styles/PortfolioCard";
+import { StyledCardGrid } from "../styles/PortfolioPage";
 
 function PortfolioPage() {
     return (
@@ -22,42 +27,50 @@ function PortfolioPage() {
                     <Grid item md={12}>
 
                     </Grid>
-                    <Grid container spacing={2}>
-                        <Grid item md={6}>
-                            <Card>
+                    <Grid 
+                        container
+                        spacing={2}
+                        alignItems="center"
+                        justifyContent="center"
+                    >
+                        <StyledCardGrid item md={6}>
+                            <StyledPortfolioCard>
+                                <StyledTitle>
+                                    CatSAT
+                                </StyledTitle>
                                 <Link href="/portfolio/catsat">CatSAT</Link>
-                            </Card>
-                        </Grid>
-                        <Grid item md={6}>
-                            <Card>
+                            </StyledPortfolioCard>
+                        </StyledCardGrid>
+                        <StyledCardGrid item md={6}>
+                            <StyledPortfolioCard>
                                 <Link href="/portfolio/zendog">ZenDog</Link>
-                            </Card>
-                        </Grid>
-                        <Grid item md={6}>
-                            <Card>
+                            </StyledPortfolioCard>
+                        </StyledCardGrid>
+                        <StyledCardGrid item md={6}>
+                            <StyledPortfolioCard>
                                 <Link href="/portfolio/papas-what-is-going-on-eria">Papa's What-Is-Going-On-Eria</Link>
-                            </Card>
-                        </Grid>
-                        <Grid item md={6}>
-                            <Card>
+                            </StyledPortfolioCard>
+                        </StyledCardGrid>
+                        <StyledCardGrid item md={6}>
+                            <StyledPortfolioCard>
                                 <Link href="/portfolio/songlybot">SonglyBot</Link>
-                            </Card>
-                        </Grid>
-                        <Grid item md={6}>
-                            <Card>
+                            </StyledPortfolioCard>
+                        </StyledCardGrid>
+                        <StyledCardGrid item md={6}>
+                            <StyledPortfolioCard>
                                 <Link href="/portfolio/intervallic">Intervallic</Link>
-                            </Card>
-                        </Grid>
-                        <Grid item md={6}>
-                            <Card>
+                            </StyledPortfolioCard>
+                        </StyledCardGrid>
+                        <StyledCardGrid item md={6}>
+                            <StyledPortfolioCard>
                                 <Link href="/portfolio/imaginarium">Imaginarium</Link>
-                            </Card>
-                        </Grid>
-                        <Grid item md={6}>
-                            <Card>
+                            </StyledPortfolioCard>
+                        </StyledCardGrid>
+                        <StyledCardGrid item md={6}>
+                            <StyledPortfolioCard>
                                 <Link href="/portfolio/polygonal-folding">Polygonal Folding</Link>
-                            </Card>
-                        </Grid>
+                            </StyledPortfolioCard>
+                        </StyledCardGrid>
                     </Grid>
                 </Grid>
             </StyledContainer>
