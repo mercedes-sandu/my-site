@@ -1,6 +1,7 @@
 import { 
     StyledContainer,
     StyledHeader,
+    StyledHomePageContainer,
     StyledInlineLink,
 } from "../styles/StyledComponents";
 import { 
@@ -21,7 +22,7 @@ import ProfilePicture from "../components/mercedes profile-modified.png";
 
 function HomePage() {
     return (
-        <StyledContainer container spacing={12}>
+        <StyledHomePageContainer container spacing={12}>
             <StyledHalfContainer item md={6}>
                 <StyledHeader variant="h2">
                     Hi! I'm Mercedes!
@@ -82,7 +83,7 @@ function HomePage() {
                     />
                 </Grid>
             </StyledHalfContainer>
-        </StyledContainer>
+        </StyledHomePageContainer>
     );
 }
 
