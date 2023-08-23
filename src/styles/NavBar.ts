@@ -1,16 +1,18 @@
-import { Box, IconButton, styled } from "@mui/material";
+import { AppBar, Box, IconButton, styled } from "@mui/material";
 import { DarkMode, LightMode, Menu } from "@mui/icons-material";
 import { NavLink } from "react-router-dom";
 
-export const StyledNavBar = styled(Box)(({ theme }) => ({
-    height: "60px",
-    width: "100%",
-    display: "flex",
-    alignItems: "center",
-    position: "relative",
-    padding: "0 0.5rem 0",
-    backgroundColor: theme.palette.primary.main,
-    color: theme.palette.text.primary,
+export const StyledNavBar = styled(AppBar)(({ theme }) => ({
+    // height: "60px",
+    // width: "100%",
+    // display: "flex",
+    // alignItems: "center",
+    // position: "relative",
+    // padding: "0 0.5rem 0",
+    // backgroundColor: theme.palette.primary.main,
+    // color: theme.palette.text.primary,
+    position: "static",
+    backgroundColor: theme.palette.text.primary,
 }));
 
 export const StyledIconButton = styled(IconButton)(({ theme }) => ({
