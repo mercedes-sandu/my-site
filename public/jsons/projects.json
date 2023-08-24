@@ -1,0 +1,77 @@
+{
+    "CatSAT": {
+        "title": "CatSAT",
+        "dates": "March 2023 to Present",
+        "description": "A SAT solver developed by Dr. Ian Horswill that uses an optimized WalkSAT algorithm to solve constraint problems and pseudoboolean constraint problems.",
+        "tags": [
+            "CatSAT",
+            "CS Research",
+            "C#"
+        ],
+        "navTo": "/portfolio/catsat"
+    },
+    "ZenDog": {
+        "title": "ZenDog",
+        "dates": "February 2023 to March 2023",
+        "description": "An app allowing dog owners to connect with experts and receive curated content.",
+        "tags": [
+            "JavaScript",
+            "React",
+            "Web Dev"
+        ],
+        "navTo": "/portfolio/zendog"
+    },
+    "Papa's What-Is-Going-On-Eria": {
+        "title": "Papa's What-Is-Going-On-Eria",
+        "dates": "October 2022",
+        "description": "A cooking flash game where you fulfill restaurant orders as ingredients gradually become corrupted and unusable.",
+        "tags": [
+            "C#",
+            "Unity"
+        ],
+        "navTo": "/portfolio/papas-what-is-going-on-eria"
+    },
+    "SonglyBot": {
+        "title": "SonglyBot",
+        "dates": "July 2022 to Present",
+        "description": "A Discord bot created for the official Overture Games Discord server. Features are developed to make the server more interactive and fun.",
+        "tags": [
+            "Discord API",
+            "Python"
+        ],
+        "navTo": "/portfolio/songlybot"
+    },
+    "Intervallic": {
+        "title": "Intervallic",
+        "dates": "June 2022 to Present",
+        "description": "A video game where you can use your instrument to control an alien robot cat as it navigates the world through music.",
+        "tags": [
+            "C#",
+            "Unity"
+        ],
+        "navTo": "/portfolio/intervallic"
+    },
+    "Imaginarium": {
+        "title": "Imaginarium",
+        "dates": "March 2022 to Present",
+        "description": "A language developed by Dr. Ian Horswill to generate just about anything you could imagine.",
+        "tags": [
+            "CS Research",
+            "C#",
+            "Imaginarium",
+            "Unity"
+        ],
+        "navTo": "/portfolio/imaginarium"
+    },
+    "Polygonal Folding": {
+        "title": "Polygonal Folding",
+        "dates": "January 2021 to June 2023",
+        "description": "Mathematics research done with Dr. Shuyi Weng in discrete geometry. This paper discusses the affine dependence of vertices in polygonal cap curves.",
+        "tags": [
+            "LaTeX",
+            "Math Research",
+            "Mathematica"
+        ],
+        "navTo": "/portfolio/polygonal-folding"
+    }
+}

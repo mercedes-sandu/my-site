@@ -1,15 +1,11 @@
-import { Grid, Link } from "@mui/material";
+import { Grid } from "@mui/material";
 import { 
     StyledContainer,
     StyledHeader,
     StyledHeaderSpan,
     StyledParagraph,
 } from "../styles/StyledComponents";
-import { 
-    StyledPortfolioCard,
-    StyledTitle
-} from "../styles/PortfolioCard";
-import { StyledCardGrid } from "../styles/PortfolioPage";
+import PortfolioCard from "../components/portfolio-card/PortfolioCard";
 
 function PortfolioPage() {
     return (
@@ -33,44 +29,44 @@ function PortfolioPage() {
                         alignItems="center"
                         justifyContent="center"
                     >
-                        <StyledCardGrid item md={6}>
-                            <StyledPortfolioCard>
-                                <StyledTitle>
-                                    CatSAT
-                                </StyledTitle>
-                                <Link href="/portfolio/catsat">CatSAT</Link>
-                            </StyledPortfolioCard>
-                        </StyledCardGrid>
-                        <StyledCardGrid item md={6}>
-                            <StyledPortfolioCard>
+                        <PortfolioCard />
+                        <PortfolioCard />
+                        <PortfolioCard />
+                        <PortfolioCard />
+                        <PortfolioCard />
+                        <PortfolioCard />
+                        <PortfolioCard />
+                            {/* <Link href="/portfolio/catsat">CatSAT</Link> */}
+                        {/* <StyledCardGrid item md={6}>
+                            <PortfolioCard>
                                 <Link href="/portfolio/zendog">ZenDog</Link>
-                            </StyledPortfolioCard>
+                            </PortfolioCard>
                         </StyledCardGrid>
                         <StyledCardGrid item md={6}>
-                            <StyledPortfolioCard>
+                            <PortfolioCard>
                                 <Link href="/portfolio/papas-what-is-going-on-eria">Papa's What-Is-Going-On-Eria</Link>
-                            </StyledPortfolioCard>
+                            </PortfolioCard>
                         </StyledCardGrid>
                         <StyledCardGrid item md={6}>
-                            <StyledPortfolioCard>
+                            <PortfolioCard>
                                 <Link href="/portfolio/songlybot">SonglyBot</Link>
-                            </StyledPortfolioCard>
+                            </PortfolioCard>
                         </StyledCardGrid>
                         <StyledCardGrid item md={6}>
-                            <StyledPortfolioCard>
+                            <PortfolioCard>
                                 <Link href="/portfolio/intervallic">Intervallic</Link>
-                            </StyledPortfolioCard>
+                            </PortfolioCard>
                         </StyledCardGrid>
                         <StyledCardGrid item md={6}>
-                            <StyledPortfolioCard>
+                            <PortfolioCard>
                                 <Link href="/portfolio/imaginarium">Imaginarium</Link>
-                            </StyledPortfolioCard>
+                            </PortfolioCard>
                         </StyledCardGrid>
                         <StyledCardGrid item md={6}>
-                            <StyledPortfolioCard>
+                            <PortfolioCard>
                                 <Link href="/portfolio/polygonal-folding">Polygonal Folding</Link>
-                            </StyledPortfolioCard>
-                        </StyledCardGrid>
+                            </PortfolioCard>
+                        </StyledCardGrid> */}
                     </Grid>
                 </Grid>
             </StyledContainer>
