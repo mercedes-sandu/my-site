@@ -24,6 +24,9 @@ export const StyledHalfContainer = styled(Grid)(({ theme }) => ({
 export const StyledIconButton = styled(IconButton)(({ theme }) => ({
     backgroundColor: theme.palette.secondary[4],
     boxShadow: `2px 2px 20px ${theme.palette.secondary[3]}`,
+    "&:hover": {
+        backgroundColor: theme.palette.secondary[4], // todo: scale button
+    }
 }));
 
 export const StyledEmail = styled(Email)(({ theme }) => ({

@@ -8,29 +8,32 @@ import {
     StyledTitle
 } from "../../styles/PortfolioCard";
 
-function PortfolioCard() {
+interface PortfolioCardProps {
+    title: string;
+    dates: string;
+    description: string;
+    tags: string[];
+}
+
+function PortfolioCard(props: PortfolioCardProps) {
     return (
         <StyledCardGrid item md={6}>
             <StyledPortfolioCard>
                 <StyledTitle>
-                    Title
+                    {props.title}
                 </StyledTitle>
                 <StyledDates>
-                    Start to End
+                    {props.dates}
                 </StyledDates>
                 <StyledDescription>
-                    Here is a nice little description.
+                    {props.description}
                 </StyledDescription>
                 <StyledTagsBox>
-                    <StyledTag>
-                        Tag
-                    </StyledTag>
-                    <StyledTag>
-                        Tag
-                    </StyledTag>
-                    <StyledTag>
-                        Tag
-                    </StyledTag>
+                    {props.tags.map((tag, index) => (
+                        <StyledTag key={index}>
+                            {tag}
+                        </StyledTag>
+                    ))}
                 </StyledTagsBox>
             </StyledPortfolioCard>
         </StyledCardGrid>

@@ -14,6 +14,7 @@ export const StyledNavBar = styled(AppBar)(({ theme }) => ({
     position: "static",
     backgroundColor: theme.palette.primary.main,
     color: theme.palette.text.primary,
+    padding: "1rem 2rem 0 2rem",
 }));
 
 export const StyledIconButton = styled(IconButton)(({ theme }) => ({

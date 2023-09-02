@@ -14,6 +14,7 @@
     "@types/node": "^16.18.38",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
+    "fs": "^0.0.1-security",
     "mui": "^0.0.1",
     "next": "^13.4.7",
     "react": "^18.2.0",

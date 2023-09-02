@@ -1,10 +1,16 @@
-import { Grid, Link, styled, Typography } from "@mui/material";
+import { Box, Grid, Link, styled, Typography } from "@mui/material";
 
 export const StyledContainer = styled(Grid)(({ theme }) => ({
     backgroundColor: theme.palette.primary.main,
     color: theme.palette.text.primary,
-    padding: "3rem 10rem 3rem 10rem",
+    padding: "3rem 6rem 3rem 6rem",
     height: "100vh",
+}));
+
+export const StyledFooter = styled(Box)(({ theme }) => ({
+    width: "100%",
+    backgroundColor: theme.palette.primary.main,
+    height: "10vh",
 }));
 
 export const StyledHomePageContainer = styled(Grid)(({ theme }) => ({

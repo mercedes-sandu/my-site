@@ -1,6 +1,7 @@
 import { Grid } from "@mui/material";
 import { 
     StyledContainer,
+    StyledFooter,
     StyledHeader,
     StyledHeaderSpan,
     StyledInlineLink,
@@ -60,6 +61,8 @@ function AboutPage() {
                     check out my <StyledInlineLink href="">resume</StyledInlineLink>! I'd love to hear from you!
                 </StyledParagraph>
             </Grid>
+            <StyledFooter>
+            </StyledFooter>
         </StyledContainer>
     );
 }

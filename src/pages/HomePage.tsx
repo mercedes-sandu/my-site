@@ -1,5 +1,5 @@
 import { 
-    StyledContainer,
+    StyledFooter,
     StyledHeader,
     StyledHomePageContainer,
     StyledInlineLink,
@@ -83,6 +83,8 @@ function HomePage() {
                     />
                 </Grid>
             </StyledHalfContainer>
+            <StyledFooter>
+            </StyledFooter>
         </StyledHomePageContainer>
     );
 }
