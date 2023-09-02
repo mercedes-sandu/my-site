@@ -31,6 +31,7 @@ function PortfolioPage() {
                     justifyContent="center"
                 >
                     {Object.entries(projects).map(([key, project]) => (
+                        project.display ? (
                         <PortfolioCard
                             key={key}
                             title={project.title}
@@ -38,6 +39,7 @@ function PortfolioPage() {
                             description={project.description}
                             tags={project.tags}
                         />
+                        ) : null
                     ))}
                 </Grid>
             </Grid>

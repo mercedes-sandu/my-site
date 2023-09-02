@@ -1,4 +1,40 @@
 {
+    "Exhaling Dust": {
+        "title": "Exhaling Dust",
+        "dates": "August 2023 to Present",
+        "description": "A 3D puzzle and space exploration game with physical puzzles and narrative elements.",
+        "tags": [
+            "Blender",
+            "C#",
+            "Unity"
+        ],
+        "navTo": "/portfolio/exhaling-dust",
+        "display": false
+    },
+    "Abbott Internship": {
+        "title": "Abbott Internship",
+        "dates": "June 2023 to September 2023",
+        "description": "The projects I worked on during my time as an intern at Abbott.",
+        "tags": [
+            "Figma",
+            "React",
+            "TypeScript",
+            "Web Dev"
+        ],
+        "navTo": "/portfolio/abbott-internship",
+        "display": false
+    },
+    "Ocean Cleanup": {
+        "title": "Ocean Cleanup",
+        "dates": "April 2023 to May 2023",
+        "description": "A low-poly 3D ocean exploration and cleanup game made for the Progression Mechanics Game Jam.",
+        "tags": [
+            "C#",
+            "Unity"
+        ],
+        "navTo": "/portfolio/ocean-cleanup",
+        "display": false
+    },
     "CatSAT": {
         "title": "CatSAT",
         "dates": "March 2023 to Present",
@@ -8,18 +44,80 @@
             "CS Research",
             "C#"
         ],
-        "navTo": "/portfolio/catsat"
+        "navTo": "/portfolio/catsat",
+        "display": true
+    },
+    "Smart Context Stories": {
+        "title": "Smart Context Stories",
+        "dates": "March 2023 to June 2023",
+        "description": "An AI Chrome extension that catches you up on the news you missed while you were busy.",
+        "tags": [
+            "JavaScript",
+            "OpenAI",
+            "React",
+            "Web Dev"
+        ],
+        "navTo": "/portfolio/smart-context-stories",
+        "display": false
     },
     "ZenDog": {
         "title": "ZenDog",
         "dates": "February 2023 to March 2023",
-        "description": "An app allowing dog owners to connect with experts and receive curated content.",
+        "description": "A webapp allowing dog owners to connect with experts and receive curated content.",
         "tags": [
+            "Figma",
             "JavaScript",
             "React",
             "Web Dev"
         ],
-        "navTo": "/portfolio/zendog"
+        "navTo": "/portfolio/zendog",
+        "display": true
+    },
+    "DiningInformant": {
+        "title": "DiningInformant",
+        "dates": "January 2023 to February 2023",
+        "description": "A webapp that allows Northwestern students to see wait times and menus for on-campus dining halls.",
+        "tags": [
+            "Figma",
+            "JavaScript",
+            "React",
+            "Web Dev"
+        ],
+        "navTo": "/portfolio/dininginformant",
+        "display": false
+    },
+    "When the Devil Takes Hold": {
+        "title": "When the Devil Takes Hold",
+        "dates": "January 2023 to March 2023",
+        "description": "A 2D pixel puzzle game where you solve murderous puzzles to appease a demon, all while trying to escape his wrath.",
+        "tags": [
+            "C#",
+            "Unity"
+        ],
+        "navTo": "/portfolio/when-the-devil-takes-hold",
+        "display": false
+    },
+    "Riverswood Manor": {
+        "title": "Riverswood Manor",
+        "dates": "November 2022 to December 2022",
+        "description": "A 3D escape room game where you play as a butler trying to escape a haunted mansion.",
+        "tags": [
+            "C#",
+            "Unity"
+        ],
+        "navTo": "/portfolio/riverswood-manor",
+        "display": false
+    },
+    "We Three Witches": {
+        "title": "We Three Witches",
+        "dates": "November 2022",
+        "description": "A 2D pixel platformer game where you play as one of three witches fighting AI enemy monsters.",
+        "tags": [
+            "C#",
+            "Unity"
+        ],
+        "navTo": "/portfolio/we-three-witches",
+        "display": false
     },
     "Papa's What-Is-Going-On-Eria": {
         "title": "Papa's What-Is-Going-On-Eria",
@@ -29,7 +127,8 @@
             "C#",
             "Unity"
         ],
-        "navTo": "/portfolio/papas-what-is-going-on-eria"
+        "navTo": "/portfolio/papas-what-is-going-on-eria",
+        "display": true
     },
     "SonglyBot": {
         "title": "SonglyBot",
@@ -39,7 +138,8 @@
             "Discord API",
             "Python"
         ],
-        "navTo": "/portfolio/songlybot"
+        "navTo": "/portfolio/songlybot",
+        "display": true
     },
     "Intervallic": {
         "title": "Intervallic",
@@ -49,7 +149,8 @@
             "C#",
             "Unity"
         ],
-        "navTo": "/portfolio/intervallic"
+        "navTo": "/portfolio/intervallic",
+        "display": true
     },
     "Imaginarium": {
         "title": "Imaginarium",
@@ -61,7 +162,8 @@
             "Imaginarium",
             "Unity"
         ],
-        "navTo": "/portfolio/imaginarium"
+        "navTo": "/portfolio/imaginarium",
+        "display": true
     },
     "Polygonal Folding": {
         "title": "Polygonal Folding",
@@ -72,6 +174,7 @@
             "Math Research",
             "Mathematica"
         ],
-        "navTo": "/portfolio/polygonal-folding"
+        "navTo": "/portfolio/polygonal-folding",
+        "display": true
     }
 }
