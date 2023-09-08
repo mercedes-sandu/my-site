@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Mercedes Sandu">
+        <meta name="description" content="My personal portfolio">
+        <meta name="keywords" content="Mercedes, Sandu">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="icon" type="image/png" href="../icons/favicon-16x16.png" sizes="16x16">
+        <title>Mercedes Sandu</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="flex">
+                <div class="logo" onclick="location.href='../index.html';" style="cursor: pointer;">
+                    Mercedes Sandu
+                </div>
+                <nav>
+                    <ul class="flex">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../portfolio.html" class="active">Portfolio</a></li>
+                        <!-- <li><a href="../contact.html">Contact</a></li> -->
+                        <li><a href="../resume-mercedes-sandu.pdf" target="_blank">Resume</a></li>
+                        <span>
+                            <img src="../js/moon.webp" id="theme-mode-icon">
+                        </span>
+                    </ul>
+                    <script type="text/javascript" src="../js/toggleMode.js"></script>
+                </nav>
+            </header>
+        </div>
+
+        <section class="post" id="DiningInformant">
+            <div class="heading">
+                <h1>DiningInformant</h1>
+                <h2>A webapp allowing Northwestern students to see wait times and menus for on-campus dining halls.</h2>
+                <h3>January 2023 to February 2023 | COMP_SCI 394: Agile Software Development</h3>
+            </div>
+            <div class="text">
+                <p>
+                    DiningInformant was the first project my team worked on in COMP_SCI 394. For this project, we had to quickly come up with a webapp idea, pitch it within the first 
+                    week, and begin development. We decided to make a webapp that would help first- and second-year students at Northwestern see the wait time at various campus dining 
+                    halls, report their wait times and rating of the dining halls, and see the menus for each meal, daily. We had five weeks to complete this project.
+                </p>
+                <p>
+                    We came up with the app idea, a Figma mockup, and a list of user stories. We worked together to create a sprint plan week by week and had weekly meetings to discuss 
+                    what needed to be done and the plan of action. My personal role in the project was to demo the project weekly, create and iterate upon the Figma mockups, and to 
+                    primarily implement the frontend aspects of the webapp. I entirely implemented the rating form and aided the other developers with the UI/UX for the other pages and 
+                    components. I also worked on setting up the databases in Firebase, and set up end-to-end as well as unit testing for the app before delivering it by the middle of the 
+                    quarter.
+                </p>
+                <p>
+                    The webapp was developed using React, Firebase, and MUI. Majority of the languages used were JavaScript, CSS, and HTML. Below are some screenshots of the webapp.
+                </p>
+            </div>
+            <div class="image-container">
+                <img class="back" src="../pictures/dininginformant.webp">
+                <img class="front" src="../pictures/dininginformant.webp">
+            </div>
+            <div class="text">
+                <h4>Features:</h4>
+                <ul>
+                    <li>A home page where the user can see a card corresponding to every dining hall, featured meal items, the dining hall's star rating, and the current approximate wait time</li>
+                    <li>A page where the user can see the menu of each meal being offered at every dining hall, with a tab for each meal (i.e., breakfast, lunch, dinner)</li>
+                    <li>A form where users can report their experienced wait time and rating of the dining hall they went to</li>
+                    <li>Storage and retrieval of dining hall information (i.e., wait time, rating, etc.)</li>
+                    <li>DineOnCampus API calls to retrieve dining hall menus and cache them</li>
+                </ul>
+                <p>
+                    If you'd like to browse the code, feel free to take a look at the 
+                    <a class="inline-link" href="https://github.com/394-w23/DiningInformant" target="_blank">DiningInformant</a> repository.
+                </p>
+            </div>
+        </section>
+        <footer></footer>
+    </body>
+</html>
