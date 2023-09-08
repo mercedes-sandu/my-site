@@ -2,6 +2,7 @@
     "Exhaling Dust": {
         "title": "Exhaling Dust",
         "dates": "August 2023 to Present",
+        "organization": "Goob Games",
         "description": "A 3D puzzle and space exploration game with physical puzzles and narrative elements.",
         "tags": [
             "Blender",
@@ -14,6 +15,7 @@
     "Abbott Internship": {
         "title": "Abbott Internship",
         "dates": "June 2023 to September 2023",
+        "organization": "Abbott Laboratories",
         "description": "The projects I worked on during my time as an intern at Abbott.",
         "tags": [
             "Figma",
@@ -27,6 +29,7 @@
     "Ocean Cleanup": {
         "title": "Ocean Cleanup",
         "dates": "April 2023 to May 2023",
+        "organization": "Progression Mechanics Game Jam",
         "description": "A low-poly 3D ocean exploration and cleanup game made for the Progression Mechanics Game Jam.",
         "tags": [
             "C#",
@@ -38,6 +41,7 @@
     "CatSAT": {
         "title": "CatSAT",
         "dates": "March 2023 to Present",
+        "organization": "Computer Science Research",
         "description": "A SAT solver developed by Dr. Ian Horswill that uses an optimized WalkSAT algorithm to solve constraint problems and pseudoboolean constraint problems.",
         "tags": [
             "CatSAT",
@@ -50,6 +54,7 @@
     "Smart Context Stories": {
         "title": "Smart Context Stories",
         "dates": "March 2023 to June 2023",
+        "organization": "COMP_SCI 338-0: Practicum in Intelligent Information Systems",
         "description": "An AI Chrome extension that catches you up on the news you missed while you were busy.",
         "tags": [
             "JavaScript",
@@ -63,6 +68,7 @@
     "ZenDog": {
         "title": "ZenDog",
         "dates": "February 2023 to March 2023",
+        "organization": "COMP_SCI 394-0: Agile Software Development",
         "description": "A webapp allowing dog owners to connect with experts and receive curated content.",
         "tags": [
             "Figma",
@@ -76,6 +82,7 @@
     "DiningInformant": {
         "title": "DiningInformant",
         "dates": "January 2023 to February 2023",
+        "organization": "COMP_SCI 394-0: Agile Software Development",
         "description": "A webapp that allows Northwestern students to see wait times and menus for on-campus dining halls.",
         "tags": [
             "Figma",
@@ -89,6 +96,7 @@
     "When the Devil Takes Hold": {
         "title": "When the Devil Takes Hold",
         "dates": "January 2023 to March 2023",
+        "organization": "COMP_SCI 377-0: Game Development Studio",
         "description": "A 2D pixel puzzle game where you solve murderous puzzles to appease a demon, all while trying to escape his wrath.",
         "tags": [
             "C#",
@@ -100,6 +108,7 @@
     "Riverswood Manor": {
         "title": "Riverswood Manor",
         "dates": "November 2022 to December 2022",
+        "organization": "COMP_SCI 376-0: Game Design and Development",
         "description": "A 3D escape room game where you play as a butler trying to escape a haunted mansion.",
         "tags": [
             "C#",
@@ -111,6 +120,7 @@
     "We Three Witches": {
         "title": "We Three Witches",
         "dates": "November 2022",
+        "organization": "COMP_SCI 376-0: Game Design and Development",
         "description": "A 2D pixel platformer game where you play as one of three witches fighting AI enemy monsters.",
         "tags": [
             "C#",
@@ -122,6 +132,7 @@
     "Papa's What-Is-Going-On-Eria": {
         "title": "Papa's What-Is-Going-On-Eria",
         "dates": "October 2022",
+        "organization": "COMP_SCI 376-0: Game Design and Development",
         "description": "A cooking flash game where you fulfill restaurant orders as ingredients gradually become corrupted and unusable.",
         "tags": [
             "C#",
@@ -133,6 +144,7 @@
     "SonglyBot": {
         "title": "SonglyBot",
         "dates": "July 2022 to Present",
+        "organization": "Overture Games",
         "description": "A Discord bot created for the official Overture Games Discord server. Features are developed to make the server more interactive and fun.",
         "tags": [
             "Discord API",
@@ -144,6 +156,7 @@
     "Intervallic": {
         "title": "Intervallic",
         "dates": "June 2022 to Present",
+        "organization": "Overture Games",
         "description": "A video game where you can use your instrument to control an alien robot cat as it navigates the world through music.",
         "tags": [
             "C#",
@@ -155,6 +168,7 @@
     "Imaginarium": {
         "title": "Imaginarium",
         "dates": "March 2022 to Present",
+        "organization": "Computer Science Research",
         "description": "A language developed by Dr. Ian Horswill to generate just about anything you could imagine.",
         "tags": [
             "CS Research",
@@ -168,6 +182,7 @@
     "Polygonal Folding": {
         "title": "Polygonal Folding",
         "dates": "January 2021 to June 2023",
+        "organization": "Mathematics Research",
         "description": "Mathematics research done with Dr. Shuyi Weng in discrete geometry. This paper discusses the affine dependence of vertices in polygonal cap curves.",
         "tags": [
             "LaTeX",
