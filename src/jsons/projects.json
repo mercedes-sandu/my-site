@@ -55,7 +55,7 @@
         "title": "Smart Context Stories",
         "dates": "March 2023 to June 2023",
         "organization": "COMP_SCI 338-0: Practicum in Intelligent Information Systems",
-        "description": "An AI Chrome extension that catches you up on the news you missed while you were busy.",
+        "description": "An OpenAI Google Chrome extension that catches you up on the news you missed while you were busy.",
         "tags": [
             "JavaScript",
             "OpenAI",
