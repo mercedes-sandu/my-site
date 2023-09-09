@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Mercedes Sandu">
+        <meta name="description" content="My personal portfolio">
+        <meta name="keywords" content="Mercedes, Sandu">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="icon" type="image/png" href="../icons/favicon-16x16.png" sizes="16x16">
+        <title>Mercedes Sandu</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="flex">
+                <div class="logo" onclick="location.href='../index.html';" style="cursor: pointer;">
+                    Mercedes Sandu
+                </div>
+                <nav>
+                    <ul class="flex">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../portfolio.html" class="active">Portfolio</a></li>
+                        <!-- <li><a href="../contact.html">Contact</a></li> -->
+                        <li><a href="../resume-mercedes-sandu.pdf" target="_blank">Resume</a></li>
+                        <span>
+                            <img src="../js/moon.webp" id="theme-mode-icon">
+                        </span>
+                    </ul>
+                    <script type="text/javascript" src="../js/toggleMode.js"></script>
+                </nav>
+            </header>
+        </div>
+
+        <section class="post" id="OceanCleanup">
+            <div class="heading">
+                <h1>Ocean Cleanup</h1>
+                <h2>A low-poly 3D ocean exploration and cleanup game made for the Progression Mechanics Game Jam.</h2>
+                <h3>April 2023 to May 2023 | Progression Mechanics Game Jam</h3>
+            </div>
+            <div class="image-container">
+                <img class="back" src="../pictures/ocean cleanup title.webp">
+                <img class="front" src="../pictures/ocean cleanup title.webp">
+            </div>
+            <div class="text">
+                <p>
+                    Ocean Cleanup is a game my team made for the Progression Mechanics Game Jam hosted at Northwestern. You control a cute 
+                    low-poly submarine that must explore the ocean and collect trash to clean it up. As you collect trash, you gain points 
+                    which are expendable on ship upgrades. We had about eight weeks to complete this project. 
+                </p>
+                <p>
+                    On this project, I worked as both a 3D artist and a programmer. As an artist, I created all of the 3D models (aside from 
+                    the terrain, which was created using a Unity package which procedurally generates low-poly terrain) and their respective 
+                    materials using Blender. As shown in a screenshot below, I made
+                    <ul>
+                        <li>the submarine (the propellers rotate!)</li>
+                        <li>the various plastics (bottles, cups, bowls, lids, balloons, and utensils), and</li>
+                        <li>the aqutatic plants (corals, kelps, and mushrooms).</li>
+                    </ul>
+                </p>
+                <p>
+                    As a programmer, I was mainly responsible for coding the plastics, level manager, shop, and UI. This was my first experience 
+                    with a game jam, so I underestimated how quickly time would fly (especially doing this during the school year). I would have 
+                    loved to have a lot more mechanics and areas in the game, but I'm still proud of what we were able to accomplish in the time 
+                    allotted. I'm looking forward to finishing the project some day!
+                </p>
+                <p>
+                    The game was made using Unity, C#, and Blender. 
+                </p>
+                <h4>Features:</h4>
+                <ul>
+                    <li>Custom 3D models for the submarine (with moving components), plastics, and aquatic plants</li>
+                    <li>Two levels and areas of exploration</li>
+                    <li>A third-person controller that allows the player to control the direction and yaw/pitch/roll of the vessel</li>
+                    <li>In-game UI overlay to see how many pieces of plastic and how much currency you've collected</li>
+                    <li>A UI overlay shop to purchase ship upgrades (speed and collision radius) with in-game currency</li>
+                    <li>A level control script that detects when the player has completed a level (collected all pieces of plastic), and 
+                        advances the player to the next level</li>
+                </ul>
+                <p>
+                    Below are some screenshots of the game.
+                </p>
+            </div>
+            <div class="image-container">
+                <img class="back" src="../pictures/ocean cleanup instructions.webp">
+                <img class="front" src="../pictures/ocean cleanup instructions.webp">
+            </div>
+            <div class="image-container">
+                <img class="back" src="../pictures/ocean cleanup area 1.webp">
+                <img class="front" src="../pictures/ocean cleanup area 1.webp">
+            </div>
+            <div class="image-container">
+                <img class="back" src="../pictures/ocean cleanup area 2.webp">
+                <img class="front" src="../pictures/ocean cleanup area 2.webp">
+            </div>
+            <div class="image-container">
+                <img class="back" src="../pictures/ocean cleanup shop.webp">
+                <img class="front" src="../pictures/ocean cleanup shop.webp">
+            </div>
+            <div class="image-container">
+                <img class="back" src="../pictures/ocean cleanup assets.webp">
+                <img class="front" src="../pictures/ocean cleanup assets.webp">
+            </div>
+            <div class="text">
+                <p>
+                    If you'd like to browse the code, feel free to take a look at the 
+                    <a class="inline-link" href="https://github.com/mercedes-sandu/Ocean-Cleanup" target="_blank">Ocean Cleanup</a> 
+                    repository.
+                </p>
+            </div>
+        </section>
+        <footer></footer>
+    </body>
+</html>
