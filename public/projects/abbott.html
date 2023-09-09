@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Mercedes Sandu">
+        <meta name="description" content="My personal portfolio">
+        <meta name="keywords" content="Mercedes, Sandu">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="icon" type="image/png" href="../icons/favicon-16x16.png" sizes="16x16">
+        <title>Mercedes Sandu</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="flex">
+                <div class="logo" onclick="location.href='../index.html';" style="cursor: pointer;">
+                    Mercedes Sandu
+                </div>
+                <nav>
+                    <ul class="flex">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../portfolio.html" class="active">Portfolio</a></li>
+                        <!-- <li><a href="../contact.html">Contact</a></li> -->
+                        <li><a href="../resume-mercedes-sandu.pdf" target="_blank">Resume</a></li>
+                        <span>
+                            <img src="../js/moon.webp" id="theme-mode-icon">
+                        </span>
+                    </ul>
+                    <script type="text/javascript" src="../js/toggleMode.js"></script>
+                </nav>
+            </header>
+        </div>
+
+        <section class="post" id="Abbott">
+            <div class="heading">
+                <h1>Abbott Internship</h1>
+                <h2>The projects I worked on during my time as an intern at Abbott.</h2>
+                <h3>June 2023 to September 2023 | Abbott Laboratories</h3>
+            </div>
+            <div class="text">
+                <p>
+                    My first internship during Summer 2023 was at Abbott Laboratories, working in Downtown Chicago. I was brought on as an IT intern, working on my primary assignment, 
+                    an E-commerce React webapp. On this project, I worked primarily on two teams as a frontend developer: pre-purchase and post-purchase. The pre-purchase team mainly 
+                    focused on the product catalog and pre-screening surveys, while the post-purchase team focused on order histroy, tracking, and test results. 
+                </p>
+                <p>
+                    As a frontend developer, I primarily worked with designers, other engineers, and project managers to modify existing components and create new ones. A good majority 
+                    of my work consisted of ADA audits, where I would modify components to make them more accessible through color uses, ARIA labels, focus states, and more. With every 
+                    change that was made for accessibility, I had to run Lighthouse tests and document the passing results. I also worked on creating new components, such as skeleton 
+                    loaders for cards, redesigned footers, and more.
+                </p>
+                <p>
+                    The webapp was developed using React, Azure, and MUI. Majority of the languages used were TypeScript, CSS, and HTML.
+                </p>
+                <p>
+                    Another part of my internship was a showcase project done with a team of other interns. We were assigned to work with a team in the Nutrition division of Abbott to 
+                    improve UI/UX of their existing data analytics projects. We did a full visual and structural redesign of a PowerBI dashboard and a PowerApp, as well create templates 
+                    for future dashboards and components they could use in Figma. We began the project by analyzing the current dashboard and app, noting what worked and what didn't work, 
+                    and then creating a list of user stories. As lead designer, I then created a Figma mockup of the dashboard and app, and then my teammembers implemented the new designs 
+                    in PowerBI and PowerApp, after iterating upon it with the Nutrition team. I was also responsible for documenting the changes we made with rationale in a PowerPoint for 
+                    every page we changed. At the end of the internship period, we presented our project to the entire IT department as well as a panel of directors and leaders.
+                </p>
+                <p>
+                    Some screenshots of dashboard template designs are shown below.
+                </p>
+            </div>
+            <div class="image-container">
+                <img class="back" src="../pictures/light dashboard.webp">
+                <img class="front" src="../pictures/light dashboard.webp">
+            </div>
+            <div class="image-container">
+                <img class="back" src="../pictures/dark dashboard.webp">
+                <img class="front" src="../pictures/dark dashboard.webp">
+            </div>
+        </section>
+        <footer></footer>
+    </body>
+</html>

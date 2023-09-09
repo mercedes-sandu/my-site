@@ -628,7 +628,7 @@ footer {
     text-align: left;
     width: 100%;
     color: var(--text-color);
-    font-size: 13px;
+    font-size: 14px;
     font-family: open-sans;
     height: 4em;
     text-align: justify;
@@ -659,7 +659,6 @@ footer {
 
 .project-description {
     display: flex;
-    justify-content: center;
     align-items: center;
     margin-left: 110px;
     margin-right: 110px;

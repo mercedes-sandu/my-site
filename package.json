@@ -33,6 +33,7 @@
     "mongoose": "^6.5.2",
     "multiparty": "^4.2.3",
     "nodemailer": "^6.7.8",
+    "nodemon": "^3.0.1",
     "path": "^0.12.7",
     "querystring": "^0.2.1"
   }
