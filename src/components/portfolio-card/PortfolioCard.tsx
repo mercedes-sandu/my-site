@@ -7,17 +7,28 @@ import {
     StyledTagsBox,
     StyledTitle
 } from "../../styles/PortfolioCard";
+import { useNavigate } from "react-router-dom";
 
 interface PortfolioCardProps {
     title: string;
     dates: string;
     description: string;
     tags: string[];
+    navTo: string;
 }
 
 function PortfolioCard(props: PortfolioCardProps) {
+    let navigate = useNavigate(); 
+    const routeChange = (path: string) => { 
+        navigate(path);
+    }
+
     return (
-        <StyledCardGrid item md={6}>
+        <StyledCardGrid 
+            item
+            md={6}
+            onClick={() => {routeChange(props.navTo)}}
+        >
             <StyledPortfolioCard>
                 <StyledTitle>
                     {props.title}

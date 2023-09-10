@@ -9,7 +9,8 @@ export const StyledPortfolioCard = styled(Card)(({ theme }) => ({
     backgroundColor: theme.palette.primary[1],
     "&:hover": {
         backgroundColor: theme.palette.primary[2],
-    }
+    },
+    cursor: "pointer",
 }));
 
 export const StyledTitle = styled(Typography)(({ theme }) => ({

@@ -7,7 +7,7 @@ import {
     StyledParagraph,
 } from "../styles/StyledComponents";
 import PortfolioCard from "../components/portfolio-card/PortfolioCard";
-import projects from "../jsons/projects.json";
+import { projects } from "../jsons/projects";
 
 function PortfolioPage() {
     return (
@@ -38,6 +38,7 @@ function PortfolioPage() {
                             dates={project.dates}
                             description={project.description}
                             tags={project.tags}
+                            navTo={project.navTo}
                         />
                         ) : null
                     ))}
