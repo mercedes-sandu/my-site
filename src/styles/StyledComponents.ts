@@ -17,7 +17,7 @@ export const StyledHomePageContainer = styled(Grid)(({ theme }) => ({
     backgroundColor: theme.palette.primary.main,
     color: theme.palette.text.primary,
     width: "100%",
-    height: "100vh",
+    height: "90vh",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",

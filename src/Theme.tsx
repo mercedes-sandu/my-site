@@ -69,6 +69,7 @@ export const darkTheme = createTheme({
         fontSize: "1.3rem",
         lineHeight: "2.8rem",
         fontWeight: 400,
+        textAlign: "justify",
     }
   },
 });

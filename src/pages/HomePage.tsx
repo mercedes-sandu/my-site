@@ -1,5 +1,4 @@
 import {
-  StyledFooter,
   StyledHeader,
   StyledHomePageContainer,
   StyledInlineLink,
@@ -19,8 +18,8 @@ import ProfilePicture from "../components/mercedes profile-modified.png";
 
 function HomePage() {
   return (
-    <StyledHomePageContainer container spacing={12}>
-      <StyledHalfContainer item md={7}>
+    <StyledHomePageContainer container sx={{ pl: 20, pr: 20 }}>
+      <StyledHalfContainer item md={7} sx={{ pr: 10 }}>
         <StyledHeader variant="h1" sx={{ mb: 1 }}>
           Hi! I'm Mercedes!
         </StyledHeader>
@@ -75,7 +74,6 @@ function HomePage() {
           <StyledAvatar src={ProfilePicture} alt="Mercedes Sandu" />
         </Grid>
       </StyledHalfContainer>
-      <StyledFooter></StyledFooter>
     </StyledHomePageContainer>
   );
 }
