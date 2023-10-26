@@ -25,18 +25,21 @@ export const StyledIconButton = styled(IconButton)(({ theme }) => ({
     backgroundColor: theme.palette.secondary[4],
     boxShadow: `2px 2px 20px ${theme.palette.secondary[3]}`,
     "&:hover": {
-        backgroundColor: theme.palette.secondary[4], // todo: scale button
-    }
+        backgroundColor: theme.palette.secondary[4],
+    },
 }));
 
 export const StyledEmail = styled(Email)(({ theme }) => ({
     color: theme.palette.text.primary,
+    fontSize: "3rem",
 }));
 
 export const StyledGitHub = styled(GitHub)(({ theme }) => ({
     color: theme.palette.text.primary,
+    fontSize: "3rem",
 }));
 
 export const StyledLinkedIn = styled(LinkedIn)(({ theme }) => ({
     color: theme.palette.text.primary,
+    fontSize: "3rem",
 }));

@@ -5,14 +5,17 @@ import ProjectPage from "./components/project-page/ProjectPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/navbar/NavBar";
 import { CssBaseline, ThemeProvider } from "@mui/material";
-import { darkTheme } from "./Theme";
+import { darkTheme, lightTheme } from "./Theme";
+import { useState } from "react";
 
 function App() {
+  const [darkMode, setDarkMode] = useState(true);
+
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <CssBaseline />
       <BrowserRouter>
-        <NavBar />
+        <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="about" element={<AboutPage />} />
@@ -21,7 +24,7 @@ function App() {
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
-  )
+  );
 }
 
 export default App;

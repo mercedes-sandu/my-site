@@ -48,6 +48,10 @@ export const StyledNavLink = styled(NavLink)(({ theme }) => ({
     color: theme.palette.text.primary,
     alignSelf: "center",
     marginLeft: "2rem",
+    fontFamily: "Open Sans",
+    fontSize: "1.3rem",
+    fontWeight: 400,
+    lineHeight: "2.8rem",
     "&:hover": {
         color: theme.palette.secondary[2],
     },

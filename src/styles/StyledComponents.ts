@@ -16,8 +16,11 @@ export const StyledFooter = styled(Box)(({ theme }) => ({
 export const StyledHomePageContainer = styled(Grid)(({ theme }) => ({
     backgroundColor: theme.palette.primary.main,
     color: theme.palette.text.primary,
-    padding: "5rem 10rem 5rem 10rem",
+    width: "100%",
     height: "100vh",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
 }));
 
 export const StyledHeader = styled(Typography)(({ theme }) => ({
