@@ -42,7 +42,7 @@ function HomePage() {
           />
         </Box>
         <Typography variant="body1" sx={{ mb: 4 }}>
-          I'm a rising senior at Northwestern University with a passion for
+          I'm a senior at Northwestern University with a passion for
           math, computer science, and software/video game development! Look
           around to learn more{" "}
           <StyledInlineLink href="/about">about me</StyledInlineLink> and my{" "}

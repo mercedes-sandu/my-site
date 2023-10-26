@@ -10,13 +10,13 @@ import {
 
 function AboutPage() {
   return (
-    <StyledContainer container spacing={2}>
+    <StyledContainer container sx={{ pt: 8, pl: 20, pr: 20 }}>
       <Grid item md={12}>
-        <StyledHeader variant="h2">
+        <StyledHeader variant="h1">
           About <StyledHeaderSpan>Me</StyledHeaderSpan>
         </StyledHeader>
         <StyledParagraph variant="body1">
-          Hello World! I'm a rising senior at Northwestern University pursuing a
+          Hello World! I'm a senior at Northwestern University pursuing a
           double major in mathematics and computer science, a minor in
           chemistry, and an M.S. in computer science. I'm an undergraduate
           mathematics researcher looking into discrete geometry and a graduate
