@@ -34,7 +34,8 @@ export const StyledDescription = styled(Typography)(({ theme }) => ({
     color: theme.palette.text.primary,
     textAlign: "justify",
     height: "130px",
-    // justifySelf: "center",
+    display: "flex",
+    alignItems: "center",
 }));
 
 export const StyledTagsBox = styled(Box)(({ theme }) => ({

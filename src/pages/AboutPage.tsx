@@ -74,7 +74,7 @@ function AboutPage() {
       </StyledParagraph>
       <StyledParagraph variant="body1">
         I'm proud to say that I've been doing research since my first year at
-        Northwestern. I've worked iwth professors in the mathematics and
+        Northwestern. I've worked with professors in the mathematics and
         computer science departments, namely{" "}
         <StyledInlineLink
           href="https://sites.google.com/view/shuyi-weng/"
