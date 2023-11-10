@@ -1,13 +1,13 @@
 import { Box, Grid, Link, styled, Typography } from "@mui/material";
 
-export const StyledContainer = styled(Grid)(({ theme }) => ({
+export const StyledContainer = styled(Box)(({ theme }) => ({
     backgroundColor: theme.palette.primary.main,
     color: theme.palette.text.primary,
     width: "100%",
     display: "flex",
     flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: "flex-start",
+    alignItems: "flex-start",
 }));
 
 export const StyledFooter = styled(Box)(({ theme }) => ({

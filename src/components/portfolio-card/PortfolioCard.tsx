@@ -1,7 +1,9 @@
+import { Typography } from "@mui/material";
 import {
   StyledCardGrid,
   StyledDates,
   StyledDescription,
+  StyledDot,
   StyledPortfolioCard,
   StyledTag,
   StyledTagsBox,
@@ -32,12 +34,17 @@ function PortfolioCard(props: PortfolioCardProps) {
       }}
     >
       <StyledPortfolioCard>
-        <StyledTitle>{props.title}</StyledTitle>
-        <StyledDates>{props.dates}</StyledDates>
-        <StyledDescription>{props.description}</StyledDescription>
+        <StyledTitle variant="cardHeader">{props.title}</StyledTitle>
+        <StyledDates variant="cardH2">{props.dates}</StyledDates>
+        <StyledDescription variant="cardP">
+          {props.description}
+        </StyledDescription>
         <StyledTagsBox>
           {props.tags.map((tag, index) => (
-            <StyledTag key={index}>{tag}</StyledTag>
+            <StyledTag key={index}>
+              <StyledDot />
+              <Typography variant="cardTag">{tag}</Typography>
+            </StyledTag>
           ))}
         </StyledTagsBox>
       </StyledPortfolioCard>

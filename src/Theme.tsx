@@ -19,6 +19,31 @@ declare module "@mui/material/styles" {
   }
 }
 
+declare module "@mui/material/styles" {
+  interface TypographyVariants {
+    cardHeader: React.CSSProperties;
+    cardH2: React.CSSProperties;
+    cardP: React.CSSProperties;
+    cardTag: React.CSSProperties;
+  }
+
+  interface TypographyVariantsOptions {
+    cardHeader?: React.CSSProperties;
+    cardH2?: React.CSSProperties;
+    cardP?: React.CSSProperties;
+    cardTag?: React.CSSProperties;
+  }
+}
+
+declare module "@mui/material/Typography" {
+  interface TypographyPropsVariantOverrides {
+    cardHeader: true;
+    cardH2: true;
+    cardP: true;
+    cardTag: true;
+  }
+}
+
 const breakpoints = {
   xs: 0,
   sm: 600,
@@ -65,12 +90,45 @@ export const darkTheme = createTheme({
       fontWeight: 600,
     },
     body1: {
-        fontFamily: "Open Sans",
-        fontSize: "1.3rem",
-        lineHeight: "2.8rem",
-        fontWeight: 400,
-        textAlign: "justify",
-    }
+      fontFamily: "Open Sans",
+      fontSize: "1.3rem",
+      lineHeight: "2.8rem",
+      fontWeight: 400,
+      textAlign: "justify",
+    },
+    cardHeader: {
+      fontFamily: "Open Sans",
+      fontSize: "2rem",
+      fontWeight: 600,
+    },
+    cardH2: {
+      fontFamily: "Open Sans",
+      fontSize: "1.4rem",
+      fontWeight: 500,
+    },
+    cardP: {
+      fontFamily: "Open Sans",
+      fontSize: "1.2rem",
+      fontWeight: 400,
+      lineHeight: "2.2rem",
+    },
+    cardTag: {
+      fontFamily: "Open Sans",
+      fontSize: "1rem",
+      fontWeight: 400,
+    },
+  },
+  components: {
+    MuiTypography: {
+      defaultProps: {
+        variantMapping: {
+          cardHeader: "h1",
+          cardH2: "h2",
+          cardP: "p",
+          cardTag: "p",
+        },
+      },
+    },
   },
 });
 
@@ -99,5 +157,57 @@ export const lightTheme = createTheme({
   breakpoints: {
     values: { ...breakpoints },
     unit: "px",
+  },
+  typography: {
+    h1: {
+      fontFamily: "Montserrat",
+      fontSize: "4rem",
+      fontWeight: 800,
+    },
+    h6: {
+      fontFamily: "Montserrat",
+      fontSize: "2rem",
+      fontWeight: 600,
+    },
+    body1: {
+      fontFamily: "Open Sans",
+      fontSize: "1.3rem",
+      lineHeight: "2.8rem",
+      fontWeight: 400,
+      textAlign: "justify",
+    },
+    cardHeader: {
+      fontFamily: "Open Sans",
+      fontSize: "2rem",
+      fontWeight: 600,
+    },
+    cardH2: {
+      fontFamily: "Open Sans",
+      fontSize: "1.4rem",
+      fontWeight: 500,
+    },
+    cardP: {
+      fontFamily: "Open Sans",
+      fontSize: "1.2rem",
+      fontWeight: 400,
+      lineHeight: "2.2rem",
+    },
+    cardTag: {
+      fontFamily: "Open Sans",
+      fontSize: "1rem",
+      fontWeight: 400,
+    },
+  },
+  components: {
+    MuiTypography: {
+      defaultProps: {
+        variantMapping: {
+          cardHeader: "h1",
+          cardH2: "h2",
+          cardP: "p",
+          cardTag: "p",
+        },
+      },
+    },
   },
 });

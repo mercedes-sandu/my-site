@@ -22,6 +22,8 @@ export const StyledNavBar = styled(AppBar)(({ theme }) => ({
 
 export const StyledIconButton = styled(IconButton)(({ theme }) => ({
     margin: "0 2rem 0 2rem",
+    width: "40px",
+    height: "40px",
     backgroundColor: theme.palette.primary[1],
     "&:hover": {
         backgroundColor: theme.palette.primary[2],

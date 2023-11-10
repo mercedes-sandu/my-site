@@ -52,7 +52,7 @@ function ProjectPage() {
               key={index}
               variant="body1"
               dangerouslySetInnerHTML={{ __html: paragraph }}
-            ></Typography>
+            />
           ))}
         {readme && (
           <Typography variant="body1">
