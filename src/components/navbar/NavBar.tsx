@@ -39,11 +39,11 @@ function NavBar({ darkMode, setDarkMode }: NavBarProps) {
   return (
     <StyledNavBar>
       <Container
-        maxWidth="xl"
         sx={{
           "&.MuiContainer-root": {
             paddingLeft: "2rem",
             paddingRight: "2rem",
+            maxWidth: "100vw",
           },
         }}
       >

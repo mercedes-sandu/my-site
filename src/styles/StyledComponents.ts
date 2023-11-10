@@ -34,6 +34,10 @@ export const StyledHeaderSpan = styled("span")(({ theme }) => ({
     color: theme.palette.secondary[1],
 }));
 
+export const StyledItalicizedSpan = styled("span")(({ theme }) => ({
+    fontStyle: "italic",
+}));
+
 export const StyledInlineLink = styled(Link)(({ theme }) => ({
     color: theme.palette.secondary[3],
 }));

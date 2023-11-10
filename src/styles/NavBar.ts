@@ -14,9 +14,12 @@ export const StyledNavBar = styled(AppBar)(({ theme }) => ({
     position: "static",
     backgroundColor: theme.palette.primary.main,
     color: theme.palette.text.primary,
-    padding: "1rem 2rem 0 2rem",
+    padding: "1rem 0",
     "&.MuiPaper-root": {
         boxShadow: "none",
+    },
+    "&.MuiContainer-root": {
+        margin: 0,
     },
 }));
 
