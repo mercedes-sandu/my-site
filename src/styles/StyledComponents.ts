@@ -40,6 +40,11 @@ export const StyledItalicizedSpan = styled("span")(({ theme }) => ({
 
 export const StyledInlineLink = styled(Link)(({ theme }) => ({
     color: theme.palette.secondary[3],
+    transition: "color 0.2s ease-in-out",
+    "&:hover": {
+        color: theme.palette.secondary[4],
+        textDecoration: "none",
+    },
 }));
 
 export const StyledDate = styled("span")(({ theme }) => ({

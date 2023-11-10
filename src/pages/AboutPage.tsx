@@ -42,7 +42,7 @@ function AboutPage() {
           target="_blank"
         >
           The Garage
-        </StyledInlineLink>
+        </StyledInlineLink>{" "}
         at Northwestern making games to help make learning and practice more fun
         for musicians.
       </StyledParagraph>
@@ -143,8 +143,8 @@ function AboutPage() {
         Now that you've read plenty about the work that I do, I'm sure you'd be
         surprised to find out that I have plenty of free time! In this free
         time, I love to play video games (
-        <StyledItalicizedSpan>NieR: Automata</StyledItalicizedSpan>,
-        <StyledItalicizedSpan>Persona 5 Royal</StyledItalicizedSpan>, and
+        <StyledItalicizedSpan>NieR: Automata</StyledItalicizedSpan>,{" "}
+        <StyledItalicizedSpan>Persona 5 Royal</StyledItalicizedSpan>, and{" "}
         <StyledItalicizedSpan>Final Fantasy XVI</StyledItalicizedSpan> are some
         of my current favorites), shop, play piano,{" "}
         <StyledInlineLink
@@ -154,7 +154,7 @@ function AboutPage() {
         >
           arrange music
         </StyledInlineLink>
-        , create art, and read.
+        , create art (digital, traditional, and 3D!), and read.
       </StyledParagraph>
       <StyledParagraph variant="body1">
         If you have any questions or comments, feel free to{" "}
