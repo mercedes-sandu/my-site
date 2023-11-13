@@ -1,0 +1,20 @@
+i| 
+
+p| Riverswood Manor is a 3D game I made in two weeks for my final project in COMP_SCI 376. You play as a butler in a manor where the Countess has been murdered by the Count. You start in your room, hearing a scream and seeing a note being slipped under your door from the Countess. From there, you must figure out how to escape the manor. After escaping the room through the painting in the wall, you enter the Count's office, where you must solve a puzzle to unlock the hidden door in the bookcase. The game ends when you escape.
+p| There are multiple systems in play with this game, including cued game events, an interaction system to pick up and touch various objects, and a UI inventory system to store and view clues. The office scene requires the player to listen to audio cues played from a music box and find corresponding items in the room that make the same sounds. These objects are distinctly colored red, yellow, and green, matching the buttons on the wall by the fireplace to make a code. If the right code is entered, the player successfully escapes the manor.
+p| The game was made using Unity and C#.
+
+f| 3D first-person player controller
+f| Custom cursor in the center of the screen that changes when you can interact with an object
+f| UI letters as clues, which can be stored in the player's inventory to be read again
+f| Particle systems and animated objects upon interaction
+f| Collision detection that cues certain game events (i.e., letters sliding in from under a door or carpet)
+f| Sound effects and music
+
+s| 
+s| 
+s| 
+s| 
+s| 
+
+g| https://github.com/mercedes-sandu/Riverswood-Manor

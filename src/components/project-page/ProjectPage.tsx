@@ -8,6 +8,7 @@ import {
 } from "../../styles/StyledComponents";
 import { useParams } from "react-router-dom";
 import { projects } from "../../jsons/projects";
+// import { interpretMxrkdown } from "../../utility/mxrkdownInterpreter";
 
 function ProjectPage() {
   const theme = useTheme();
@@ -43,6 +44,8 @@ function ProjectPage() {
       }
     }
   });
+
+  // interpretMxrkdown("../../mxrkdowns/polygonal-folding.mxr");
 
   return (
     <StyledContainer sx={{ pt: 8, pl: 20, pr: 20 }}>

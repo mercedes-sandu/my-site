@@ -1,0 +1,30 @@
+i| 
+
+p| When the Devil Takes Hold is a top-down puzzle and fighting game my team made in six weeks in COMP_SCI 377. You play as a girl who signed a pact with a demon to kill people for him in exchange for her life. If you do not do so fast enough, then the pact is being breached and you must fight for your life against the demon. Thus, the game is split into two core game loops: one where the player is solving puzzles to murder NPCs, and one where the player is fighting or trying to escape from the demon. You win the game by either completing all the puzzles or killing the demon, and you lose by dying to the demon.
+p| At the start of every puzzle level, a timer is displayed at the top of the screen. You must complete the puzzle within this time, but killing an NPC grants you a bit of extra time. If the timer runs out, the player is teleported to the fight sequence. At this point, the player can either fight to the death or find objects to hide behind, making the demon somehow forget their existence, teleporting the player back to the last puzzle they failed to complete. But, be careful! Hiding penalizes the player by decreasing the time allowed to complete the puzzle they return to.
+p| The game was made using Unity and C#.
+
+f| Seven different levels:
+ff| Level One: Kill the NPCs by rotating the lasers being reflected from the mirrors
+ff| Level Two: Crush the NPC by dropping a boulder on them from above
+ff| Level Three: Find and kill the NPC that is not a decoy
+ff| Level Four: Find the NPC to kill in the unlit maze
+ff| Level Five: Crush the NPC with a boulder by pushing it and avoiding other holes
+ff| Level Six: Find and kill the NPC that is not a decoy in the dark
+ff| Level Seven: Use your single-use lighter to detonate a string of bombs and kill all the NPCs
+f| A dynamic timer system that allows for adding and subtracting time
+f| Point and click projectile system with limited ammo
+f| Player data saving across scenes (ammo, health, timer, etc.)
+f| Enemy script with demon movement, pathfinding projectiles, and custom behavior for when the player hides
+f| Breakable pots for replenishing ammo
+f| Instructions and control screens
+f| Sound effects for various game events such as taking damage, dealing damage, and dying
+
+s| 
+s| 
+s| 
+s| 
+s| 
+s| 
+
+g| https://github.com/mercedes-sandu/When-the-Devil-Takes-Hold

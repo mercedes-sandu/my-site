@@ -1,0 +1,16 @@
+i| 
+
+p| We Three Witches is a game I made in a week for one of the freestyle projects in COMP_SCI 376. You play as one of three witches, each with their own unique attacks, to fight off AI enemy monsters. The goal is to survive as long as possible. In terms of gameplay, it is pretty standard and basic as a 2D platformer due to only having a week to complete the project. I wanted some unique features, so I added character selection (one of the three witches) and a mana point system. Each of the three witches has a basic projectile attack where the player can point and shoot in the direction where they want the projectile to fire, and a special magic attack that drains mana. The player's mana and health are displayed in a HUD, and mana gradually replenishes with time.
+p| The enemies spawn at a set of random locations on the map, and use A* pathfinding to move toward the player, avoiding game objects labeled as obstacles. They then attack the player when they get within a close enough range, and their health bar is displayed above them. If time allows in the future, I would love to add more than one area to the game, have more unique abilities for the witches (such as melee attacks), and add more enemy types and bosses.
+p| The game was made using Unity and C#.
+
+f| Character selection
+f| A HUD that incorporates a health point and mana point system
+f| AI enemies that use A* pathfinding to move toward the player, avoiding obstacles, once spawned in, and attack the player when in a close enough range
+f| Unlimited projectile attacks that fly toward the direction of the mouse pointer, and specialized magic attacks that drain mana
+f| A game over screen when the player dies
+
+s| 
+s| 
+
+g| https://github.com/mercedes-sandu/We-Three-Witches

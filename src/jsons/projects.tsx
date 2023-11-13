@@ -256,3 +256,24 @@ export const projects = {
     display: true,
   },
 };
+
+export const tags = [
+  "All",
+  "Blender",
+  "CatSAT",
+  "CS Research",
+  "C#",
+  "Discord API",
+  "Figma",
+  "Imaginarium",
+  "JavaScript",
+  "LaTeX",
+  "Mathematica",
+  "Math Research",
+  "OpenAI",
+  "Python",
+  "React",
+  "TypeScript",
+  "Unity",
+  "Web Dev",
+];

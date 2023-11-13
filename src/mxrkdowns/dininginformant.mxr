@@ -1,0 +1,13 @@
+p| DiningInformant was the first project my team worked on in COMP_SCI 394. For this project, we had to quickly come up with a webapp idea, pitch it within the first week, and begin development. We decided to make a webapp that would help first- and second-year students at Northwestern see the wait time at various campus dining halls, report their wait times and rating of the dining halls, and see the menus for each meal, daily. We had five weeks to complete this project.
+p| We came up with the app idea, a Figma mockup, and a list of user stories. We worked together to create a sprint plan week by week and had weekly meetings to discuss what needed to be done and the plan of action. My personal role in the project was to demo the project weekly, create and iterate upon the Figma mockups, and to primarily implement the frontend aspects of the webapp. I entirely implemented the rating form and aided the other developers with the UI/UX for the other pages and components. I also worked on setting up the databases in Firebase, and set up end-to-end as well as unit testing for the app before delivering it by the middle of the quarter.
+p| The webapp was developed using React, Firebase, and MUI. Majority of the languages used were JavaScript, CSS, and HTML.
+
+s| 
+
+f| A home page where the user can see a card corresponding to every dining hall, featured meal items, the dining hall's star rating, and the current approximate wait time
+f| A page where the user can see the menu of each meal being offered at every dining hall, with a tab for each meal (i.e., breakfast, lunch, dinner)
+f| A form where users can report their experienced wait time and rating of the dining hall they went to
+f| Storage and retrieval of dining hall information (i.e., wait time, rating, etc.)
+f| DineOnCampus API calls to retrieve dining hall menus and cache them
+
+g| https://github.com/394-w23/DiningInformant

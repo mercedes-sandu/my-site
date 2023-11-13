@@ -1,0 +1,21 @@
+i| 
+
+p| Papa's What-Is-Going-On-Eria is a game I made in a week for one of the freestyle projects in COMP_SCI 376. It is largely inspired by [[<https://www.coolmathgames.com/0-papas-pizzeria> Papa's Pizzeria]]. You control a character in a top-down 2D kitchen, receiving randomized orders for burgers and soda. You must go to each station in the kitchen to receive and then make the order. The basic game loop is as follows: (1) go to the order counter to receive the ticket with all the order details, (2) go to the stove to prepare the meat that goes on the burger, (3) go to the cutting board to assemble the burger with all of the proper addons and condiments, (4) go to the soda machine to pour the correct soda into the cup, and (5) go to the lunch tray to serve the order. This process repeats over and over until your time runs out, so the goal is to complete as many orders as possible and thus maximize your score.
+p| As you complete orders, you may notice something slightly odd happening. It seems that every time you complete an order, one of the ingredients randomly gets corrupted and you can no longer use it! The corrupted ingredients may still pop up on the ticket, just try to carry on and ignore them.
+p| The game was made using Unity and C#.
+
+r| https://github.com/mercedes-sandu/Papas-What-Is-Going-On-Eria/blob/main/README.md
+
+f| Hand-drawn art using Procreate
+f| Randomized generation of orders using dynamic loading of prefabs from the Resources folder
+f| An interaction system that allows UI interfaces to popup when interacting with different kitchen stations
+f| Four different UI overlays for each station with specialized functionality
+f| A click-move-and-drop system to assemble the burger by placing items exactly where you wish them to be
+f| A timer that calls the end condition
+
+s| 
+s| 
+s| 
+s| 
+
+g| https://github.com/mercedes-sandu/Papas-What-Is-Going-On-Eria

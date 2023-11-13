@@ -1,0 +1,18 @@
+p| Smart Context Stories is a Google Chrome extension that uses OpenAI's GPT-3 API and New York Times' API to generate a summary of the news you missed on recurring issues while you were busy. The project was made for COMP_SCI 338, where we were tasked with creating a project that used AI in some way that benefited media production or consumption.
+p| When the user opens a New York Times article on a recurring issue (i.e., COVID-19, the presidential election, the stock market, etc.) and runs the extension, the extension will query a database for the last time the user read on this topic. If the user has never read about this topic before, the extension will generate a summary of the most important points overall, otherwise it will only generate a summary of events that have happened since the last date of reading. The program then queries the New York Times API for the most relevant articles in the specified time frame on the topic and generates a four-bullet-point summary of the most important points. If the user is unsatisfied with the results, they can be regenerated via a button, and the user can also see the articles/sources used to generate the summary. I worked as the frontend developer for the team, and programmed primarily with the New York Times API.
+p| The webapp was developed using React, Firebase, and MUI. Majority of the languages used were JavaScript, CSS, and HTML.
+
+r| https://github.com/patrickhoey20/SmartContextStories/blob/main/README.md
+
+s| 
+s| 
+
+f| Signing in with a username
+f| A loading screen while API calls are being made
+f| Topic identification and categorization via OpenAI API
+f| Article queries using New York Times API
+f| Summary of articles queried in four bullet points
+f| List of sources pointing to articles used
+f| An option to regenerate the summary
+
+g| https://github.com/patrickhoey20/SmartContextStories

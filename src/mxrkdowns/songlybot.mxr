@@ -1,0 +1,10 @@
+i| 
+
+p| SonglyBot is a small Discord API Python bot that I developed to help foster a community in the [[<https://discord.gg/8qn2m3uKan> Overture Games Discord server]]. I had a really fun time learning to use Python and Discord API to create this bot, as well as Amazon Web Services to host it 24/7.
+p| I certainly plan on expanding the bot and adding more features as we release our first game and the community grows. If you have any ideas, I would love to discuss them!
+
+f| Assigning yourself roles by reacting with specific emojis
+f| Restricting access to the server until new members have read the rules
+f| Multiplayer Wordle (written in collaboration with my friend, [[<https://github.com/rhysgilliam> Rhys]])
+f| A scoreboard for minigames
+f| Responding to certain keywords, for the sake of inside jokes

@@ -1,0 +1,21 @@
+i| 
+
+p| Ocean Cleanup is a game my team made for the Progression Mechanics Game Jam hosted at Northwestern. You control a cute low-poly submarine that must explore the ocean and collect trash to clean it up. As you collect trash, you gain points which are expendable on ship upgrades. We had about eight weeks to complete this project.
+p| On this project, I worked as both a 3D artist and a programmer. As an artist, I created all of the 3D models (aside from the terrain, which was created using a Unity package which procedurally generates low-poly terrain) and their respective materials using Blender. As shown in a screenshot below, I made the submarine (the propellers rotate!), the various plastics (bottles, cups, bowls, lids, balloons, and utensils), and the aqutatic plants (corals, kelps, and mushrooms).
+p| As a programmer, I was mainly responsible for coding the plastics, level manager, shop, and UI. This was my first experience with a game jam, so I underestimated how quickly time would fly (especially doing this during the school year). I would have loved to have a lot more mechanics and areas in the game, but I'm still proud of what we were able to accomplish in the time allotted. I'm looking forward to finishing the project some day!
+p| The game was made using Unity, C#, and Blender.
+
+f| Custom 3D models for the submarine (with moving components), plastics, and aquatic plants
+f| Two levels and areas of exploration
+f| A third-person controller that allows the player to control the direction and yaw/pitch/roll of the vessel
+f| In-game UI overlay to see how many pieces of plastic and how much currency you've collected
+f| A UI overlay shop to purchase ship upgrades (speed and collision radius) with in-game currency
+f| A level control script that detects when the player has completed a level (collected all pieces of plastic), and advances the player to the next level
+
+s| 
+s| 
+s| 
+s| 
+s| 
+
+g| https://github.com/mercedes-sandu/Ocean-Cleanup
