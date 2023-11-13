@@ -84,6 +84,17 @@ export const darkTheme = createTheme({
       fontSize: "4rem",
       fontWeight: 800,
     },
+    h2: {
+      fontFamily: "Open Sans",
+      fontSize: "1.2rem",
+      fontWeight: 400,
+      fontStyle: "italic",
+    },
+    h3: {
+      fontFamily: "Open Sans",
+      fontSize: "1.2rem",
+      fontWeight: 400,
+    },
     h6: {
       fontFamily: "Montserrat",
       fontSize: "2rem",

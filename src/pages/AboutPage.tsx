@@ -171,7 +171,7 @@ function AboutPage() {
         </StyledInlineLink>
         ! I'd love to hear from you!
       </StyledParagraph>
-      <StyledFooter></StyledFooter>
+      <StyledFooter />
     </StyledContainer>
   );
 }
