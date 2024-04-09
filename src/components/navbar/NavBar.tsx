@@ -87,8 +87,25 @@ function NavBar({ darkMode, setDarkMode }: NavBarProps) {
                 color: theme.palette.text.primary,
                 alignSelf: "center",
                 marginLeft: "2rem",
+                fontFamily: "Open Sans",
+                fontSize: "1.3rem",
+                fontWeight: 400,
+                lineHeight: "2.8rem",
+                backgroundImage: `linear-gradient(${theme.palette.secondary[2]}, ${theme.palette.secondary[2]})`,
+                backgroundPosition: "0% 100%",
+                backgroundSize: "0% 2px",
+                backgroundRepeat: "no-repeat",
+                transition:
+                  "color 0.2s ease-in-out, background-size 0.3s, background-position 0s 0.3s",
                 "&:hover": {
                   color: theme.palette.secondary[2],
+                  backgroundPosition: "100% 100%",
+                  backgroundSize: "100% 2px",
+                },
+                "&.active": {
+                  color: theme.palette.secondary[2],
+                  backgroundPosition: "100% 100%",
+                  backgroundSize: "100% 2px",
                 },
               }}
               target="_blank"

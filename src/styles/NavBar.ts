@@ -2,6 +2,7 @@ import {
     AppBar,
     IconButton,
     styled,
+    Typography,
 } from "@mui/material";
 import { 
     DarkMode,

@@ -24,10 +24,10 @@ export const StyledHalfContainer = styled(Grid)(({ theme }) => ({
 export const StyledIconButton = styled(IconButton)(({ theme }) => ({
     backgroundColor: theme.palette.secondary[4],
     boxShadow: `2px 2px 20px ${theme.palette.secondary[3]}`,
-    transition: "transform 0.2s ease-in-out",
+    transition: "transform 0.15s ease-in-out",
     "&:hover": {
         backgroundColor: theme.palette.secondary[4],
-        transform: "scale(1.05)",
+        transform: "scale(1.1)",
     },
     "&:focus": {
         backgroundColor: theme.palette.secondary[4],
