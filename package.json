@@ -1,40 +1,28 @@
 {
-  "name": "personal-website",
-  "version": "1.0.0",
-  "description": "My personal website",
-  "main": "app.js",
+  "name": "my-site",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "node app",
-    "dev": "nodemon app",
-    "watch": "nodemon --ext *",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mercedes-sandu/personal-website.git"
-  },
-  "keywords": [
-    "mercedes",
-    "sandu"
-  ],
-  "author": "Mercedes Sandu",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mercedes-sandu/personal-website/issues"
-  },
-  "homepage": "https://github.com/mercedes-sandu/personal-website#readme",
   "dependencies": {
-    "body-parser": "^1.20.0",
-    "connect-livereload": "^0.6.1",
-    "dotenv": "^16.0.3",
-    "express": "^4.18.1",
-    "fs": "^0.0.1-security",
-    "livereload": "^0.9.3",
-    "mongoose": "^6.5.2",
-    "multiparty": "^4.2.3",
-    "nodemailer": "^6.7.8",
-    "nodemon": "^3.0.1",
-    "path": "^0.12.7",
-    "querystring": "^0.2.1"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
   }
 }
