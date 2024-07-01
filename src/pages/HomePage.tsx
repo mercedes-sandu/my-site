@@ -5,15 +5,21 @@ import {
   Typography,
   useTheme,
 } from "@mui/material";
-import portrait from "../assets/images/portrait.webp";
+import portraitLight from "../assets/images/portrait light.webp";
+import portraitDark from "../assets/images/portrait dark.webp";
 import { Typewriter } from "react-simple-typewriter";
-import verticalBar from "../assets/images/vertical bar.svg";
+import verticalBarLight from "../assets/images/vertical bar light.svg";
+import verticalBarDark from "../assets/images/vertical bar dark.svg";
 import { StyledInlineLink } from "../components/StyledComponents";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
 
-function HomePage() {
+interface HomePageProps {
+  darkMode: boolean;
+}
+
+function HomePage({ darkMode }: HomePageProps) {
   const theme = useTheme();
 
   return (
@@ -38,7 +44,7 @@ function HomePage() {
         <Box
           component="img"
           width="50px"
-          src={verticalBar}
+          src={darkMode ? verticalBarLight : verticalBarDark}
           alt="vertical bar"
         />
         <Box
@@ -153,7 +159,7 @@ function HomePage() {
         <Box
           component="img"
           height="65%"
-          src={portrait}
+          src={darkMode ? portraitLight : portraitDark}
           alt="sci-fi portrait of me"
         />
       </Box>

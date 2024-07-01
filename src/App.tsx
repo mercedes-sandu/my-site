@@ -16,7 +16,7 @@ function App() {
       <BrowserRouter>
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<HomePage darkMode={darkMode} />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
         </Routes>
