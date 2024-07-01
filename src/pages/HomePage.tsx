@@ -9,9 +9,9 @@ import portrait from "../assets/images/portrait.webp";
 import { Typewriter } from "react-simple-typewriter";
 import verticalBar from "../assets/images/vertical bar.svg";
 import { StyledInlineLink } from "../components/StyledComponents";
-import linkedin from "../assets/images/linkedin.svg";
-import github from "../assets/images/github.svg";
-import email from "../assets/images/email.svg";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import EmailIcon from "@mui/icons-material/Email";
 
 function HomePage() {
   const theme = useTheme();
@@ -28,8 +28,8 @@ function HomePage() {
         justifyContent: "center",
         alignItems: "center",
         "&.MuiContainer-root": {
-          pl: "16vw",
-          pr: "16vw",
+          pl: "10vw",
+          pr: "10vw",
         },
       }}
       maxWidth={false}
@@ -87,9 +87,55 @@ function HomePage() {
             <StyledInlineLink>about me</StyledInlineLink> and my{" "}
             <StyledInlineLink>projects</StyledInlineLink>!
           </Typography>
-          <Box sx={{ display: "flex" }}>
-            <IconButton sx={{ padding: "none" }}>
-              <Box component="img" width="50px" src={linkedin} />
+          <Box sx={{ display: "flex", mt: 6 }}>
+            <IconButton
+              sx={{
+                backgroundColor: "transparent",
+                color: theme.palette.secondary.main,
+                transition: "color 0.2s ease-in-out",
+                padding: 0,
+                mr: 10,
+                "&:hover": {
+                  backgroundColor: "transparent",
+                  color: theme.palette.text.primary,
+                },
+              }}
+              href="https://www.linkedin.com/in/mercedes-sandu"
+              target="_blank"
+            >
+              <LinkedInIcon sx={{ width: "50px", height: "50px" }} />
+            </IconButton>
+            <IconButton
+              sx={{
+                backgroundColor: "transparent",
+                color: theme.palette.secondary.main,
+                transition: "color 0.2s ease-in-out",
+                padding: 0,
+                mr: 10,
+                "&:hover": {
+                  backgroundColor: "transparent",
+                  color: theme.palette.text.primary,
+                },
+              }}
+              href="https://github.com/mercedes-sandu"
+              target="_blank"
+            >
+              <GitHubIcon sx={{ width: "50px", height: "50px" }} />
+            </IconButton>
+            <IconButton
+              sx={{
+                backgroundColor: "transparent",
+                color: theme.palette.secondary.main,
+                transition: "color 0.2s ease-in-out",
+                padding: 0,
+                "&:hover": {
+                  backgroundColor: "transparent",
+                  color: theme.palette.text.primary,
+                },
+              }}
+              href="mailto:mxrcedes@gmail.com"
+            >
+              <EmailIcon sx={{ width: "50px", height: "50px" }} />
             </IconButton>
           </Box>
         </Box>
@@ -101,6 +147,7 @@ function HomePage() {
           display: "flex",
           justifyContent: "end",
           alignItems: "center",
+          pr: 4,
         }}
       >
         <Box

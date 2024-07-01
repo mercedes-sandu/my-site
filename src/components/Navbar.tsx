@@ -1,6 +1,6 @@
 import { Box, useTheme } from "@mui/material";
-import logoLight from "../assets/images/logo-light.svg";
-import logoDark from "../assets/images/logo-dark.svg";
+import logoLight from "../assets/images/logo light.svg";
+import logoDark from "../assets/images/logo dark.svg";
 import NavbarButton from "./NavbarButton";
 import resume from "../assets/pdfs/resume-mercedes-sandu.pdf";
 

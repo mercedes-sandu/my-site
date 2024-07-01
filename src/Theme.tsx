@@ -54,17 +54,18 @@ const typography: TypographyOptions = {
   h1: {
     fontFamily: "Meqanor",
     fontSize: "64px",
+    textAlign: "left",
   },
   h2: {
     fontFamily: "Meqanor",
     fontSize: "40px",
+    textAlign: "left",
   },
   body1: {
     fontFamily: "Cormorant Garamond",
     fontSize: "24px",
     fontWeight: 400,
     textAlign: "justify",
-    // TODO: line spacing?
   },
   cardHeader: {
     fontFamily: "Meqanor",
