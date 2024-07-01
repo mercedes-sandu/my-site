@@ -17,8 +17,8 @@ function App() {
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
         <Routes>
           <Route path="/" element={<HomePage darkMode={darkMode} />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/portfolio" element={<PortfolioPage />} />
+          <Route path="/about" element={<AboutPage darkMode={darkMode} />} />
+          <Route path="/portfolio" element={<PortfolioPage darkMode={darkMode} />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

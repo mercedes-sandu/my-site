@@ -1,6 +1,10 @@
 import { Box, Container, Typography, useTheme } from "@mui/material";
 
-function PortfolioPage() {
+interface PortfolioPageProps {
+  darkMode: boolean;
+}
+
+function PortfolioPage({ darkMode }: PortfolioPageProps) {
   const theme = useTheme();
   return (
     <Container

@@ -69,7 +69,7 @@ function HomePage({ darkMode }: HomePageProps) {
               style={{
                 fontFamily: "Meqanor",
                 color: theme.palette.secondary.main,
-                fontSize: "40px",
+                fontSize: "34px",
               }}
             >
               <Typewriter
@@ -153,12 +153,14 @@ function HomePage({ darkMode }: HomePageProps) {
           display: "flex",
           justifyContent: "end",
           alignItems: "center",
-          pr: 4,
         }}
       >
         <Box
           component="img"
-          height="65%"
+          minWidth="40%"
+          width="auto"
+          height="auto"
+          maxHeight="60%"
           src={darkMode ? portraitLight : portraitDark}
           alt="sci-fi portrait of me"
         />
