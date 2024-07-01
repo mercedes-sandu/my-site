@@ -12,6 +12,8 @@ interface NavbarButtonProps {
   first?: boolean;
 }
 
+// TODO: focus styles for navbar buttons
+
 function NavbarButton({
   label,
   linkTo,

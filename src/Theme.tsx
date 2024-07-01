@@ -53,7 +53,7 @@ const breakpoints = {
 const typography: TypographyOptions = {
   h1: {
     fontFamily: "Meqanor",
-    fontSize: "70px",
+    fontSize: "64px",
   },
   h2: {
     fontFamily: "Meqanor",
