@@ -21,6 +21,7 @@ declare module "@mui/material/styles" {
     cardBody: React.CSSProperties;
     cardTag: React.CSSProperties;
     navbarLabel: React.CSSProperties;
+    filterLabel: React.CSSProperties;
   }
 
   interface TypographyVariantsOptions {
@@ -29,6 +30,7 @@ declare module "@mui/material/styles" {
     cardBody?: React.CSSProperties;
     cardTag?: React.CSSProperties;
     navbarLabel?: React.CSSProperties;
+    filterLabel?: React.CSSProperties;
   }
 }
 
@@ -39,6 +41,7 @@ declare module "@mui/material/Typography" {
     cardBody: true;
     cardTag: true;
     navbarLabel: true;
+    filterLabel: true;
   }
 }
 
@@ -97,6 +100,12 @@ const typography: TypographyOptions = {
     fontWeight: 400,
     textIndent: "0px",
   },
+  filterLabel: {
+    fontFamily: "Cormorant Garamond",
+    fontSize: "18px",
+    fontWeight: 400,
+    textIndent: "0px",
+  },
 };
 
 const variantMapping = {
@@ -105,6 +114,7 @@ const variantMapping = {
   cardBody: "p",
   cardTag: "p",
   navbarLabel: "p",
+  filterLabel: "p",
 };
 
 export const darkTheme = createTheme({
