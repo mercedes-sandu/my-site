@@ -44,3 +44,5 @@ body {
 ::-webkit-scrollbar-track-piece:end {
   background: transparent;
 }
+
+/* TODO: figure out text highlighting on dark/light mode */

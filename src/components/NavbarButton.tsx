@@ -114,7 +114,9 @@ function NavbarButton({
           {darkMode ? "dark mode" : "light mode"}
         </Typography>
       ) : (
-        <StyledNavLink to={linkTo ?? "/"}>{label}</StyledNavLink>
+        <StyledNavLink to={linkTo ?? "/"}>
+          <Typography variant="navbarLabel">{label}</Typography>
+        </StyledNavLink>
       )}
     </Box>
   );

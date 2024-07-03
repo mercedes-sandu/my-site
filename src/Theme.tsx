@@ -55,17 +55,20 @@ const typography: TypographyOptions = {
     fontFamily: "Meqanor",
     fontSize: "64px",
     textAlign: "left",
+    textIndent: "0px",
   },
   h2: {
     fontFamily: "Meqanor",
     fontSize: "40px",
     textAlign: "left",
+    textIndent: "0px",
   },
   body1: {
     fontFamily: "Cormorant Garamond",
     fontSize: "24px",
     fontWeight: 400,
     textAlign: "justify",
+    textIndent: "24px",
   },
   cardHeader: {
     fontFamily: "Meqanor",
@@ -92,6 +95,7 @@ const typography: TypographyOptions = {
     fontFamily: "Cormorant Garamond",
     fontSize: "22px",
     fontWeight: 400,
+    textIndent: "0px",
   },
 };
 

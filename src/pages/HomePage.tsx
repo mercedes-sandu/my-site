@@ -10,7 +10,7 @@ import portraitDark from "../assets/images/portrait dark.webp";
 import { Typewriter } from "react-simple-typewriter";
 import verticalBarLight from "../assets/images/vertical bar light.svg";
 import verticalBarDark from "../assets/images/vertical bar dark.svg";
-import { StyledInlineLink } from "../components/StyledComponents";
+import { InlineNavLink } from "../components/StyledComponents";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
@@ -90,8 +90,8 @@ function HomePage({ darkMode }: HomePageProps) {
           <Typography>
             i'm a software and video game developer with a passion for math,
             computer science, art, and music. look around to learn more{" "}
-            <StyledInlineLink>about me</StyledInlineLink> and my{" "}
-            <StyledInlineLink>projects</StyledInlineLink>!
+            <InlineNavLink to="/about">about me</InlineNavLink> and my{" "}
+            <InlineNavLink to="/portfolio">projects</InlineNavLink>!
           </Typography>
           <Box sx={{ display: "flex", mt: 6 }}>
             <IconButton
