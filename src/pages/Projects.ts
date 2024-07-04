@@ -251,7 +251,7 @@ export const projects = {
     display: true,
   },
   "songlybot": {
-    title: "songlyBot",
+    title: "songlybot",
     dates: "july 2022 to august 2022",
     organization: "overture games",
     description:
@@ -286,7 +286,7 @@ export const projects = {
   },
   "imaginarium": {
     title: "imaginarium",
-    dates: "march 2022 to present",
+    dates: "march 2022 to june 2024",
     organization: "computer science research",
     description:
       "a language developed by dr. ian horswill to generate just about anything you could imagine.",
@@ -307,7 +307,7 @@ export const projects = {
     organization: "mathematics research",
     description:
       "mathematics research done with dr. shuyi weng in discrete geometry exploring the affine dependence of vertices in polygonal cap curves.",
-    tags: ["latex", "math Research", "mathematica"],
+    tags: ["latex", "math research", "mathematica"],
     paragraphs: [],
     coverImage: "",
     screenshots: [],
@@ -321,7 +321,6 @@ export const projects = {
 };
 
 export const tags = [
-  "all",
   "blender",
   "catsat",
   "cs research",

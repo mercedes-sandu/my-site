@@ -81,13 +81,12 @@ const typography: TypographyOptions = {
     fontFamily: "Cormorant Garamond",
     fontSize: "18px",
     fontWeight: 700,
-    // TODO: letter spacing
+    letterSpacing: "4px",
   },
   cardBody: {
     fontFamily: "Cormorant Garamond",
     fontSize: "22px",
     fontWeight: 400,
-    // TODO: line spacing?
   },
   cardTag: {
     fontFamily: "Cormorant Garamond",

@@ -21,6 +21,7 @@ function Navbar({ darkMode, setDarkMode }: NavbarProps) {
         top: 0,
         width: "100%",
         backgroundColor: theme.palette.background.default,
+        zIndex: 1000,
       }}
     >
       <Box

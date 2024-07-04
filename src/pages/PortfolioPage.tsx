@@ -1,14 +1,16 @@
 import {
   Box,
-  Button,
   Container,
-  Grid,
+  ToggleButton,
+  ToggleButtonGroup,
   Typography,
   useTheme,
 } from "@mui/material";
 import verticalBarLightLong from "../assets/images/vertical bar light long.svg";
 import verticalBarDarkLong from "../assets/images/vertical bar dark long.svg";
 import { projects, tags } from "./Projects";
+import { useEffect, useState } from "react";
+import ProjectCard from "../components/ProjectCard";
 
 interface PortfolioPageProps {
   darkMode: boolean;
@@ -17,8 +19,32 @@ interface PortfolioPageProps {
 function PortfolioPage({ darkMode }: PortfolioPageProps) {
   const theme = useTheme();
 
+  const [cards, setCards] = useState<any>(projects);
+  const [selectedTags, setSelectedTags] = useState<string[]>([]);
+
+  const handleFilterButton = (
+    _event: React.MouseEvent<HTMLElement>,
+    newTags: string[]
+  ) => {
+    setSelectedTags(newTags);
+    if (newTags.length === 0) {
+      setCards(projects);
+    } else {
+      setCards(
+        Object.values(projects).filter((project) => {
+          return project.tags.some((tag: string) => newTags.includes(tag));
+        })
+      );
+    }
+    console.log(cards);
+  };
+
+  useEffect(() => {
+    setCards(projects);
+  }, [selectedTags]);
+
   // for filtering projects by tag: https://codesandbox.io/s/admiring-keldysh-dh1o0o?file=/src/App.js
-  
+
   return (
     <Container
       sx={{
@@ -75,46 +101,89 @@ function PortfolioPage({ darkMode }: PortfolioPageProps) {
             >
               my projects
             </Typography>
-            <Typography variant="body1">
+            <Typography variant="body1" sx={{ mb: 4 }}>
               below you'll find a collection of some projects i have completed
               and others that are still in progress. feel free to use the
               filters to sort them by programming language or topic.
             </Typography>
-            <Box
+            <ToggleButtonGroup
               sx={{
+                // TODO: make flexwrap
                 width: "100%",
                 display: "flex",
-                justifyContent: "space-evenly",
-                alignItems: "center",
                 flexWrap: "wrap",
+                pl: "24px",
+                pr: "24px",
+                mb: 4,
               }}
+              value={selectedTags}
+              onChange={handleFilterButton}
             >
               {tags.map((tag) => (
-                <Button
+                <ToggleButton
                   key={tag}
-                  variant="outlined"
+                  value={tag}
                   sx={{
                     color: theme.palette.text.primary,
                     border: `2px solid ${theme.palette.secondary.main}`,
                     borderRadius: 0,
                     textTransform: "none",
+                    width: "136px",
+                    height: "30px",
+                    mr: 2,
+                    mb: 2,
                     transition: "border-color 0.2s ease-in-out",
+                    textDecoration: "none",
+                    "&.MuiToggleButton-root": {
+                      border: `2px solid ${theme.palette.secondary.main}`,
+                    },
                     "&:hover": {
                       border: `2px solid ${theme.palette.text.primary}`,
+                      backgroundColor: "transparent",
                     },
-                    // TODO: selected state
+                    "&.Mui-selected": {
+                      border: `2px solid ${theme.palette.secondary.main}`,
+                      textDecoration: "underline",
+                      backgroundColor: "transparent",
+                    },
+                    "&.Mui-selected:hover": {
+                      border: `2px solid ${theme.palette.text.primary}`,
+                      backgroundColor: "transparent",
+                    },
                     // TODO: focus state
                   }}
+                  disableRipple
                 >
-                  <Typography variant="filterLabel">{tag}</Typography>
-                </Button>
+                  <Typography
+                    variant="filterLabel"
+                    sx={{ textDecoration: "inherit" }}
+                  >
+                    {tag}
+                  </Typography>
+                </ToggleButton>
               ))}
-            </Box>
+            </ToggleButtonGroup>
           </Box>
-          <Grid container spacing={8}>
-            <Grid item md={6}></Grid>
-            <Grid item md={6}></Grid>
-          </Grid>
+          <Box
+            sx={{
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "space-around",
+            }}
+          >
+            {Object.values(cards).map(
+              (project: any) =>
+                project.display && (
+                  <ProjectCard
+                    key={project.title}
+                    title={project.title}
+                    dates={project.dates}
+                    description={project.description}
+                    tags={project.tags}
+                  />
+                )
+            )}
+          </Box>
         </Box>
       </Box>
     </Container>

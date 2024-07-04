@@ -64,7 +64,7 @@ function HomePage({ darkMode }: HomePageProps) {
           >
             hi, i'm mercedes
           </Typography>
-          <Box sx={{ mb: 4 }}>
+          <Box sx={{ mb: 4, textIndent: "0px" }}>
             <span
               style={{
                 fontFamily: "Meqanor",
@@ -87,7 +87,7 @@ function HomePage({ darkMode }: HomePageProps) {
               />
             </span>
           </Box>
-          <Typography>
+          <Typography variant="body1" sx={{ textIndent: "0px" }}>
             i'm a software and video game developer with a passion for math,
             computer science, art, and music. look around to learn more{" "}
             <InlineNavLink to="/about">about me</InlineNavLink> and my{" "}
