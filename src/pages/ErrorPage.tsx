@@ -1,3 +1,5 @@
+// TODO: style this page
+
 function ErrorPage() {
   return (
     <div>

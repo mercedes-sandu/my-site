@@ -45,8 +45,6 @@ function PortfolioPage({ darkMode }: PortfolioPageProps) {
     setCards(projects);
   }, [selectedTags]);
 
-  // for filtering projects by tag: https://codesandbox.io/s/admiring-keldysh-dh1o0o?file=/src/App.js
-
   return (
     <Container
       sx={{

@@ -12,6 +12,7 @@ export interface Project {
   media: string[];
   repository: string;
   navTo: string;
+  mxrkdownUrl: string;
   display: boolean;
 }
 
@@ -30,6 +31,7 @@ export const projects: Record<string, Project> = {
     media: [],
     repository: "",
     navTo: "pour-decisions",
+    mxrkdownUrl: "",
     display: false,
   },
   "8-bit-gambit": {
@@ -46,6 +48,7 @@ export const projects: Record<string, Project> = {
     media: [],
     repository: "",
     navTo: "8-bit-gambit",
+    mxrkdownUrl: "",
     display: false,
   },
   "non-negative-news": {
@@ -62,6 +65,7 @@ export const projects: Record<string, Project> = {
     media: [],
     repository: "",
     navTo: "non-negative-news",
+    mxrkdownUrl: "",
     display: false,
   },
   "gymcats": {
@@ -78,6 +82,7 @@ export const projects: Record<string, Project> = {
     media: [],
     repository: "",
     navTo: "gymcats",
+    mxrkdownUrl: "",
     display: false,
   },
   "budgetbuddy": {
@@ -94,6 +99,7 @@ export const projects: Record<string, Project> = {
     media: [],
     repository: "",
     navTo: "budgetbuddy",
+    mxrkdownUrl: "",
     display: false,
   },
   "abbott-internship": {
@@ -111,6 +117,7 @@ export const projects: Record<string, Project> = {
     media: [],
     repository: "",
     navTo: "abbott-internship",
+    mxrkdownUrl: "",
     display: false,
   },
   "ocean-cleanup": {
@@ -128,6 +135,7 @@ export const projects: Record<string, Project> = {
     media: [],
     repository: "",
     navTo: "ocean-cleanup",
+    mxrkdownUrl: "",
     display: false,
   },
   "catsat": {
@@ -145,6 +153,7 @@ export const projects: Record<string, Project> = {
     media: [],
     repository: "",
     navTo: "catsat",
+    mxrkdownUrl: "",
     display: true,
   },
   "smart-context-stories": {
@@ -163,6 +172,7 @@ export const projects: Record<string, Project> = {
     media: [],
     repository: "",
     navTo: "smart-context-stories",
+    mxrkdownUrl: "",
     display: false,
   },
   "zendog": {
@@ -180,6 +190,7 @@ export const projects: Record<string, Project> = {
     media: [],
     repository: "",
     navTo: "zendog",
+    mxrkdownUrl: "",
     display: true,
   },
   "dininginformant": {
@@ -197,6 +208,7 @@ export const projects: Record<string, Project> = {
     media: [],
     repository: "",
     navTo: "dininginformant",
+    mxrkdownUrl: "",
     display: false,
   },
   "when-the-devil-takes-hold": {
@@ -214,6 +226,7 @@ export const projects: Record<string, Project> = {
     media: [],
     repository: "",
     navTo: "when-the-devil-takes-hold",
+    mxrkdownUrl: "",
     display: false,
   },
   "riverswood-manor": {
@@ -231,6 +244,7 @@ export const projects: Record<string, Project> = {
     media: [],
     repository: "",
     navTo: "riverswood-manor",
+    mxrkdownUrl: "",
     display: false,
   },
   "we-three-witches": {
@@ -248,6 +262,7 @@ export const projects: Record<string, Project> = {
     media: [],
     repository: "",
     navTo: "we-three-witches",
+    mxrkdownUrl: "",
     display: false,
   },
   "papas-what-is-going-on-eria": {
@@ -265,6 +280,7 @@ export const projects: Record<string, Project> = {
     media: [],
     repository: "",
     navTo: "papas-what-is-going-on-eria",
+    mxrkdownUrl: "",
     display: true,
   },
   "songlybot": {
@@ -282,6 +298,7 @@ export const projects: Record<string, Project> = {
     media: [],
     repository: "",
     navTo: "songlybot",
+    mxrkdownUrl: "",
     display: true,
   },
   "intervallic": {
@@ -299,6 +316,7 @@ export const projects: Record<string, Project> = {
     media: [],
     repository: "",
     navTo: "intervallic",
+    mxrkdownUrl: "/intervallic.mxr",
     display: true,
   },
   "imaginarium": {
@@ -316,6 +334,7 @@ export const projects: Record<string, Project> = {
     media: [],
     repository: "",
     navTo: "imaginarium",
+    mxrkdownUrl: "",
     display: true,
   },
   "polygonal-folding": {
@@ -333,6 +352,7 @@ export const projects: Record<string, Project> = {
     media: [],
     repository: "",
     navTo: "polygonal-folding",
+    mxrkdownUrl: "",
     display: true,
   },
 };

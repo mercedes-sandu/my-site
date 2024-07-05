@@ -4,6 +4,10 @@ import verticalBarDarkLong from "../assets/images/vertical bar dark long.svg";
 import ErrorPage from "./ErrorPage";
 import { useParams } from "react-router-dom";
 import { projects } from "./Projects";
+import MxrkdownRenderer from "../components/MxrkdownRenderer";
+import { parseMxrkdown } from "../utility/parser";
+import { mxrkdownElement } from "../utility/types";
+import { useEffect, useState } from "react";
 
 interface ProjectPageProps {
   darkMode: boolean;
@@ -18,6 +22,24 @@ function ProjectPage({ darkMode }: ProjectPageProps) {
   }
 
   const theme = useTheme();
+
+  const [elements, setElements] = useState<mxrkdownElement[]>([]);
+
+  useEffect(() => {
+    const fetchMxrkdown = async () => {
+      try {
+        const response = await fetch(`../mxrkdowns/projects/${project.mxrkdownUrl}`);
+        const text = await response.text();
+        const parsedElements = parseMxrkdown(text);
+        console.log("parsed elements: " + parsedElements);
+        setElements(parsedElements);
+      } catch (error) {
+        console.error(`Error fetching mxrkdown: ${error}`);
+      }
+    };
+
+    fetchMxrkdown();
+  }, []);
 
   return (
     <Container
@@ -65,7 +87,7 @@ function ProjectPage({ darkMode }: ProjectPageProps) {
           }}
         >
           <Box sx={{ width: "100%", display: "flex", flexDirection: "column" }}>
-            <Typography variant="h1" sx={{ mb: 1 }}>
+            {/* <Typography variant="h1" sx={{ mb: 1 }}>
               {project.title}
             </Typography>
             <Typography
@@ -77,7 +99,8 @@ function ProjectPage({ darkMode }: ProjectPageProps) {
             </Typography>
             <Typography variant="body1" sx={{ mb: 4 }}>
               {project.description}
-            </Typography>
+            </Typography> */}
+            <MxrkdownRenderer elements={elements} />
           </Box>
         </Box>
       </Box>
