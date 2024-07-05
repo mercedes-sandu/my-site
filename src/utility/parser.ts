@@ -61,7 +61,7 @@ export function parseMxrkdown(content: string): mxrkdownElement[] {
 
 function parseInlineStyles(content: string): string {
   return content
-    .replace(/\[\[(.*?)\s(.*?)\]\]/g, '<a href="$1">$2</a>') // inline links
+    .replace(/\[\[(.*?)\s(.*?)\]\]/g, '<a href="$1" target="_blank">$2</a>') // inline links
     .replace(/\/\/(.*?)\/\//g, "<em>$1</em>") // italicized text
     .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>"); // bold text
 }

@@ -1,4 +1,5 @@
 import { mxrkdownElement } from "../utility/types";
+import { Typography } from "@mui/material";
 
 interface MxrkdownRendererProps {
   elements: mxrkdownElement[];
@@ -11,9 +12,10 @@ function MxrkdownRenderer({ elements }: MxrkdownRendererProps) {
         switch (element.type) {
           case "paragraph":
             return (
-              <p
+              <Typography
                 key={index}
                 dangerouslySetInnerHTML={{ __html: element.content }}
+                variant="body1"
               />
             );
           case "coverImage":
