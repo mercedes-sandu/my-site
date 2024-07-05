@@ -1,4 +1,21 @@
-export const projects = {
+export interface Project {
+  title: string;
+  dates: string;
+  organization: string;
+  description: string;
+  tags: string[];
+  paragraphs: string[];
+  coverImage: string;
+  screenshots: string[];
+  readme: string;
+  features: string[];
+  media: string[];
+  repository: string;
+  navTo: string;
+  display: boolean;
+}
+
+export const projects: Record<string, Project> = {
   "pour-decisions": {
     title: "pour decisions",
     dates: "april 2024 to may 2024",
@@ -118,7 +135,7 @@ export const projects = {
     dates: "march 2023 to present",
     organization: "computer science research",
     description:
-      "a sat solver developed by dr. ian Hhrswill that uses an optimized walksat algorithm to solve constraint problems and pseudoboolean constraint problems.",
+      "a sat solver developed by dr. ian horswill that uses an optimized walksat algorithm to solve constraint problems and pseudoboolean constraint problems.",
     tags: ["catsat", "cs research", "c#", "imaginarium", "figma", "typescript", "react", "web dev"],
     paragraphs: [],
     coverImage: "",

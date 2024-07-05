@@ -1,13 +1,22 @@
 import { Box, Container, Typography, useTheme } from "@mui/material";
 import verticalBarLightLong from "../assets/images/vertical bar light long.svg";
 import verticalBarDarkLong from "../assets/images/vertical bar dark long.svg";
+import ErrorPage from "./ErrorPage";
+import { useParams } from "react-router-dom";
+import { projects } from "./Projects";
 
 interface ProjectPageProps {
   darkMode: boolean;
-  projectData: any;
 }
 
-function ProjectPage({ darkMode, projectData }: ProjectPageProps) {
+function ProjectPage({ darkMode }: ProjectPageProps) {
+  const { projectId } = useParams<{ projectId: string }>();
+  const project = projects[projectId ?? ""];
+
+  if (!project) {
+    return <ErrorPage />;
+  }
+
   const theme = useTheme();
 
   return (
@@ -57,19 +66,17 @@ function ProjectPage({ darkMode, projectData }: ProjectPageProps) {
         >
           <Box sx={{ width: "100%", display: "flex", flexDirection: "column" }}>
             <Typography variant="h1" sx={{ mb: 1 }}>
-              portfolio
+              {project.title}
             </Typography>
             <Typography
               variant="h2"
               color={theme.palette.secondary.main}
               sx={{ mb: 4 }}
             >
-              my projects
+              {project.dates}
             </Typography>
             <Typography variant="body1" sx={{ mb: 4 }}>
-              below you'll find a collection of some projects i have completed
-              and others that are still in progress. feel free to use the
-              filters to sort them by programming language or topic.
+              {project.description}
             </Typography>
           </Box>
         </Box>

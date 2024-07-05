@@ -12,9 +12,10 @@ interface ProjectCardProps {
   dates: string;
   description: string;
   tags: string[];
+  onClick?: () => void;
 }
 
-function ProjectCard({ title, dates, description, tags }: ProjectCardProps) {
+function ProjectCard({ title, dates, description, tags, onClick }: ProjectCardProps) {
   const theme = useTheme();
   return (
     <Card
@@ -34,6 +35,7 @@ function ProjectCard({ title, dates, description, tags }: ProjectCardProps) {
         },
         // TODO: focus state
       }}
+      onClick={onClick}
     >
       <CardActionArea
         sx={{

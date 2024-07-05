@@ -7,7 +7,6 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import PortfolioPage from "./pages/PortfolioPage";
 import ProjectPage from "./pages/ProjectPage";
-import { projects } from "./pages/Projects";
 
 function App() {
   const [darkMode, setDarkMode] = useState<boolean>(true);
@@ -26,7 +25,7 @@ function App() {
           />
           <Route
             path="/portfolio/:projectId"
-            element={<ProjectPage darkMode={darkMode} projectData={projects} />}
+            element={<ProjectPage darkMode={darkMode} />}
           />
         </Routes>
       </BrowserRouter>

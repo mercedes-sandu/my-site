@@ -11,6 +11,7 @@ import verticalBarDarkLong from "../assets/images/vertical bar dark long.svg";
 import { projects, tags } from "./Projects";
 import { useEffect, useState } from "react";
 import ProjectCard from "../components/ProjectCard";
+import { useNavigate } from "react-router-dom";
 
 interface PortfolioPageProps {
   darkMode: boolean;
@@ -18,6 +19,7 @@ interface PortfolioPageProps {
 
 function PortfolioPage({ darkMode }: PortfolioPageProps) {
   const theme = useTheme();
+  const navigate = useNavigate();
 
   const [cards, setCards] = useState<any>(projects);
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
@@ -180,6 +182,7 @@ function PortfolioPage({ darkMode }: PortfolioPageProps) {
                     dates={project.dates}
                     description={project.description}
                     tags={project.tags}
+                    onClick={() => navigate(`/portfolio/${project.navTo}`)}
                   />
                 )
             )}
