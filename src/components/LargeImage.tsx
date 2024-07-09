@@ -21,10 +21,13 @@ function LargeImage({ src, alt }: ImageProps) {
     >
       <Box
         sx={{
-          width: "90%",
+          width: "70%",
           height: "auto",
           border: `2px solid ${theme.palette.text.primary}`,
-          padding: "12px", // TODO: tweak?
+          padding: "12px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
         }}
       >
         <Box component="img" src={src} alt={alt} width="100%" />
