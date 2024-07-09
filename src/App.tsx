@@ -8,6 +8,9 @@ import AboutPage from "./pages/AboutPage";
 import PortfolioPage from "./pages/PortfolioPage";
 import ProjectPage from "./pages/ProjectPage";
 
+// TODO: remove these imports when mxrkdown parsing works
+import PolygonalFolding from "./pages/projects/PolygonalFolding";
+
 function App() {
   const [darkMode, setDarkMode] = useState<boolean>(true);
 
@@ -18,15 +21,27 @@ function App() {
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
         <Routes>
           <Route path="/" element={<HomePage darkMode={darkMode} />} />
-          <Route path="/about" element={<AboutPage darkMode={darkMode} />} />
+          <Route path="about" element={<AboutPage darkMode={darkMode} />} />
           <Route
-            path="/portfolio"
+            path="portfolio"
             element={<PortfolioPage darkMode={darkMode} />}
           />
+          {/* TODO: remove this when mxrkdown parsing works */}
+
           <Route
+            path="portfolio/polygonal-folding"
+            element={
+              <PolygonalFolding
+                darkMode={darkMode}
+                projectKey="polygonal-folding"
+              />
+            }
+          />
+          {/* TODO: uncomment below when mxrkdown parsing works */}
+          {/* <Route
             path="/portfolio/:projectId"
             element={<ProjectPage darkMode={darkMode} />}
-          />
+          /> */}
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

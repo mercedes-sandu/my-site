@@ -12,6 +12,7 @@ import { projects, tags } from "./Projects";
 import { useEffect, useState } from "react";
 import ProjectCard from "../components/ProjectCard";
 import { useNavigate } from "react-router-dom";
+import Footer from "../components/Footer";
 
 interface PortfolioPageProps {
   darkMode: boolean;
@@ -185,6 +186,7 @@ function PortfolioPage({ darkMode }: PortfolioPageProps) {
                 )
             )}
           </Box>
+          <Footer />
         </Box>
       </Box>
     </Container>

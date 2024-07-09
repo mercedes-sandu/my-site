@@ -15,6 +15,7 @@ import {
   InlineNavLink,
   ItalicText,
 } from "../components/StyledComponents";
+import Footer from "../components/Footer";
 
 interface AboutPageProps {
   darkMode: boolean;
@@ -216,6 +217,7 @@ function AboutPage({ darkMode }: AboutPageProps) {
               </Typography>
             </Grid>
           </Grid>
+          <Footer />
         </Box>
       </Box>
     </Container>

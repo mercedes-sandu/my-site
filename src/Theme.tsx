@@ -22,6 +22,11 @@ declare module "@mui/material/styles" {
     cardTag: React.CSSProperties;
     navbarLabel: React.CSSProperties;
     filterLabel: React.CSSProperties;
+    projectTitle: React.CSSProperties;
+    projectDates: React.CSSProperties;
+    projectDescription: React.CSSProperties;
+    projectTag: React.CSSProperties;
+    projectP: React.CSSProperties;
   }
 
   interface TypographyVariantsOptions {
@@ -31,6 +36,11 @@ declare module "@mui/material/styles" {
     cardTag?: React.CSSProperties;
     navbarLabel?: React.CSSProperties;
     filterLabel?: React.CSSProperties;
+    projectTitle?: React.CSSProperties;
+    projectDates?: React.CSSProperties;
+    projectDescription?: React.CSSProperties;
+    projectTag?: React.CSSProperties;
+    projectP?: React.CSSProperties;
   }
 }
 
@@ -42,6 +52,11 @@ declare module "@mui/material/Typography" {
     cardTag: true;
     navbarLabel: true;
     filterLabel: true;
+    projectTitle: true;
+    projectDates: true;
+    projectDescription: true;
+    projectTag: true;
+    projectP: true;
   }
 }
 
@@ -105,6 +120,41 @@ const typography: TypographyOptions = {
     fontWeight: 400,
     textIndent: "0px",
   },
+  projectTitle: {
+    fontFamily: "Meqanor",
+    fontSize: "64px",
+    textAlign: "left",
+    textIndent: "0px",
+  },
+  projectDates: {
+    fontFamily: "Cormorant Garamond",
+    fontSize: "24px",
+    fontWeight: 700,
+    letterSpacing: "8px",
+    textAlign: "left",
+    textIndent: "0px",
+  },
+  projectDescription: {
+    fontFamily: "Cormorant Garamond",
+    fontSize: "24px",
+    fontWeight: 700,
+    letterSpacing: "1px",
+    textAlign: "left",
+    textIndent: "0px",
+  },
+  projectTag: {
+    fontFamily: "Cormorant Garamond",
+    fontSize: "18px",
+    fontWeight: 400,
+    textIndent: "0px",
+  },
+  projectP: {
+    fontFamily: "Cormorant Garamond",
+    fontSize: "24px",
+    fontWeight: 400,
+    textAlign: "justify",
+    textIndent: "24px",
+  },
 };
 
 const variantMapping = {
@@ -114,6 +164,11 @@ const variantMapping = {
   cardTag: "p",
   navbarLabel: "p",
   filterLabel: "p",
+  projectTitle: "h1",
+  projectDates: "h2",
+  projectDescription: "h3",
+  projectTag: "p",
+  projectP: "p",
 };
 
 export const darkTheme = createTheme({

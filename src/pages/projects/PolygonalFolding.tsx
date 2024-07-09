@@ -1,46 +1,23 @@
 import { Box, Container, Typography, useTheme } from "@mui/material";
-import verticalBarLightLong from "../assets/images/vertical bar light long.svg";
-import verticalBarDarkLong from "../assets/images/vertical bar dark long.svg";
-import ErrorPage from "./ErrorPage";
-import { useParams } from "react-router-dom";
-import { projects } from "./Projects";
-import MxrkdownRenderer from "../components/MxrkdownRenderer";
-import { parseMxrkdown } from "../utility/parser";
-import { mxrkdownElement } from "../utility/types";
-import { useEffect, useState } from "react";
-import Footer from "../components/Footer";
+import verticalBarLightLong from "../../assets/images/vertical bar light long.svg";
+import verticalBarDarkLong from "../../assets/images/vertical bar dark long.svg";
+import ErrorPage from "../ErrorPage";
+import { projects } from "../Projects";
+import Footer from "../../components/Footer";
 
 interface ProjectPageProps {
   darkMode: boolean;
+  projectKey: string;
 }
 
-function ProjectPage({ darkMode }: ProjectPageProps) {
-  const { projectId } = useParams<{ projectId: string }>();
-  const project = projects[projectId ?? ""];
+function PolygonalFolding({ darkMode, projectKey }: ProjectPageProps) {
+  const project = projects[projectKey];
 
   if (!project) {
     return <ErrorPage />;
   }
 
   const theme = useTheme();
-
-  const [elements, setElements] = useState<mxrkdownElement[]>([]);
-
-  useEffect(() => {
-    const fetchMxrkdown = async () => {
-      try {
-        const response = await fetch(`../mxrkdowns/projects/${project.mxrkdownUrl}`);
-        const text = await response.text();
-        const parsedElements = parseMxrkdown(text);
-        console.log("parsed elements: " + parsedElements);
-        setElements(parsedElements);
-      } catch (error) {
-        console.error(`Error fetching mxrkdown: ${error}`);
-      }
-    };
-
-    fetchMxrkdown();
-  }, []);
 
   return (
     <Container
@@ -88,7 +65,7 @@ function ProjectPage({ darkMode }: ProjectPageProps) {
           }}
         >
           <Box sx={{ width: "100%", display: "flex", flexDirection: "column" }}>
-          <Typography
+            <Typography
               variant="projectDates"
               color={theme.palette.secondary.main}
             >
@@ -128,7 +105,6 @@ function ProjectPage({ darkMode }: ProjectPageProps) {
             <Typography variant="projectDescription" sx={{ mb: 4 }}>
               {project.description}
             </Typography>
-            <MxrkdownRenderer elements={elements} />
           </Box>
           <Footer />
         </Box>
@@ -137,4 +113,4 @@ function ProjectPage({ darkMode }: ProjectPageProps) {
   );
 }
 
-export default ProjectPage;
+export default PolygonalFolding;
