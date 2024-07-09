@@ -7,7 +7,9 @@ import Footer from "../../components/Footer";
 import { InlineLink } from "../../components/StyledComponents";
 import Awards from "../../components/Awards";
 import Media from "../../components/Media";
+import LargeImage from "../../components/LargeImage";
 import jmm from "../../assets/pdfs/jmm.pdf";
+import polygonalFoldingImage from "../../assets/images/projects/polygonal folding.webp";
 
 interface ProjectPageProps {
   darkMode: boolean;
@@ -173,6 +175,7 @@ function PolygonalFolding({ darkMode, projectKey }: ProjectPageProps) {
               flexDirection: "column",
             }}
           >
+            <LargeImage src={polygonalFoldingImage} />
             <Typography variant="projectP" sx={{ mb: 2 }}>
               i was first introduced to research in the field of mathematics
               under the northwestern undergraduate research assistant program (
