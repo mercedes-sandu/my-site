@@ -99,7 +99,7 @@ function AboutPage({ darkMode }: AboutPageProps) {
               <List
                 sx={{
                   listStyleType: "disc",
-                  pl: 2,
+                  pl: 6,
                   "&.MuiList-root": {
                     pt: 0,
                     pb: 0,
@@ -109,64 +109,63 @@ function AboutPage({ darkMode }: AboutPageProps) {
                 <ListItem
                   sx={{
                     display: "list-item",
-                    "&.MuiListItem-root": {
-                      pt: 0,
-                      pb: 0,
-                    },
+                    padding: "0px",
                   }}
                 >
                   <ListItemText>
-                    {/* TODO: add link to math research project page */}
-                    an undergraduate{" "}
-                    <InlineLink>mathematics researcher</InlineLink>{" "}
-                    investigating paper folding in the field of discrete
-                    geometry
+                    <Typography variant="body1" sx={{ textIndent: "0px" }}>
+                      {/* TODO: add link to math research project page */}
+                      an undergraduate{" "}
+                      <InlineNavLink to="/portfolio/polygonal-folding">
+                        mathematics researcher
+                      </InlineNavLink>{" "}
+                      investigating paper folding in the field of discrete
+                      geometry
+                    </Typography>
                   </ListItemText>
                 </ListItem>
                 <ListItem
                   sx={{
                     display: "list-item",
-                    "&.MuiListItem-root": {
-                      pt: 0,
-                      pb: 0,
-                    },
+                    padding: "0px",
                   }}
                 >
                   <ListItemText>
-                    {/* TODO: add link to comp sci research project page */}a
-                    graduate{" "}
-                    <InlineLink>computer science researcher</InlineLink>{" "}
-                    exploring the use of logic programming and traditional AI in
-                    narrative-based video games
+                    <Typography variant="body1" sx={{ textIndent: "0px" }}>
+                      {/* TODO: add link to comp sci research project page */}a
+                      graduate{" "}
+                      <InlineLink>computer science researcher</InlineLink>{" "}
+                      exploring the use of logic programming and traditional AI
+                      in narrative-based video games
+                    </Typography>
                   </ListItemText>
                 </ListItem>
                 <ListItem
                   sx={{
                     display: "list-item",
-                    "&.MuiListItem-root": {
-                      pt: 0,
-                      pb: 0,
-                    },
+                    padding: "0px",
                   }}
                 >
                   <ListItemText>
-                    a frontend lead and software engineer of{" "}
-                    <InlineLink>intervallic</InlineLink> at{" "}
-                    <InlineLink
-                      href="https://www.overture.games/"
-                      target="_blank"
-                    >
-                      overture games
-                    </InlineLink>
-                    , a startup founded at{" "}
-                    <InlineLink
-                      href="https://www.thegarage.northwestern.edu/"
-                      target="_blank"
-                    >
-                      the garage
-                    </InlineLink>{" "}
-                    that creates games to help make practice more fun for
-                    musicians
+                    <Typography variant="body1" sx={{ textIndent: "0px" }}>
+                      a frontend lead and software engineer of{" "}
+                      <InlineLink>intervallic</InlineLink> at{" "}
+                      <InlineLink
+                        href="https://www.overture.games/"
+                        target="_blank"
+                      >
+                        overture games
+                      </InlineLink>
+                      , a startup founded at{" "}
+                      <InlineLink
+                        href="https://www.thegarage.northwestern.edu/"
+                        target="_blank"
+                      >
+                        the garage
+                      </InlineLink>{" "}
+                      that creates games to help make practice more fun for
+                      musicians
+                    </Typography>
                   </ListItemText>
                 </ListItem>
               </List>

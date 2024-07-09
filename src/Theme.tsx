@@ -27,6 +27,7 @@ declare module "@mui/material/styles" {
     projectDescription: React.CSSProperties;
     projectTag: React.CSSProperties;
     projectP: React.CSSProperties;
+    projectSubheader: React.CSSProperties;
   }
 
   interface TypographyVariantsOptions {
@@ -41,6 +42,7 @@ declare module "@mui/material/styles" {
     projectDescription?: React.CSSProperties;
     projectTag?: React.CSSProperties;
     projectP?: React.CSSProperties;
+    projectSubheader?: React.CSSProperties;
   }
 }
 
@@ -57,6 +59,7 @@ declare module "@mui/material/Typography" {
     projectDescription: true;
     projectTag: true;
     projectP: true;
+    projectSubheader: true;
   }
 }
 
@@ -155,6 +158,13 @@ const typography: TypographyOptions = {
     textAlign: "justify",
     textIndent: "24px",
   },
+  projectSubheader: {
+    fontFamily: "Meqanor",
+    fontSize: "40px",
+    fontWeight: 700,
+    textAlign: "left",
+    textIndent: "0px",
+  },
 };
 
 const variantMapping = {
@@ -165,10 +175,11 @@ const variantMapping = {
   navbarLabel: "p",
   filterLabel: "p",
   projectTitle: "h1",
-  projectDates: "h2",
-  projectDescription: "h3",
+  projectDates: "h3",
+  projectDescription: "h4",
   projectTag: "p",
   projectP: "p",
+  projectSubheader: "h2",
 };
 
 export const darkTheme = createTheme({

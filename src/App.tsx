@@ -7,6 +7,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import PortfolioPage from "./pages/PortfolioPage";
 import ProjectPage from "./pages/ProjectPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 // TODO: remove these imports when mxrkdown parsing works
 import PolygonalFolding from "./pages/projects/PolygonalFolding";
@@ -18,6 +19,7 @@ function App() {
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <CssBaseline />
       <BrowserRouter>
+        <ScrollToTop />
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
         <Routes>
           <Route path="/" element={<HomePage darkMode={darkMode} />} />

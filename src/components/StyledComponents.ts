@@ -27,3 +27,8 @@ export const ItalicText = styled("span")(({ theme }) => ({
   fontStyle: "italic",
   color: theme.palette.text.primary,
 }));
+
+export const BoldText = styled("span")(({ theme }) => ({
+  fontWeight: 700,
+  color: theme.palette.secondary.main,
+}));
