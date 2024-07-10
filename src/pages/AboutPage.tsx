@@ -93,7 +93,7 @@ function AboutPage({ darkMode }: AboutPageProps) {
                   northwestern university
                 </InlineLink>{" "}
                 with a double major in mathematics and computer science, a minor
-                in chemistry, and an M.S. in computer science. while there, i
+                in chemistry, and an m.s. in computer science. while there, i
                 worked as:
               </Typography>
               <List
@@ -114,7 +114,6 @@ function AboutPage({ darkMode }: AboutPageProps) {
                 >
                   <ListItemText>
                     <Typography variant="body1" sx={{ textIndent: "0px" }}>
-                      {/* TODO: add link to math research project page */}
                       an undergraduate{" "}
                       <InlineNavLink to="/portfolio/polygonal-folding">
                         mathematics researcher
@@ -132,7 +131,7 @@ function AboutPage({ darkMode }: AboutPageProps) {
                 >
                   <ListItemText>
                     <Typography variant="body1" sx={{ textIndent: "0px" }}>
-                      {/* TODO: add link to comp sci research project page */}a
+                      {/* TODO: add link to catsat page */}a
                       graduate{" "}
                       <InlineLink>computer science researcher</InlineLink>{" "}
                       exploring the use of logic programming and traditional AI
@@ -195,9 +194,9 @@ function AboutPage({ darkMode }: AboutPageProps) {
               </Typography>
               <Typography variant="body1" sx={{ mb: 2 }}>
                 in my free time, i love to play video games (
-                <ItalicText>NieR: Automata</ItalicText>,{" "}
-                <ItalicText>Persona 5 Royal</ItalicText>, and{" "}
-                <ItalicText>Final Fantasy XVI</ItalicText> are some of my
+                <ItalicText>nier: automata</ItalicText>,{" "}
+                <ItalicText>persona 5 royal</ItalicText>, and{" "}
+                <ItalicText>final fantasy xvi</ItalicText> are some of my
                 favorites), play piano,{" "}
                 <InlineLink
                   href="https://musescore.com/user/917141"

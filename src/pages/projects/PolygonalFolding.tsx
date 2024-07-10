@@ -123,7 +123,6 @@ function PolygonalFolding({ darkMode, projectKey }: ProjectPageProps) {
               width: "100%",
               display: "flex",
               flexDirection: "column",
-              mb: 2,
             }}
           >
             <Typography
@@ -178,6 +177,7 @@ function PolygonalFolding({ darkMode, projectKey }: ProjectPageProps) {
             <LargeImage
               src={polygonalFoldingImage}
               alt="quadrilateral and pentagon drawn using the cap construction algorithm"
+              description="quadrilateral and pentagon drawn using the cap construction algorithm"
             />
             <Typography variant="projectP" sx={{ mb: 2 }}>
               i was first introduced to research in the field of mathematics

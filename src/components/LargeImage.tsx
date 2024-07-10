@@ -1,11 +1,12 @@
-import { Box, useTheme } from "@mui/material";
+import { Box, Typography, useTheme } from "@mui/material";
 
 interface ImageProps {
   src: string;
   alt?: string;
+  description?: string;
 }
 
-function LargeImage({ src, alt }: ImageProps) {
+function LargeImage({ src, alt, description }: ImageProps) {
   const theme = useTheme();
 
   return (
@@ -15,7 +16,9 @@ function LargeImage({ src, alt }: ImageProps) {
         height: "auto",
         display: "flex",
         justifyContent: "center",
-        alignItems: "content",
+        alignItems: "center",
+        flexDirection: "column",
+        mt: 4,
         mb: 4,
       }}
     >
@@ -28,10 +31,17 @@ function LargeImage({ src, alt }: ImageProps) {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          mb: 1,
         }}
       >
         <Box component="img" src={src} alt={alt} width="100%" />
       </Box>
+      <Typography
+        variant="largeImageDescription"
+        sx={{ maxWidth: "70%", height: "auto", textAlign: "center" }}
+      >
+        {description}
+      </Typography>
     </Box>
   );
 }

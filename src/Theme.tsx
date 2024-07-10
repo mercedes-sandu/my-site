@@ -28,6 +28,8 @@ declare module "@mui/material/styles" {
     projectTag: React.CSSProperties;
     projectP: React.CSSProperties;
     projectSubheader: React.CSSProperties;
+    codeTitle: React.CSSProperties;
+    largeImageDescription: React.CSSProperties;
   }
 
   interface TypographyVariantsOptions {
@@ -43,6 +45,8 @@ declare module "@mui/material/styles" {
     projectTag?: React.CSSProperties;
     projectP?: React.CSSProperties;
     projectSubheader?: React.CSSProperties;
+    codeTitle?: React.CSSProperties;
+    largeImageDescription?: React.CSSProperties;
   }
 }
 
@@ -60,6 +64,8 @@ declare module "@mui/material/Typography" {
     projectTag: true;
     projectP: true;
     projectSubheader: true;
+    codeTitle: true;
+    largeImageDescription: true;
   }
 }
 
@@ -165,6 +171,18 @@ const typography: TypographyOptions = {
     textAlign: "left",
     textIndent: "0px",
   },
+  codeTitle: {
+    fontFamily: "monospace",
+    fontSize: "18px",
+    textIndent: "0px",
+  },
+  largeImageDescription: {
+    fontFamily: "Cormorant Garamond",
+    fontSize: "18px",
+    textIndent: "0px",
+    fontWeight: 400,
+    textAlign: "center",
+  },
 };
 
 const variantMapping = {
@@ -180,6 +198,8 @@ const variantMapping = {
   projectTag: "p",
   projectP: "p",
   projectSubheader: "h2",
+  codeTitle: "h6",
+  largeImageDescription: "p",
 };
 
 export const darkTheme = createTheme({
@@ -196,6 +216,7 @@ export const darkTheme = createTheme({
     },
     secondary: {
       main: "#c993db",
+      1: "#282c34",
     },
   },
   breakpoints: {
@@ -226,6 +247,7 @@ export const lightTheme = createTheme({
     },
     secondary: {
       main: "#ba64d7",
+      1: "#fafafa",
     },
   },
   breakpoints: {

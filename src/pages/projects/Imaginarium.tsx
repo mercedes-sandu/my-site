@@ -4,12 +4,14 @@ import verticalBarDarkLong from "../../assets/images/vertical bar dark long.svg"
 import ErrorPage from "../ErrorPage";
 import { projects } from "../Projects";
 import Footer from "../../components/Footer";
-import { InlineLink } from "../../components/StyledComponents";
+import { InlineLink, ItalicText } from "../../components/StyledComponents";
 import LargeImage from "../../components/LargeImage";
 import imaginariumImage from "../../assets/images/projects/imaginarium.webp";
 import imaginariumRelationshipsImage from "../../assets/images/projects/relationships.webp";
 import Features from "../../components/Features";
 import CodeSnippet from "../../components/CodeSnippet";
+import { imaginariumCode } from "../CodeSnippets";
+import RepositoryButton from "../../components/RepositoryButton";
 
 interface ProjectPageProps {
   darkMode: boolean;
@@ -24,33 +26,6 @@ function Imaginarium({ darkMode, projectKey }: ProjectPageProps) {
   }
 
   const theme = useTheme();
-
-  const imaginariumCode = `a setting is a kind of place.
-
-  // noun descriptors
-  school, beach, mountain, castle, restaurant, cafe, fortress, oasis, and city are kinds of setting.
-
-  // plurals
-  the plural of oasis is oases.
-
-  // adjective descriptors
-  a setting can be ancient, contemporary, magical, majestic, modern, mystical, quiet, or traditional.
-  a setting is any two of alive, attractive, beautiful, bustling, calm, charming, creepy, enchanting, fascinating, lively, or peaceful.
-
-  // specific descriptors
-  schools are bustling, lively, or crowded.
-  castles are ancient or magical.
-  castles are beautiful or creepy.
-  cities are bustling, lively, crowded, alive, or modern.
-  oases are charming, beautiful, fascinating, peaceful, or majestic.
-
-  // time of day
-  settings have a time.
-  times have an hour from hours. // 1 to 12
-  times have a minute from minutes. // 00 to 59
-  times have a half from halves. // AM or PM
-  a time is described as "at [hour]:[minute] [half]".
-  `;
 
   const features = [
     {
@@ -139,7 +114,6 @@ function Imaginarium({ darkMode, projectKey }: ProjectPageProps) {
               width: "100%",
               display: "flex",
               flexDirection: "column",
-              mb: 2,
             }}
           >
             <Typography
@@ -194,10 +168,76 @@ function Imaginarium({ darkMode, projectKey }: ProjectPageProps) {
             <LargeImage
               src={imaginariumImage}
               alt="a graph showing all types of entities to generate in the unity imaginarium implementation"
+              description="a graph showing all types of entities to generate in the unity imaginarium implementation"
             />
-            <Typography variant="projectP" sx={{ mb: 2 }}></Typography>
-            <CodeSnippet code={imaginariumCode} />
+            <Typography variant="projectP" sx={{ mb: 2 }}>
+              <ItalicText>imaginarium</ItalicText> is a program created by{" "}
+              <InlineLink
+                href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/horswill-ian.html"
+                target="_blank"
+              >
+                dr. ian horswill
+              </InlineLink>{" "}
+              designed to generate any fictional entity one could imagine for
+              purposes such as (but not limited to) story creation, narrative
+              development, and tabletop roleplaying games. i stumbled upon this
+              project when taking a special topics in computer science class
+              with him that focused on the role of ai in narrative-based games.
+            </Typography>
+            <Typography variant="projectP">
+              in this class, we were asked to use{" "}
+              <ItalicText>imaginarium</ItalicText> to generate some characters
+              and write a quick story. i was immediately hooked and intrigued by
+              the fact that the "code" one writes in{" "}
+              <ItalicText>imaginarium</ItalicText> is basically just structured
+              english. there is no fancy notation or syntax to learn, which is
+              what makes such a tool so powerful; it is accessible to anyone,
+              regardless of coding experience. for reference, here is what an
+              example of my code looks like to generate settings for a
+              narrative-based game:
+            </Typography>
+            <CodeSnippet
+              code={imaginariumCode}
+              darkMode={darkMode}
+              title="setting.gen"
+            />
+            <Typography variant="projectP">
+              in addition to generating entities,{" "}
+              <ItalicText>imaginarium</ItalicText> can also be used to generate
+              relationships between said entities. if you were to generate
+              characters, you could write something like "characters can love
+              each other," and then generating at least two characters would
+              result in a graph of characters with edges between them
+              representing the relationship. here's an example of such a
+              relationship graph:
+            </Typography>
+            <LargeImage
+              src={imaginariumRelationshipsImage}
+              alt="a graph showing all relationships between generated cats in the unity imaginarium implementation"
+              description="a graph showing all relationships between generated cats in the unity imaginarium implementation"
+            />
+            <Typography variant="projectP">
+              it happened to be the case that i was also starting to take
+              interest in pursuing a combined degree (b.a. and m.s. in computer
+              science) at northwestern university, and reached out to dr.
+              horswill to see if i could take a graduate-level research projects
+              class with him as my advisor. eventually, i decided i would work
+              on expanding <ItalicText>imaginarium</ItalicText>'s capabilities,
+              in particular looking at the core of the code and the sat solver
+              that is used to generate constraint-based models.
+            </Typography>
             <Features features={features} />
+            <Features features={featuresToImplement} toImplement />
+            <Box sx={{ mt: 4, width: "100%", height: "auto", display: "flex" }}>
+              <RepositoryButton
+                url="https://github.com/ianhorswill/ImaginariumCore"
+                name="imaginariumcore"
+              />
+              <RepositoryButton
+                url="https://github.com/ianhorswill/Imaginarium"
+                name="imaginarium"
+              />
+            </Box>
           </Box>
           <Footer />
         </Box>

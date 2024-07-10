@@ -29,7 +29,9 @@ function ProjectPage({ darkMode }: ProjectPageProps) {
   useEffect(() => {
     const fetchMxrkdown = async () => {
       try {
-        const response = await fetch(`../mxrkdowns/projects/${project.mxrkdownUrl}`);
+        const response = await fetch(
+          `../mxrkdowns/projects/${project.mxrkdownUrl}`
+        );
         const text = await response.text();
         const parsedElements = parseMxrkdown(text);
         console.log("parsed elements: " + parsedElements);
@@ -88,7 +90,7 @@ function ProjectPage({ darkMode }: ProjectPageProps) {
           }}
         >
           <Box sx={{ width: "100%", display: "flex", flexDirection: "column" }}>
-          <Typography
+            <Typography
               variant="projectDates"
               color={theme.palette.secondary.main}
             >
