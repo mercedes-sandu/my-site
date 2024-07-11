@@ -24,7 +24,8 @@ function LargeImage({ src, alt, description }: ImageProps) {
     >
       <Box
         sx={{
-          width: "70%",
+          maxWidth: "70%",
+          maxHeight: "93vh",
           height: "auto",
           border: `2px solid ${theme.palette.text.primary}`,
           padding: "12px",
@@ -34,7 +35,7 @@ function LargeImage({ src, alt, description }: ImageProps) {
           mb: 1,
         }}
       >
-        <Box component="img" src={src} alt={alt} width="100%" />
+        <Box component="img" src={src} alt={alt} width="100%" height="100%" />
       </Box>
       <Typography
         variant="largeImageDescription"

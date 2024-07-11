@@ -13,6 +13,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import PolygonalFolding from "./pages/projects/PolygonalFolding";
 import Imaginarium from "./pages/projects/Imaginarium";
 import Intervallic from "./pages/projects/Intervallic";
+import SonglyBot from "./pages/projects/SonglyBot";
 
 function App() {
   const [darkMode, setDarkMode] = useState<boolean>(true);
@@ -56,6 +57,15 @@ function App() {
               <Intervallic
                 darkMode={darkMode}
                 projectKey="intervallic"
+              />
+            }
+          />
+          <Route
+            path="portfolio/songlybot"
+            element={
+              <SonglyBot
+                darkMode={darkMode}
+                projectKey="songlybot"
               />
             }
           />
