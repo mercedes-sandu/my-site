@@ -4,9 +4,14 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 interface RepositoryButtonProps {
   url: string;
   name: string;
+  showIcon?: boolean;
 }
 
-function RepositoryButton({ url, name }: RepositoryButtonProps) {
+function RepositoryButton({
+  url,
+  name,
+  showIcon = true,
+}: RepositoryButtonProps) {
   const theme = useTheme();
 
   return (
@@ -29,7 +34,9 @@ function RepositoryButton({ url, name }: RepositoryButtonProps) {
       href={url}
       target="_blank"
     >
-      <GitHubIcon sx={{ color: theme.palette.text.primary, mr: 2 }} />
+      {showIcon ?? (
+        <GitHubIcon sx={{ color: theme.palette.text.primary, mr: 2 }} />
+      )}
       <Typography variant="projectTag" color={theme.palette.text.primary}>
         {name}
       </Typography>

@@ -12,6 +12,7 @@ import ScrollToTop from "./components/ScrollToTop";
 // TODO: remove these imports when mxrkdown parsing works
 import PolygonalFolding from "./pages/projects/PolygonalFolding";
 import Imaginarium from "./pages/projects/Imaginarium";
+import Intervallic from "./pages/projects/Intervallic";
 
 function App() {
   const [darkMode, setDarkMode] = useState<boolean>(true);
@@ -46,6 +47,15 @@ function App() {
               <Imaginarium
                 darkMode={darkMode}
                 projectKey="imaginarium"
+              />
+            }
+          />
+          <Route
+            path="portfolio/intervallic"
+            element={
+              <Intervallic
+                darkMode={darkMode}
+                projectKey="intervallic"
               />
             }
           />
