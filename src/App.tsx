@@ -14,6 +14,7 @@ import PolygonalFolding from "./pages/projects/PolygonalFolding";
 import Imaginarium from "./pages/projects/Imaginarium";
 import Intervallic from "./pages/projects/Intervallic";
 import SonglyBot from "./pages/projects/SonglyBot";
+import PapasWhatIsGoingOnEria from "./pages/projects/PapasWhatIsGoingOnEria";
 
 function App() {
   const [darkMode, setDarkMode] = useState<boolean>(true);
@@ -66,6 +67,15 @@ function App() {
               <SonglyBot
                 darkMode={darkMode}
                 projectKey="songlybot"
+              />
+            }
+          />
+          <Route
+            path="portfolio/papas-what-is-going-on-eria"
+            element={
+              <PapasWhatIsGoingOnEria
+                darkMode={darkMode}
+                projectKey="papas-what-is-going-on-eria"
               />
             }
           />
