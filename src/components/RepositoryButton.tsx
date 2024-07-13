@@ -34,9 +34,9 @@ function RepositoryButton({
       href={url}
       target="_blank"
     >
-      {showIcon ?? (
+      {showIcon ? (
         <GitHubIcon sx={{ color: theme.palette.text.primary, mr: 2 }} />
-      )}
+      ) : null}
       <Typography variant="projectTag" color={theme.palette.text.primary}>
         {name}
       </Typography>

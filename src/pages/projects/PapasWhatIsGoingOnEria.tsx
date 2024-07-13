@@ -17,6 +17,10 @@ import LargeImage from "../../components/LargeImage";
 import Features from "../../components/Features";
 import RepositoryButton from "../../components/RepositoryButton";
 import papasImage from "../../assets/images/projects/papas what is going on eria.webp";
+import orderReceipt from "../../assets/images/projects/order receipt.webp";
+import cooker from "../../assets/images/projects/cooker.webp";
+import assembler from "../../assets/images/projects/assembler.webp";
+import sodaMachine from "../../assets/images/projects/soda machine.webp";
 
 interface ProjectPageProps {
   darkMode: boolean;
@@ -32,7 +36,36 @@ function PapasWhatIsGoingOnEria({ darkMode, projectKey }: ProjectPageProps) {
 
   const theme = useTheme();
 
-  const features = [{}];
+  const features = [
+    {
+      description: "hand-drawn art using procreate",
+      id: 0,
+    },
+    {
+      description:
+        "randomized generation of orders using dynamic loading of prefabs from the resources folder",
+      id: 1,
+    },
+    {
+      description:
+        "an interaction system that allows ui interfaces to pop up when interacting with different kitchen stations",
+      id: 2,
+    },
+    {
+      description:
+        "four different ui overlays for each station with specialized functionality",
+      id: 3,
+    },
+    {
+      description:
+        "a click-move-and-drop system to assemble the burger by placing items exactly where you wish them to be",
+      id: 4,
+    },
+    {
+      description: "a timer that invokes the end condition",
+      id: 5,
+    },
+  ];
 
   return (
     <Container
@@ -209,7 +242,55 @@ function PapasWhatIsGoingOnEria({ darkMode, projectKey }: ProjectPageProps) {
               the goal is to complete as many orders as possible and thus
               maximize your score.
             </Typography>
+            <Typography variant="projectP" sx={{ mb: 2 }}>
+              as you complete orders, you may notice something slightly odd
+              happening. it seems that every time you complete an order, one of
+              the ingredients randomly gets corrupted and you can no longer use
+              it! the corrupted ingredients may still pop up on the order
+              ticket, just try to carry on and ignore them.
+            </Typography>
+            <Typography variant="projectP">
+              the game was made using unity and c#. for more details and
+              specific instructions/controls please see the{" "}
+              <InlineLink
+                href="https://github.com/mercedes-sandu/Papas-What-Is-Going-On-Eria/blob/main/README.md"
+                target="_blank"
+              >
+                readme file
+              </InlineLink>{" "}
+              for the game.
+            </Typography>
             <Features features={features} />
+            <Typography variant="projectP" sx={{ mt: 4 }}>
+              below are some screenshots for the game.
+            </Typography>
+            <LargeImage
+              src={orderReceipt}
+              alt="an order receipt for the game"
+              description="an order receipt for the game"
+            />
+            <LargeImage
+              src={cooker}
+              alt="the grill station where meat is cooked"
+              description="the grill station where meat is cooked"
+            />
+            <LargeImage
+              src={assembler}
+              alt="the station where the burger is assembled with toppings and condiments"
+              description="the station where the burger is assembled with toppings and condiments"
+            />
+            <LargeImage
+              src={sodaMachine}
+              alt="the soda machine where soda is poured into a cup"
+              description="the soda machine where soda is poured into a cup"
+            />
+            <Box sx={{ mt: 4, width: "100%", height: "auto", display: "flex" }}>
+              <RepositoryButton
+                url="https://github.com/mercedes-sandu/Papas-What-Is-Going-On-Eria"
+                name="papa's what-is-going-on-eria"
+                showIcon
+              />
+            </Box>
           </Box>
           <Footer />
         </Box>
