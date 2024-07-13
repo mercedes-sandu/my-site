@@ -28,6 +28,7 @@ declare module "@mui/material/styles" {
     projectTag: React.CSSProperties;
     projectP: React.CSSProperties;
     projectSubheader: React.CSSProperties;
+    projectOrganization: React.CSSProperties;
     codeTitle: React.CSSProperties;
     largeImageDescription: React.CSSProperties;
   }
@@ -45,6 +46,7 @@ declare module "@mui/material/styles" {
     projectTag?: React.CSSProperties;
     projectP?: React.CSSProperties;
     projectSubheader?: React.CSSProperties;
+    projectOrganization?: React.CSSProperties;
     codeTitle?: React.CSSProperties;
     largeImageDescription?: React.CSSProperties;
   }
@@ -64,6 +66,7 @@ declare module "@mui/material/Typography" {
     projectTag: true;
     projectP: true;
     projectSubheader: true;
+    projectOrganization: true;
     codeTitle: true;
     largeImageDescription: true;
   }
@@ -171,6 +174,14 @@ const typography: TypographyOptions = {
     textAlign: "left",
     textIndent: "0px",
   },
+  projectOrganization: {
+    fontFamily: "Cormorant Garamond",
+    fontSize: "24px",
+    fontWeight: 400,
+    letterSpacing: "1px",
+    textAlign: "left",
+    textIndent: "0px",
+  },
   codeTitle: {
     fontFamily: "monospace",
     fontSize: "18px",
@@ -194,10 +205,11 @@ const variantMapping = {
   filterLabel: "p",
   projectTitle: "h1",
   projectDates: "h3",
-  projectDescription: "h4",
+  projectDescription: "h5",
   projectTag: "p",
   projectP: "p",
   projectSubheader: "h2",
+  projectOrganization: "h4",
   codeTitle: "h6",
   largeImageDescription: "p",
 };

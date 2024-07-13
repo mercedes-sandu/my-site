@@ -125,8 +125,11 @@ function PapasWhatIsGoingOnEria({ darkMode, projectKey }: ProjectPageProps) {
             >
               {project.dates}
             </Typography>
-            <Typography variant="projectTitle" sx={{ mb: 6 }}>
+            <Typography variant="projectTitle" sx={{ mb: 4 }}>
               {project.title}
+            </Typography>
+            <Typography variant="projectOrganization" sx={{ mb: 2 }}>
+              {project.organization}
             </Typography>
             <Box
               sx={{

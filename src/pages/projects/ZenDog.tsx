@@ -7,19 +7,15 @@ import Footer from "../../components/Footer";
 import LargeImage from "../../components/LargeImage";
 import Features from "../../components/Features";
 import RepositoryButton from "../../components/RepositoryButton";
-import riverswoodTitle from "../../assets/images/projects/riverswood title.webp";
-import riverswoodOne from "../../assets/images/projects/riverswood 1.webp";
-import riverswoodTwo from "../../assets/images/projects/riverswood 2.webp";
-import riverswoodThree from "../../assets/images/projects/riverswood 3.webp";
-import riverswoodFour from "../../assets/images/projects/riverswood 4.webp";
-import riverswoodFive from "../../assets/images/projects/riverswood 5.webp";
+import zenDogLogo from "../../assets/images/projects/zendog.webp";
+import screenshots from "../../assets/images/projects/zendog screenshots.webp";
 
 interface ProjectPageProps {
   darkMode: boolean;
   projectKey: string;
 }
 
-function RiverswoodManor({ darkMode, projectKey }: ProjectPageProps) {
+function ZenDog({ darkMode, projectKey }: ProjectPageProps) {
   const project = projects[projectKey];
 
   if (!project) {
@@ -30,35 +26,33 @@ function RiverswoodManor({ darkMode, projectKey }: ProjectPageProps) {
 
   const features = [
     {
-      description: "3d first-person player controller",
+      description: "signing in with a google account",
       id: 0,
     },
     {
       description:
-        "a custom cursor in the center of the screen that changes when you can interact with an object",
+        "a signup form where the user fills in personal information as well as their dog's information, issues, and training preferences",
       id: 1,
     },
     {
       description:
-        "ui letters as clues, which can be stored in the player's inventory to be read again",
+        "a home page where the user receives a daily tip and can explore the different registered experts, filtered by dog issue (i.e., barking, crying, etc.)",
       id: 2,
     },
     {
-      description: "particle systems and animated objects upon interaction",
+      description:
+        "expert pages which display their information, contact points, and videos available to watch in the webapp",
       id: 3,
     },
     {
       description:
-        "collision detection that cues certain game events (i.e., letters sliding in from under a door or carpet)",
+        "on the expert pages, users can view the expert's content (youtube videos provided)",
       id: 4,
     },
     {
-      description: "an inventory system to store and view clues",
+      description:
+        "storage and retrieval of both user and expert information via firebase databases",
       id: 5,
-    },
-    {
-      description: "sound effects and music",
-      id: 6,
     },
   ];
 
@@ -167,68 +161,47 @@ function RiverswoodManor({ darkMode, projectKey }: ProjectPageProps) {
             }}
           >
             <LargeImage
-              src={riverswoodTitle}
-              alt="the start menu for the game"
-              description="the start menu for the game"
+              src={zenDogLogo}
+              alt="the zendog sign-in screen"
+              description="the zendog sign-in screen"
             />
             <Typography variant="projectP" sx={{ mb: 2 }}>
-              "riverswood manor" is a 3d game i made in two weeks for my final
-              project in comp_sci 376. you play as a butler in a manor where the
-              countess has been murdered by the count. you start in your room,
-              hearing a scream and seeing a note being slipped under your door
-              from the countess. from there, you must figure out how to escape
-              the manor. after escaping the room through the painting on the
-              wall, you enter the count's office, where you must solve a puzzle
-              to unlock the hidden door in the bookcase. the game ends when you
-              escape.
+              "zendog" was the second project my team worked on in comp_sci 394.
+              for this project, we partnered up with a team of clients from
+              northwestern's mpd 405 class. the clients were a group of students
+              who were interested in developing a webapp that would help dog
+              owners receive and explore personalized content to aid them in
+              improving their dog's behavior and training. we had five weeks to
+              complete this project.
             </Typography>
             <Typography variant="projectP" sx={{ mb: 2 }}>
-              there ar emultiple systems in play with this game, including cued
-              game events, an interaction system to pick up and touch various
-              objects, and a ui inventory system to store and view clues. the
-              office scene requires the player to listen to audio cues played
-              from a music box and find corresponding items in the room that
-              make the same sounds. these objects are distinctly colored red,
-              yellow, and green, matching the buttons on the wall by the
-              fireplace to make a code. if the right code is entered, the player
-              successfully escapes the manor.
+              the client team provided us with the app idea, a figma mockup, and
+              a list of user stories. we worked together to create a sprint plan
+              week by week and had weekly meetings to discuss what needed to be
+              done and the plan of action. my personal role in the project was
+              to communicate with the clients about the development team's
+              progress and to primarily implement the frontend aspects of the
+              app. i implemented the signup form and aided other developers with
+              the ui/ux for other pages and components. i also worked on setting
+              up the databases in firebase, and set up end-to-end as well as
+              unit testing for the app before delivering it to the clients at
+              the end of the quarter.
             </Typography>
             <Typography variant="projectP">
-              the game was made using unity and c#.
+              the webapp was developed using react, firebase, and mui. majority
+              of the languages used were javascript, css, and html. below are
+              some screenshots of the webapp.
             </Typography>
+            <LargeImage
+              src={screenshots}
+              alt="the onboarding form and home screen of the webapp"
+              description="the onboarding form and home screen of the webapp"
+            />
             <Features features={features} />
-            <Typography variant="projectP" sx={{ mt: 4 }}>
-              below are some screenshots for the game.
-            </Typography>
-            <LargeImage
-              src={riverswoodOne}
-              alt="the butler's bedroom"
-              description="the butler's bedroom"
-            />
-            <LargeImage
-              src={riverswoodTwo}
-              alt="the letter from the countess"
-              description="the letter from the countess"
-            />
-            <LargeImage
-              src={riverswoodThree}
-              alt="the inventory with stored clues"
-              description="the inventory with stored clues"
-            />
-            <LargeImage
-              src={riverswoodFour}
-              alt="the count's office"
-              description="the count's office"
-            />
-            <LargeImage
-              src={riverswoodFive}
-              alt="the fireplace in the count's office"
-              description="the fireplace in the count's office"
-            />
-            <Box sx={{ mt: 2, width: "100%", height: "auto", display: "flex" }}>
+            <Box sx={{ mt: 4, width: "100%", height: "auto", display: "flex" }}>
               <RepositoryButton
-                url="https://github.com/mercedes-sandu/Riverswood-Manor"
-                name="riverswood manor"
+                url="https://github.com/394-w23/DogSpace"
+                name="zendog"
               />
             </Box>
           </Box>
@@ -239,4 +212,4 @@ function RiverswoodManor({ darkMode, projectKey }: ProjectPageProps) {
   );
 }
 
-export default RiverswoodManor;
+export default ZenDog;

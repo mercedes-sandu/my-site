@@ -17,6 +17,7 @@ import SonglyBot from "./pages/projects/SonglyBot";
 import PapasWhatIsGoingOnEria from "./pages/projects/PapasWhatIsGoingOnEria";
 import WeThreeWitches from "./pages/projects/WeThreeWitches";
 import RiverswoodManor from "./pages/projects/RiverswoodManor";
+import ZenDog from "./pages/projects/ZenDog";
 
 function App() {
   const [darkMode, setDarkMode] = useState<boolean>(true);
@@ -96,6 +97,15 @@ function App() {
               <RiverswoodManor
                 darkMode={darkMode}
                 projectKey="riverswood-manor"
+              />
+            }
+          />
+          <Route
+            path="portfolio/zendog"
+            element={
+              <ZenDog
+                darkMode={darkMode}
+                projectKey="zendog"
               />
             }
           />

@@ -4,10 +4,8 @@ import verticalBarDarkLong from "../../assets/images/vertical bar dark long.svg"
 import ErrorPage from "../ErrorPage";
 import { projects } from "../Projects";
 import Footer from "../../components/Footer";
-import { InlineLink, ItalicText } from "../../components/StyledComponents";
 import LargeImage from "../../components/LargeImage";
 import Features from "../../components/Features";
-import RepositoryButton from "../../components/RepositoryButton";
 import songlyBotImage from "../../assets/images/projects/songlybot.webp";
 
 interface ProjectPageProps {
@@ -108,8 +106,11 @@ function SonglyBot({ darkMode, projectKey }: ProjectPageProps) {
             >
               {project.dates}
             </Typography>
-            <Typography variant="projectTitle" sx={{ mb: 6 }}>
+            <Typography variant="projectTitle" sx={{ mb: 4 }}>
               {project.title}
+            </Typography>
+            <Typography variant="projectOrganization" sx={{ mb: 2 }}>
+              {project.organization}
             </Typography>
             <Box
               sx={{
