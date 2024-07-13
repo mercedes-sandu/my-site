@@ -15,6 +15,7 @@ import Imaginarium from "./pages/projects/Imaginarium";
 import Intervallic from "./pages/projects/Intervallic";
 import SonglyBot from "./pages/projects/SonglyBot";
 import PapasWhatIsGoingOnEria from "./pages/projects/PapasWhatIsGoingOnEria";
+import WeThreeWitches from "./pages/projects/WeThreeWitches";
 
 function App() {
   const [darkMode, setDarkMode] = useState<boolean>(true);
@@ -76,6 +77,15 @@ function App() {
               <PapasWhatIsGoingOnEria
                 darkMode={darkMode}
                 projectKey="papas-what-is-going-on-eria"
+              />
+            }
+          />
+          <Route
+            path="portfolio/we-three-witches"
+            element={
+              <WeThreeWitches
+                darkMode={darkMode}
+                projectKey="we-three-witches"
               />
             }
           />

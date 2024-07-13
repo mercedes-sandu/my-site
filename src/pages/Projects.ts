@@ -263,7 +263,7 @@ export const projects: Record<string, Project> = {
     repository: "",
     navTo: "we-three-witches",
     mxrkdownUrl: "",
-    display: false,
+    display: true,
   },
   "papas-what-is-going-on-eria": {
     title: "papa's what-is-going-on-eria",

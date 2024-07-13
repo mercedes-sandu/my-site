@@ -12,7 +12,7 @@ import verticalBarDarkLong from "../../assets/images/vertical bar dark long.svg"
 import ErrorPage from "../ErrorPage";
 import { projects } from "../Projects";
 import Footer from "../../components/Footer";
-import { InlineLink, ItalicText } from "../../components/StyledComponents";
+import { InlineLink } from "../../components/StyledComponents";
 import LargeImage from "../../components/LargeImage";
 import Features from "../../components/Features";
 import RepositoryButton from "../../components/RepositoryButton";
@@ -284,11 +284,10 @@ function PapasWhatIsGoingOnEria({ darkMode, projectKey }: ProjectPageProps) {
               alt="the soda machine where soda is poured into a cup"
               description="the soda machine where soda is poured into a cup"
             />
-            <Box sx={{ mt: 4, width: "100%", height: "auto", display: "flex" }}>
+            <Box sx={{ mt: 2, width: "100%", height: "auto", display: "flex" }}>
               <RepositoryButton
                 url="https://github.com/mercedes-sandu/Papas-What-Is-Going-On-Eria"
                 name="papa's what-is-going-on-eria"
-                showIcon
               />
             </Box>
           </Box>
