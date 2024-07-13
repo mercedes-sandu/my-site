@@ -16,6 +16,7 @@ import Intervallic from "./pages/projects/Intervallic";
 import SonglyBot from "./pages/projects/SonglyBot";
 import PapasWhatIsGoingOnEria from "./pages/projects/PapasWhatIsGoingOnEria";
 import WeThreeWitches from "./pages/projects/WeThreeWitches";
+import RiverswoodManor from "./pages/projects/RiverswoodManor";
 
 function App() {
   const [darkMode, setDarkMode] = useState<boolean>(true);
@@ -86,6 +87,15 @@ function App() {
               <WeThreeWitches
                 darkMode={darkMode}
                 projectKey="we-three-witches"
+              />
+            }
+          />
+          <Route
+            path="portfolio/riverswood-manor"
+            element={
+              <RiverswoodManor
+                darkMode={darkMode}
+                projectKey="riverswood-manor"
               />
             }
           />

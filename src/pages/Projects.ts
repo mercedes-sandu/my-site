@@ -245,7 +245,7 @@ export const projects: Record<string, Project> = {
     repository: "",
     navTo: "riverswood-manor",
     mxrkdownUrl: "",
-    display: false,
+    display: true,
   },
   "we-three-witches": {
     title: "we three witches",
