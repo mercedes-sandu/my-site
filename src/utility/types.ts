@@ -1,5 +1,5 @@
 export type mxrkdownElement =
-  | { type: "paragraph"; content: string }
+  | { type: "paragraph"; content: any[] }
   | { type: "coverImage"; url: string }
   | { type: "inParagraphImage"; url: string }
   | { type: "screenshot"; url: string }

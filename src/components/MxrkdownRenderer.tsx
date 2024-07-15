@@ -1,5 +1,6 @@
 import { mxrkdownElement } from "../utility/types";
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
+import { InlineLink, ItalicText } from "./StyledComponents";
 
 interface MxrkdownRendererProps {
   elements: mxrkdownElement[];
@@ -7,14 +8,34 @@ interface MxrkdownRendererProps {
 
 function MxrkdownRenderer({ elements }: MxrkdownRendererProps) {
   return (
-    <div>
+    <Box>
       {elements.map((element, index) => {
         switch (element.type) {
           case "paragraph":
+            const parsedContent = element.content.map((content, index) => {
+              console.log("content: ", content);
+              switch (content.type) {
+                case "text":
+                  return <span key={index}>{content.content}</span>;
+                case "link":
+                  return (
+                    <InlineLink key={index} href={content.url}>
+                      {content.text}
+                    </InlineLink>
+                  );
+                case "italic":
+                  return <ItalicText key={index}>{content.content}</ItalicText>;
+                case "bold":
+                  return <strong key={index}>{content.content}</strong>;
+                default:
+                  return null;
+              }
+            });
+            console.log("parsed content: ", parsedContent);
             return (
               <Typography
                 key={index}
-                dangerouslySetInnerHTML={{ __html: element.content }}
+                dangerouslySetInnerHTML={{ __html: parsedContent }}
                 variant="body1"
               />
             );
@@ -76,7 +97,7 @@ function MxrkdownRenderer({ elements }: MxrkdownRendererProps) {
             return null;
         }
       })}
-    </div>
+    </Box>
   );
 }
 

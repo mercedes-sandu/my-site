@@ -34,10 +34,10 @@ function ProjectPage({ darkMode }: ProjectPageProps) {
         );
         const text = await response.text();
         const parsedElements = parseMxrkdown(text);
-        console.log("parsed elements: " + parsedElements);
         setElements(parsedElements);
       } catch (error) {
         console.error(`Error fetching mxrkdown: ${error}`);
+        // TODO: redirect to error page
       }
     };
 
@@ -90,12 +90,19 @@ function ProjectPage({ darkMode }: ProjectPageProps) {
           }}
         >
           <Box sx={{ width: "100%", display: "flex", flexDirection: "column" }}>
+<<<<<<< Updated upstream
+=======
+            <Typography variant="h1" sx={{ mb: 1 }}>
+              {project.title}
+            </Typography>
+>>>>>>> Stashed changes
             <Typography
               variant="projectDates"
               color={theme.palette.secondary.main}
             >
               {project.dates}
             </Typography>
+<<<<<<< Updated upstream
             <Typography variant="projectTitle" sx={{ mb: 4 }}>
               {project.title}
             </Typography>
@@ -131,6 +138,9 @@ function ProjectPage({ darkMode }: ProjectPageProps) {
               ))}
             </Box>
             <Typography variant="projectDescription" sx={{ mb: 4 }}>
+=======
+            <Typography variant="body1" sx={{ mb: 4, textIndent: "0px" }}>
+>>>>>>> Stashed changes
               {project.description}
             </Typography>
             <MxrkdownRenderer elements={elements} />
