@@ -18,6 +18,7 @@ import PapasWhatIsGoingOnEria from "./pages/projects/PapasWhatIsGoingOnEria";
 import WeThreeWitches from "./pages/projects/WeThreeWitches";
 import RiverswoodManor from "./pages/projects/RiverswoodManor";
 import ZenDog from "./pages/projects/ZenDog";
+import DiningInformant from "./pages/projects/DiningInformant";
 
 function App() {
   const [darkMode, setDarkMode] = useState<boolean>(true);
@@ -106,6 +107,15 @@ function App() {
               <ZenDog
                 darkMode={darkMode}
                 projectKey="zendog"
+              />
+            }
+          />
+          <Route
+            path="portfolio/dininginformant"
+            element={
+              <DiningInformant
+                darkMode={darkMode}
+                projectKey="dininginformant"
               />
             }
           />
