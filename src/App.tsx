@@ -19,6 +19,7 @@ import WeThreeWitches from "./pages/projects/WeThreeWitches";
 import RiverswoodManor from "./pages/projects/RiverswoodManor";
 import ZenDog from "./pages/projects/ZenDog";
 import DiningInformant from "./pages/projects/DiningInformant";
+import WhenTheDevilTakesHold from "./pages/projects/WhenTheDevilTakesHold";
 
 function App() {
   const [darkMode, setDarkMode] = useState<boolean>(true);
@@ -116,6 +117,15 @@ function App() {
               <DiningInformant
                 darkMode={darkMode}
                 projectKey="dininginformant"
+              />
+            }
+          />
+          <Route
+            path="portfolio/when-the-devil-takes-hold"
+            element={
+              <WhenTheDevilTakesHold
+                darkMode={darkMode}
+                projectKey="when-the-devil-takes-hold"
               />
             }
           />

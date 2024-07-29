@@ -60,17 +60,6 @@ export const projects: Record<string, Project> = {
     mxrkdownUrl: "",
     display: false,
   },
-  "abbott-internship": {
-    title: "abbott internship",
-    dates: "june 2023 to september 2023",
-    organization: "abbott laboratories",
-    description:
-      "the projects i worked on during my time as an intern at abbott.",
-    tags: ["figma", "typescript", "react", "web dev"],
-    navTo: "abbott-internship",
-    mxrkdownUrl: "",
-    display: false,
-  },
   "ocean-cleanup": {
     title: "ocean cleanup",
     dates: "april 2023 to may 2023",
@@ -136,7 +125,7 @@ export const projects: Record<string, Project> = {
     tags: ["c#", "unity"],
     navTo: "when-the-devil-takes-hold",
     mxrkdownUrl: "",
-    display: false,
+    display: true,
   },
   "riverswood-manor": {
     title: "riverswood manor",
