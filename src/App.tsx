@@ -21,6 +21,7 @@ import ZenDog from "./pages/projects/ZenDog";
 import DiningInformant from "./pages/projects/DiningInformant";
 import WhenTheDevilTakesHold from "./pages/projects/WhenTheDevilTakesHold";
 import OceanCleanup from "./pages/projects/OceanCleanup";
+import SmartContextStories from "./pages/projects/SmartContextStories";
 
 function App() {
   const [darkMode, setDarkMode] = useState<boolean>(true);
@@ -136,6 +137,15 @@ function App() {
               <OceanCleanup
                 darkMode={darkMode}
                 projectKey="ocean-cleanup"
+              />
+            }
+          />
+          <Route
+            path="portfolio/smart-context-stories"
+            element={
+              <SmartContextStories
+                darkMode={darkMode}
+                projectKey="smart-context-stories"
               />
             }
           />

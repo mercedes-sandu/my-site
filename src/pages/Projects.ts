@@ -92,7 +92,7 @@ export const projects: Record<string, Project> = {
     tags: ["figma", "javascript", "openai", "react", "web dev"],
     navTo: "smart-context-stories",
     mxrkdownUrl: "",
-    display: false,
+    display: true,
   },
   "zendog": {
     title: "zendog",
