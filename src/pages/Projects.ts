@@ -69,7 +69,7 @@ export const projects: Record<string, Project> = {
     tags: ["c#", "unity"],
     navTo: "ocean-cleanup",
     mxrkdownUrl: "",
-    display: false,
+    display: true,
   },
   "catsat": {
     title: "catsat",
