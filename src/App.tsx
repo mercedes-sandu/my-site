@@ -22,6 +22,7 @@ import DiningInformant from "./pages/projects/DiningInformant";
 import WhenTheDevilTakesHold from "./pages/projects/WhenTheDevilTakesHold";
 import OceanCleanup from "./pages/projects/OceanCleanup";
 import SmartContextStories from "./pages/projects/SmartContextStories";
+import BudgetBuddy from "./pages/projects/BudgetBuddy";
 
 function App() {
   const [darkMode, setDarkMode] = useState<boolean>(true);
@@ -146,6 +147,15 @@ function App() {
               <SmartContextStories
                 darkMode={darkMode}
                 projectKey="smart-context-stories"
+              />
+            }
+          />
+          <Route
+            path="portfolio/budgetbuddy"
+            element={
+              <BudgetBuddy
+                darkMode={darkMode}
+                projectKey="budgetbuddy"
               />
             }
           />

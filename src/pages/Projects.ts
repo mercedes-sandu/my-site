@@ -10,11 +10,32 @@ export interface Project {
 }
 
 export const projects: Record<string, Project> = {
+  catsat: {
+    title: "catsat",
+    dates: "march 2023 to present",
+    organization: "computer science research",
+    description:
+      "a sat solver developed by dr. ian horswill that uses an optimized walksat algorithm to solve constraint problems and pseudoboolean constraint problems.",
+    tags: [
+      "catsat",
+      "cs research",
+      "c#",
+      "imaginarium",
+      "figma",
+      "typescript",
+      "react",
+      "web dev",
+    ],
+    navTo: "catsat",
+    mxrkdownUrl: "",
+    display: false,
+  },
   "pour-decisions": {
     title: "pour decisions",
     dates: "april 2024 to may 2024",
     organization: "progression mechanics game jam 2024",
-    description: "",
+    description:
+      "a narrative, dialogue-based game about a decommissioned android and a homesick bartender.",
     tags: ["c#", "unity"],
     navTo: "pour-decisions",
     mxrkdownUrl: "",
@@ -24,7 +45,8 @@ export const projects: Record<string, Project> = {
     title: "8-bit gambit",
     dates: "november 2023 to december 2023",
     organization: "1-button game jam 2023",
-    description: "",
+    description:
+      "a game where you use a single button to destroy your opponent's chess pieces across multiple levels.",
     tags: ["c#", "unity"],
     navTo: "8-bit-gambit",
     mxrkdownUrl: "",
@@ -34,31 +56,34 @@ export const projects: Record<string, Project> = {
     title: "non-negative news",
     dates: "december 2023",
     organization: "comp_sci 392-0: rapid software prototyping",
-    description: "",
+    description:
+      "a webapp that provides users with positive news stories to counteract the negativity in the media.",
     tags: ["figma", "javascript", "react", "web dev"],
     navTo: "non-negative-news",
     mxrkdownUrl: "",
     display: false,
   },
-  "gymcats": {
+  gymcats: {
     title: "gymcats",
     dates: "november 2023",
     organization: "comp_sci 392-0: rapid software prototyping",
-    description: "",
+    description:
+      "a webapp that matches users with workout buddies based on their preferences and schedules.",
     tags: ["figma", "javascript", "react", "web dev"],
     navTo: "gymcats",
     mxrkdownUrl: "",
     display: false,
   },
-  "budgetbuddy": {
+  budgetbuddy: {
     title: "budgetbuddy",
     dates: "october 2023",
     organization: "comp_sci 392-0: rapid software prototyping",
-    description: "",
+    description:
+      "a webapp for users to budget their money and track their expenses.",
     tags: ["figma", "javascript", "react", "web dev"],
     navTo: "budgetbuddy",
     mxrkdownUrl: "",
-    display: false,
+    display: true,
   },
   "ocean-cleanup": {
     title: "ocean cleanup",
@@ -68,17 +93,6 @@ export const projects: Record<string, Project> = {
       "a low-poly 3d ocean exploration and cleanup game made for the 2023 progression mechanics game jam.",
     tags: ["c#", "unity"],
     navTo: "ocean-cleanup",
-    mxrkdownUrl: "",
-    display: true,
-  },
-  "catsat": {
-    title: "catsat",
-    dates: "march 2023 to present",
-    organization: "computer science research",
-    description:
-      "a sat solver developed by dr. ian horswill that uses an optimized walksat algorithm to solve constraint problems and pseudoboolean constraint problems.",
-    tags: ["catsat", "cs research", "c#", "imaginarium", "figma", "typescript", "react", "web dev"],
-    navTo: "catsat",
     mxrkdownUrl: "",
     display: true,
   },
@@ -94,7 +108,7 @@ export const projects: Record<string, Project> = {
     mxrkdownUrl: "",
     display: true,
   },
-  "zendog": {
+  zendog: {
     title: "zendog",
     dates: "february 2023 to march 2023",
     organization: "comp_sci 394-0: agile software development",
@@ -105,7 +119,7 @@ export const projects: Record<string, Project> = {
     mxrkdownUrl: "",
     display: true,
   },
-  "dininginformant": {
+  dininginformant: {
     title: "dininginformant",
     dates: "january 2023 to february 2023",
     organization: "comp_sci 394-0: agile software development",
@@ -160,7 +174,7 @@ export const projects: Record<string, Project> = {
     mxrkdownUrl: "",
     display: true,
   },
-  "songlybot": {
+  songlybot: {
     title: "songlybot",
     dates: "july 2022 to august 2022",
     organization: "overture games",
@@ -171,7 +185,7 @@ export const projects: Record<string, Project> = {
     mxrkdownUrl: "",
     display: true,
   },
-  "intervallic": {
+  intervallic: {
     title: "intervallic",
     dates: "june 2022 to october 2023",
     organization: "overture games",
@@ -182,7 +196,7 @@ export const projects: Record<string, Project> = {
     mxrkdownUrl: "/intervallic.mxr",
     display: true,
   },
-  "imaginarium": {
+  imaginarium: {
     title: "imaginarium",
     dates: "march 2022 to june 2024",
     organization: "computer science research",
