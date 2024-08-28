@@ -23,6 +23,7 @@ import WhenTheDevilTakesHold from "./pages/projects/WhenTheDevilTakesHold";
 import OceanCleanup from "./pages/projects/OceanCleanup";
 import SmartContextStories from "./pages/projects/SmartContextStories";
 import BudgetBuddy from "./pages/projects/BudgetBuddy";
+import GymCats from "./pages/projects/GymCats";
 
 function App() {
   const [darkMode, setDarkMode] = useState<boolean>(true);
@@ -156,6 +157,15 @@ function App() {
               <BudgetBuddy
                 darkMode={darkMode}
                 projectKey="budgetbuddy"
+              />
+            }
+          />
+          <Route
+            path="portfolio/gymcats"
+            element={
+              <GymCats
+                darkMode={darkMode}
+                projectKey="gymcats"
               />
             }
           />
