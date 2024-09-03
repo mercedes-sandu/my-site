@@ -39,18 +39,17 @@ function NonNegativeNews({ darkMode, projectKey }: ProjectPageProps) {
       id: 2,
     },
     {
-      description:
-        "a friends page that shows the user's accepted workout buddies as well as incoming friend requests",
+      description: "a bookmarking feature to save stories for later",
       id: 3,
     },
     {
       description:
-        "a profile page where the user can edit their personal details and workout buddy preferences",
+        "a sharing feature to share stories with friends on various social media",
       id: 4,
     },
     {
       description:
-        "a notification bubble that appears on the navigation bar when the user has a new friend request or a new workout buddy match",
+        "a profile page that displays the user's saved stories and preferred topics",
       id: 5,
     },
   ];
