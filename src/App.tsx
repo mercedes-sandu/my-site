@@ -24,6 +24,7 @@ import OceanCleanup from "./pages/projects/OceanCleanup";
 import SmartContextStories from "./pages/projects/SmartContextStories";
 import BudgetBuddy from "./pages/projects/BudgetBuddy";
 import GymCats from "./pages/projects/GymCats";
+import NonNegativeNews from "./pages/projects/NonNegativeNews";
 
 function App() {
   const [darkMode, setDarkMode] = useState<boolean>(true);
@@ -166,6 +167,15 @@ function App() {
               <GymCats
                 darkMode={darkMode}
                 projectKey="gymcats"
+              />
+            }
+          />
+          <Route
+            path="portfolio/non-negative-news"
+            element={
+              <NonNegativeNews
+                darkMode={darkMode}
+                projectKey="non-negative-news"
               />
             }
           />
