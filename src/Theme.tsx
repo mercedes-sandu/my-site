@@ -35,6 +35,10 @@ declare module "@mui/material/styles" {
     h2mobile: React.CSSProperties;
     descriptionMobile: React.CSSProperties;
     body1mobile: React.CSSProperties;
+    cardHeaderMobile: React.CSSProperties;
+    cardSubheaderMobile: React.CSSProperties;
+    cardBodyMobile: React.CSSProperties;
+    cardTagMobile: React.CSSProperties;
   }
 
   interface TypographyVariantsOptions {
@@ -57,6 +61,10 @@ declare module "@mui/material/styles" {
     h2mobile?: React.CSSProperties;
     descriptionMobile?: React.CSSProperties;
     body1mobile?: React.CSSProperties;
+    cardHeaderMobile?: React.CSSProperties;
+    cardSubheaderMobile?: React.CSSProperties;
+    cardBodyMobile?: React.CSSProperties;
+    cardTagMobile?: React.CSSProperties;
   }
 }
 
@@ -81,6 +89,10 @@ declare module "@mui/material/Typography" {
     h2mobile: true;
     descriptionMobile: true;
     body1mobile: true;
+    cardHeaderMobile: true;
+    cardSubheaderMobile: true;
+    cardBodyMobile: true;
+    cardTagMobile: true;
   }
 }
 
@@ -231,7 +243,27 @@ const typography: TypographyOptions = {
     fontWeight: 400,
     textAlign: "justify",
     textIndent: "24px",
-  }
+  },
+  cardHeaderMobile: {
+    fontFamily: "Meqanor",
+    fontSize: "32px",
+  },
+  cardSubheaderMobile: {
+    fontFamily: "Cormorant Garamond",
+    fontSize: "18px",
+    fontWeight: 700,
+    letterSpacing: "4px",
+  },
+  cardBodyMobile: {
+    fontFamily: "Cormorant Garamond",
+    fontSize: "22px",
+    fontWeight: 400,
+  },
+  cardTagMobile: {
+    fontFamily: "Cormorant Garamond",
+    fontSize: "14px",
+    fontWeight: 400,
+  },
 };
 
 const variantMapping = {
@@ -253,6 +285,10 @@ const variantMapping = {
   h1mobile: "h1",
   descriptionMobile: "p",
   body1mobile: "p",
+  cardHeaderMobile: "h1",
+  cardSubheaderMobile: "h2",
+  cardBodyMobile: "p",
+  cardTagMobile: "p",
 };
 
 export const darkTheme = createTheme({

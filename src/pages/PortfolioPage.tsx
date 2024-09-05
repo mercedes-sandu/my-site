@@ -1,7 +1,6 @@
 import {
   Box,
   Container,
-  Select,
   ToggleButton,
   ToggleButtonGroup,
   Typography,
@@ -12,7 +11,7 @@ import verticalBarDarkLong from "../assets/images/vertical bar dark long.svg";
 import horizontalBarLight from "../assets/images/horizontal bar light.svg";
 import horizontalBarDark from "../assets/images/horizontal bar dark.svg";
 import { projects, tags } from "./Projects";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import ProjectCard from "../components/ProjectCard";
 import { useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
@@ -181,6 +180,7 @@ function PortfolioPage({ darkMode, isMobile }: PortfolioPageProps) {
                     description={project.description}
                     tags={project.tags}
                     onClick={() => navigate(`/portfolio/${project.navTo}`)}
+                    isMobile={false}
                   />
                 )
             )}
@@ -232,11 +232,33 @@ function PortfolioPage({ darkMode, isMobile }: PortfolioPageProps) {
           src={darkMode ? horizontalBarLight : horizontalBarDark}
           sx={{ mb: 3 }}
         />
-        <Typography variant="body1mobile" sx={{ mb: 2 }}>
+        <Typography variant="body1mobile" sx={{ mb: 4 }}>
           below you'll find a collection of some projects i have completed and
-          others that are still in progress. feel free to use the filters to
-          sort them by programming language or topic.
+          others that are still in progress.
         </Typography>
+        {/* TODO: implement filters i can't do select right now */}
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          {Object.values(cards).map(
+            (project: any) =>
+              project.display && (
+                <ProjectCard
+                  key={project.title}
+                  title={project.title}
+                  dates={project.dates}
+                  description={project.description}
+                  tags={project.tags}
+                  onClick={() => navigate(`/portfolio/${project.navTo}`)}
+                  isMobile
+                />
+              )
+          )}
+        </Box>
         <Footer />
       </Box>
     </Container>

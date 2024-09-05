@@ -13,14 +13,22 @@ interface ProjectCardProps {
   description: string;
   tags: string[];
   onClick?: () => void;
+  isMobile: boolean;
 }
 
-function ProjectCard({ title, dates, description, tags, onClick }: ProjectCardProps) {
+function ProjectCard({
+  title,
+  dates,
+  description,
+  tags,
+  onClick,
+  isMobile,
+}: ProjectCardProps) {
   const theme = useTheme();
   return (
     <Card
       sx={{
-        width: "40%",
+        width: isMobile ? "85%" : "40%",
         height: "auto",
         minHeight: "300px",
         borderRadius: "30px",
@@ -45,21 +53,42 @@ function ProjectCard({ title, dates, description, tags, onClick }: ProjectCardPr
         }}
         disableRipple
       >
-        <CardContent sx={{ width: "100%", height: "100%", padding: "30px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+        <CardContent
+          sx={{
+            width: "100%",
+            height: "100%",
+            padding: "30px",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+          }}
+        >
           <Typography
-            variant="cardSubheader"
+            variant={isMobile ? "cardSubheaderMobile" : "cardSubheader"}
             color={theme.palette.secondary.main}
+            sx={{ mb: isMobile ? 2 : 0 }}
           >
             {dates}
           </Typography>
-          <Typography variant="cardHeader">{title}</Typography>
-          <Typography variant="cardBody">{description}</Typography>
+          <Typography
+            variant={isMobile ? "cardHeaderMobile" : "cardHeader"}
+            sx={{ mb: isMobile ? 2 : 0 }}
+          >
+            {title}
+          </Typography>
+          <Typography
+            variant={isMobile ? "cardBodyMobile" : "cardBody"}
+            sx={{ mb: isMobile ? 2 : 0 }}
+          >
+            {description}
+          </Typography>
           <Box
             sx={{
               width: "100%",
               height: "auto",
               display: "flex",
-              flexWrap: "wrap"
+              flexWrap: "wrap",
+              mt: 2,
             }}
           >
             {tags.map((tag) => (
@@ -78,7 +107,9 @@ function ProjectCard({ title, dates, description, tags, onClick }: ProjectCardPr
                 }}
                 key={tag}
               >
-                <Typography variant="cardTag">{tag}</Typography>
+                <Typography variant={isMobile ? "cardTagMobile" : "cardTag"}>
+                  {tag}
+                </Typography>
               </Box>
             ))}
           </Box>
