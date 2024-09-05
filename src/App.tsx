@@ -54,7 +54,7 @@ function App() {
           />
           <Route
             path="portfolio"
-            element={<PortfolioPage darkMode={darkMode} />}
+            element={<PortfolioPage darkMode={darkMode} isMobile={isMobile} />}
           />
           {/* TODO: remove this when mxrkdown parsing works */}
 

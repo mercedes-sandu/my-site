@@ -1,6 +1,7 @@
 import {
   Box,
   Container,
+  Select,
   ToggleButton,
   ToggleButtonGroup,
   Typography,
@@ -8,6 +9,8 @@ import {
 } from "@mui/material";
 import verticalBarLightLong from "../assets/images/vertical bar light long.svg";
 import verticalBarDarkLong from "../assets/images/vertical bar dark long.svg";
+import horizontalBarLight from "../assets/images/horizontal bar light.svg";
+import horizontalBarDark from "../assets/images/horizontal bar dark.svg";
 import { projects, tags } from "./Projects";
 import { useEffect, useState } from "react";
 import ProjectCard from "../components/ProjectCard";
@@ -16,9 +19,10 @@ import Footer from "../components/Footer";
 
 interface PortfolioPageProps {
   darkMode: boolean;
+  isMobile: boolean;
 }
 
-function PortfolioPage({ darkMode }: PortfolioPageProps) {
+function PortfolioPage({ darkMode, isMobile }: PortfolioPageProps) {
   const theme = useTheme();
   const navigate = useNavigate();
 
@@ -39,14 +43,9 @@ function PortfolioPage({ darkMode }: PortfolioPageProps) {
         })
       );
     }
-    console.log(cards);
   };
 
-  useEffect(() => {
-    setCards(projects);
-  }, [selectedTags]);
-
-  return (
+  return !isMobile ? (
     <Container
       sx={{
         position: "absolute",
@@ -188,6 +187,57 @@ function PortfolioPage({ darkMode }: PortfolioPageProps) {
           </Box>
           <Footer />
         </Box>
+      </Box>
+    </Container>
+  ) : (
+    <Container
+      sx={{
+        position: "absolute",
+        top: "120px",
+        left: 0,
+        width: "100%",
+        display: "flex",
+        "&.MuiContainer-root": {
+          pl: "10vw",
+          pr: "10vw",
+        },
+      }}
+      maxWidth={false}
+    >
+      <Box
+        sx={{
+          width: "100%",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          mt: 10,
+        }}
+      >
+        <Typography
+          variant="h1mobile"
+          sx={{ color: theme.palette.text.primary, mb: 3 }}
+        >
+          portfolio
+        </Typography>
+        <Typography
+          variant="h2mobile"
+          sx={{ color: theme.palette.secondary.main, mb: 2 }}
+        >
+          my projects
+        </Typography>
+        <Box
+          component="img"
+          height="50px"
+          src={darkMode ? horizontalBarLight : horizontalBarDark}
+          sx={{ mb: 3 }}
+        />
+        <Typography variant="body1mobile" sx={{ mb: 2 }}>
+          below you'll find a collection of some projects i have completed and
+          others that are still in progress. feel free to use the filters to
+          sort them by programming language or topic.
+        </Typography>
+        <Footer />
       </Box>
     </Container>
   );
