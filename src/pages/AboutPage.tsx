@@ -116,7 +116,7 @@ function AboutPage({ darkMode, isMobile }: AboutPageProps) {
                   }}
                 >
                   <ListItemText>
-                    <Typography variant="body1mobile" sx={{ textIndent: "0px" }}>
+                    <Typography variant="body1" sx={{ textIndent: "0px" }}>
                       an undergraduate{" "}
                       <InlineNavLink to="/portfolio/polygonal-folding">
                         mathematics researcher
@@ -133,7 +133,7 @@ function AboutPage({ darkMode, isMobile }: AboutPageProps) {
                   }}
                 >
                   <ListItemText>
-                    <Typography variant="body1mobile" sx={{ textIndent: "0px" }}>
+                    <Typography variant="body1" sx={{ textIndent: "0px" }}>
                       {/* TODO: add link to catsat page */}a graduate{" "}
                       <InlineLink>computer science researcher</InlineLink>{" "}
                       exploring the use of logic programming and traditional AI
@@ -148,7 +148,7 @@ function AboutPage({ darkMode, isMobile }: AboutPageProps) {
                   }}
                 >
                   <ListItemText>
-                    <Typography variant="body1mobile" sx={{ textIndent: "0px" }}>
+                    <Typography variant="body1" sx={{ textIndent: "0px" }}>
                       a frontend lead and software engineer of{" "}
                       <InlineLink>intervallic</InlineLink> at{" "}
                       <InlineLink
@@ -228,10 +228,7 @@ function AboutPage({ darkMode, isMobile }: AboutPageProps) {
         top: "120px",
         left: 0,
         width: "100%",
-        height: "calc(100% - 120px)",
         display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
         "&.MuiContainer-root": {
           pl: "10vw",
           pr: "10vw",
@@ -246,7 +243,7 @@ function AboutPage({ darkMode, isMobile }: AboutPageProps) {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          pt: 8,
+          mt: 10,
         }}
       >
         <Typography
@@ -284,6 +281,7 @@ function AboutPage({ darkMode, isMobile }: AboutPageProps) {
               pt: 0,
               pb: 0,
             },
+            mb: 2,
           }}
         >
           <ListItem
@@ -342,6 +340,44 @@ function AboutPage({ darkMode, isMobile }: AboutPageProps) {
             </ListItemText>
           </ListItem>
         </List>
+        <Typography variant="body1mobile" sx={{ mb: 2 }}>
+          currently, i work at{" "}
+          <InlineLink href="https://www.abbott.com" target="_blank">
+            abbott
+          </InlineLink>{" "}
+          in{" "}
+          <InlineLink
+            href="https://www.abbott.com/careers/students/development-programs.html"
+            target="_blank"
+          >
+            itpdp
+          </InlineLink>{" "}
+          (information technology professional development program). i'm doing
+          software development and design work for my first rotation of the next
+          six months.
+        </Typography>
+        <Typography variant="body1mobile" sx={{ mb: 2 }}>
+          aside from my work, i love making video games and working on video
+          game AI research. i adore collaborating with peers, participating in
+          game jams, and writing about my findings and{" "}
+          <InlineNavLink to="/portfolio">projects</InlineNavLink>.
+        </Typography>
+        <Typography variant="body1mobile" sx={{ mb: 2 }}>
+          in my free time, i love to play video games (
+          <ItalicText>nier: automata</ItalicText>,{" "}
+          <ItalicText>persona 5 royal</ItalicText>, and{" "}
+          <ItalicText>final fantasy xvi</ItalicText> are some of my favorites),
+          play piano,{" "}
+          <InlineLink href="https://musescore.com/user/917141" target="_blank">
+            arrange music
+          </InlineLink>
+          , create art, and read.
+        </Typography>
+        <Typography variant="body1mobile">
+          questions or comments? feel free to{" "}
+          <InlineLink href="mailto:mxrcedes@gmail.com">email me</InlineLink>!
+        </Typography>
+        <Footer />
       </Box>
     </Container>
   );

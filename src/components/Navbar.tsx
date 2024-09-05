@@ -104,6 +104,7 @@ function Navbar({ darkMode, isMobile, setDarkMode }: NavbarProps) {
           position: "fixed",
           top: 0,
           width: "100%",
+          height: "120px",
           backgroundColor: theme.palette.background.default,
           zIndex: 1000,
         }}
@@ -119,6 +120,7 @@ function Navbar({ darkMode, isMobile, setDarkMode }: NavbarProps) {
             top: "40px",
             pl: "30px",
             pr: "30px",
+            background: theme.palette.background.default,
             borderTop: `2px solid ${theme.palette.text.primary}`,
             borderBottom: `2px solid ${theme.palette.text.primary}`,
           }}
