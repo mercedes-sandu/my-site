@@ -4,10 +4,6 @@ import verticalBarDarkLong from "../assets/images/vertical bar dark long.svg";
 import ErrorPage from "./ErrorPage";
 import { useParams } from "react-router-dom";
 import { projects } from "./Projects";
-import MxrkdownRenderer from "../components/MxrkdownRenderer";
-import { parseMxrkdown } from "../utility/parser";
-import { mxrkdownElement } from "../utility/types";
-import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 
 interface ProjectPageProps {
@@ -23,26 +19,6 @@ function ProjectPage({ darkMode }: ProjectPageProps) {
   }
 
   const theme = useTheme();
-
-  const [elements, setElements] = useState<mxrkdownElement[]>([]);
-
-  useEffect(() => {
-    const fetchMxrkdown = async () => {
-      try {
-        const response = await fetch(
-          `../mxrkdowns/projects/${project.mxrkdownUrl}`
-        );
-        const text = await response.text();
-        const parsedElements = parseMxrkdown(text);
-        setElements(parsedElements);
-      } catch (error) {
-        console.error(`Error fetching mxrkdown: ${error}`);
-        // TODO: redirect to error page
-      }
-    };
-
-    fetchMxrkdown();
-  }, []);
 
   return (
     <Container
@@ -90,19 +66,6 @@ function ProjectPage({ darkMode }: ProjectPageProps) {
           }}
         >
           <Box sx={{ width: "100%", display: "flex", flexDirection: "column" }}>
-<<<<<<< Updated upstream
-=======
-            <Typography variant="h1" sx={{ mb: 1 }}>
-              {project.title}
-            </Typography>
->>>>>>> Stashed changes
-            <Typography
-              variant="projectDates"
-              color={theme.palette.secondary.main}
-            >
-              {project.dates}
-            </Typography>
-<<<<<<< Updated upstream
             <Typography variant="projectTitle" sx={{ mb: 4 }}>
               {project.title}
             </Typography>
@@ -138,12 +101,9 @@ function ProjectPage({ darkMode }: ProjectPageProps) {
               ))}
             </Box>
             <Typography variant="projectDescription" sx={{ mb: 4 }}>
-=======
-            <Typography variant="body1" sx={{ mb: 4, textIndent: "0px" }}>
->>>>>>> Stashed changes
               {project.description}
             </Typography>
-            <MxrkdownRenderer elements={elements} />
+            {project.content}
           </Box>
           <Footer />
         </Box>

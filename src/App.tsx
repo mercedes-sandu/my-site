@@ -10,25 +10,6 @@ import PortfolioPage from "./pages/PortfolioPage";
 import ProjectPage from "./pages/ProjectPage";
 import ScrollToTop from "./components/ScrollToTop";
 
-// TODO: remove these imports when mxrkdown parsing works
-import PolygonalFolding from "./pages/projects/PolygonalFolding";
-import Imaginarium from "./pages/projects/Imaginarium";
-import Intervallic from "./pages/projects/Intervallic";
-import SonglyBot from "./pages/projects/SonglyBot";
-import PapasWhatIsGoingOnEria from "./pages/projects/PapasWhatIsGoingOnEria";
-import WeThreeWitches from "./pages/projects/WeThreeWitches";
-import RiverswoodManor from "./pages/projects/RiverswoodManor";
-import ZenDog from "./pages/projects/ZenDog";
-import DiningInformant from "./pages/projects/DiningInformant";
-import WhenTheDevilTakesHold from "./pages/projects/WhenTheDevilTakesHold";
-import OceanCleanup from "./pages/projects/OceanCleanup";
-import SmartContextStories from "./pages/projects/SmartContextStories";
-import BudgetBuddy from "./pages/projects/BudgetBuddy";
-import GymCats from "./pages/projects/GymCats";
-import NonNegativeNews from "./pages/projects/NonNegativeNews";
-
-import goldfimch from "./assets/images/goldfimch.png";
-
 function App() {
   const [darkMode, setDarkMode] = useState<boolean>(true);
   const isMobile = useMobileMediaQuery();
@@ -56,130 +37,10 @@ function App() {
             path="portfolio"
             element={<PortfolioPage darkMode={darkMode} isMobile={isMobile} />}
           />
-          {/* TODO: remove this when mxrkdown parsing works */}
-
           <Route
-            path="portfolio/polygonal-folding"
-            element={
-              <PolygonalFolding
-                darkMode={darkMode}
-                projectKey="polygonal-folding"
-              />
-            }
-          />
-          <Route
-            path="portfolio/imaginarium"
-            element={
-              <Imaginarium darkMode={darkMode} projectKey="imaginarium" />
-            }
-          />
-          <Route
-            path="portfolio/intervallic"
-            element={
-              <Intervallic darkMode={darkMode} projectKey="intervallic" />
-            }
-          />
-          <Route
-            path="portfolio/songlybot"
-            element={<SonglyBot darkMode={darkMode} projectKey="songlybot" />}
-          />
-          <Route
-            path="portfolio/papas-what-is-going-on-eria"
-            element={
-              <PapasWhatIsGoingOnEria
-                darkMode={darkMode}
-                projectKey="papas-what-is-going-on-eria"
-              />
-            }
-          />
-          <Route
-            path="portfolio/we-three-witches"
-            element={
-              <WeThreeWitches
-                darkMode={darkMode}
-                projectKey="we-three-witches"
-              />
-            }
-          />
-          <Route
-            path="portfolio/riverswood-manor"
-            element={
-              <RiverswoodManor
-                darkMode={darkMode}
-                projectKey="riverswood-manor"
-              />
-            }
-          />
-          <Route
-            path="portfolio/zendog"
-            element={<ZenDog darkMode={darkMode} projectKey="zendog" />}
-          />
-          <Route
-            path="portfolio/dininginformant"
-            element={
-              <DiningInformant
-                darkMode={darkMode}
-                projectKey="dininginformant"
-              />
-            }
-          />
-          <Route
-            path="portfolio/when-the-devil-takes-hold"
-            element={
-              <WhenTheDevilTakesHold
-                darkMode={darkMode}
-                projectKey="when-the-devil-takes-hold"
-              />
-            }
-          />
-          <Route
-            path="portfolio/ocean-cleanup"
-            element={
-              <OceanCleanup darkMode={darkMode} projectKey="ocean-cleanup" />
-            }
-          />
-          <Route
-            path="portfolio/smart-context-stories"
-            element={
-              <SmartContextStories
-                darkMode={darkMode}
-                projectKey="smart-context-stories"
-              />
-            }
-          />
-          <Route
-            path="portfolio/budgetbuddy"
-            element={
-              <BudgetBuddy darkMode={darkMode} projectKey="budgetbuddy" />
-            }
-          />
-          <Route
-            path="portfolio/gymcats"
-            element={<GymCats darkMode={darkMode} projectKey="gymcats" />}
-          />
-          <Route
-            path="portfolio/non-negative-news"
-            element={
-              <NonNegativeNews
-                darkMode={darkMode}
-                projectKey="non-negative-news"
-              />
-            }
-          />
-          <Route
-            path="/goldfimch"
-            element={
-              <img
-                src={goldfimch}
-                alt="mercedes eating goldfish, edited by zach"
-              />
-            }
-          />
-          {/* TODO: uncomment below when mxrkdown parsing works */}
-          {/* <Route
             path="/portfolio/:projectId"
             element={<ProjectPage darkMode={darkMode} />}
-          /> */}
+          />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
