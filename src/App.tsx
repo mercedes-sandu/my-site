@@ -2,6 +2,7 @@ import { useState } from "react";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { darkTheme, lightTheme } from "./Theme";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useMobileMediaQuery } from "./utility/responsive";
 import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
@@ -26,17 +27,27 @@ import BudgetBuddy from "./pages/projects/BudgetBuddy";
 import GymCats from "./pages/projects/GymCats";
 import NonNegativeNews from "./pages/projects/NonNegativeNews";
 
+import goldfimch from "./assets/images/goldfimch.png";
+
 function App() {
   const [darkMode, setDarkMode] = useState<boolean>(true);
+  const isMobile = useMobileMediaQuery();
 
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <CssBaseline />
       <BrowserRouter>
         <ScrollToTop />
-        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+        <Navbar
+          darkMode={darkMode}
+          isMobile={isMobile}
+          setDarkMode={setDarkMode}
+        />
         <Routes>
-          <Route path="/" element={<HomePage darkMode={darkMode} />} />
+          <Route
+            path="/"
+            element={<HomePage darkMode={darkMode} isMobile={isMobile} />}
+          />
           <Route path="about" element={<AboutPage darkMode={darkMode} />} />
           <Route
             path="portfolio"
@@ -56,29 +67,18 @@ function App() {
           <Route
             path="portfolio/imaginarium"
             element={
-              <Imaginarium
-                darkMode={darkMode}
-                projectKey="imaginarium"
-              />
+              <Imaginarium darkMode={darkMode} projectKey="imaginarium" />
             }
           />
           <Route
             path="portfolio/intervallic"
             element={
-              <Intervallic
-                darkMode={darkMode}
-                projectKey="intervallic"
-              />
+              <Intervallic darkMode={darkMode} projectKey="intervallic" />
             }
           />
           <Route
             path="portfolio/songlybot"
-            element={
-              <SonglyBot
-                darkMode={darkMode}
-                projectKey="songlybot"
-              />
-            }
+            element={<SonglyBot darkMode={darkMode} projectKey="songlybot" />}
           />
           <Route
             path="portfolio/papas-what-is-going-on-eria"
@@ -109,12 +109,7 @@ function App() {
           />
           <Route
             path="portfolio/zendog"
-            element={
-              <ZenDog
-                darkMode={darkMode}
-                projectKey="zendog"
-              />
-            }
+            element={<ZenDog darkMode={darkMode} projectKey="zendog" />}
           />
           <Route
             path="portfolio/dininginformant"
@@ -137,10 +132,7 @@ function App() {
           <Route
             path="portfolio/ocean-cleanup"
             element={
-              <OceanCleanup
-                darkMode={darkMode}
-                projectKey="ocean-cleanup"
-              />
+              <OceanCleanup darkMode={darkMode} projectKey="ocean-cleanup" />
             }
           />
           <Route
@@ -155,20 +147,12 @@ function App() {
           <Route
             path="portfolio/budgetbuddy"
             element={
-              <BudgetBuddy
-                darkMode={darkMode}
-                projectKey="budgetbuddy"
-              />
+              <BudgetBuddy darkMode={darkMode} projectKey="budgetbuddy" />
             }
           />
           <Route
             path="portfolio/gymcats"
-            element={
-              <GymCats
-                darkMode={darkMode}
-                projectKey="gymcats"
-              />
-            }
+            element={<GymCats darkMode={darkMode} projectKey="gymcats" />}
           />
           <Route
             path="portfolio/non-negative-news"
@@ -176,6 +160,15 @@ function App() {
               <NonNegativeNews
                 darkMode={darkMode}
                 projectKey="non-negative-news"
+              />
+            }
+          />
+          <Route
+            path="/goldfimch"
+            element={
+              <img
+                src={goldfimch}
+                alt="mercedes eating goldfish, edited by zach"
               />
             }
           />

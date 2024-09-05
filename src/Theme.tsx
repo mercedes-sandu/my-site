@@ -31,6 +31,8 @@ declare module "@mui/material/styles" {
     projectOrganization: React.CSSProperties;
     codeTitle: React.CSSProperties;
     largeImageDescription: React.CSSProperties;
+    h1mobile: React.CSSProperties;
+    body1mobile: React.CSSProperties;
   }
 
   interface TypographyVariantsOptions {
@@ -49,6 +51,8 @@ declare module "@mui/material/styles" {
     projectOrganization?: React.CSSProperties;
     codeTitle?: React.CSSProperties;
     largeImageDescription?: React.CSSProperties;
+    h1mobile?: React.CSSProperties;
+    body1mobile?: React.CSSProperties;
   }
 }
 
@@ -69,6 +73,8 @@ declare module "@mui/material/Typography" {
     projectOrganization: true;
     codeTitle: true;
     largeImageDescription: true;
+    h1mobile: true;
+    body1mobile: true;
   }
 }
 
@@ -193,6 +199,19 @@ const typography: TypographyOptions = {
     textIndent: "0px",
     fontWeight: 400,
     textAlign: "center",
+  },
+  h1mobile: {
+    fontFamily: "Meqanor",
+    fontSize: "36px",
+    textAlign: "center",
+    textIndent: "0px",
+  },
+  body1mobile: {
+    fontFamily: "Cormorant Garamond",
+    fontSize: "20px",
+    fontWeight: 400,
+    textAlign: "center",
+    textIndent: "0px",
   },
 };
 

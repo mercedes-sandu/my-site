@@ -7,9 +7,13 @@ import {
 } from "@mui/material";
 import portraitLight from "../assets/images/portrait light.webp";
 import portraitDark from "../assets/images/portrait dark.webp";
+import portraitLightMobile from "../assets/images/portrait circle light.webp";
+import portraitDarkMobile from "../assets/images/portrait circle dark.webp";
 import { Typewriter } from "react-simple-typewriter";
 import verticalBarLight from "../assets/images/vertical bar light.svg";
 import verticalBarDark from "../assets/images/vertical bar dark.svg";
+import horizontalBarLight from "../assets/images/horizontal bar light.svg";
+import horizontalBarDark from "../assets/images/horizontal bar dark.svg";
 import { InlineNavLink } from "../components/StyledComponents";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -17,12 +21,13 @@ import EmailIcon from "@mui/icons-material/Email";
 
 interface HomePageProps {
   darkMode: boolean;
+  isMobile: boolean;
 }
 
-function HomePage({ darkMode }: HomePageProps) {
+function HomePage({ darkMode, isMobile }: HomePageProps) {
   const theme = useTheme();
 
-  return (
+  return !isMobile ? (
     <Container
       sx={{
         position: "absolute",
@@ -164,6 +169,142 @@ function HomePage({ darkMode }: HomePageProps) {
           src={darkMode ? portraitLight : portraitDark}
           alt="sci-fi portrait of me"
         />
+      </Box>
+    </Container>
+  ) : (
+    <Container
+      sx={{
+        position: "absolute",
+        top: "120px",
+        left: 0,
+        width: "100%",
+        height: "calc(100% - 120px)",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        "&.MuiContainer-root": {
+          pl: "10vw",
+          pr: "10vw",
+        },
+      }}
+      maxWidth={false}
+    >
+      <Box
+        sx={{
+          width: "100%",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Typography
+          variant="h1mobile"
+          sx={{ color: theme.palette.text.primary, mb: 3 }}
+        >
+          hi, i'm mercedes
+        </Typography>
+        <Box
+          component="img"
+          src={darkMode ? portraitLightMobile : portraitDarkMobile}
+          width="auto"
+          height="auto"
+          maxWidth="65%"
+          sx={{ mb: 3 }}
+        />
+        <Box sx={{ mb: 3, textIndent: "0px" }}>
+          <span
+            style={{
+              fontFamily: "Meqanor",
+              color: theme.palette.secondary.main,
+              fontSize: "22px",
+              textAlign: "center",
+            }}
+          >
+            <Typewriter
+              words={[
+                "game developer",
+                "software developer",
+                "web developer",
+                "mathematician",
+                "computer scientist",
+                "artist",
+                "musician",
+              ]}
+              cursor
+              loop={false}
+            />
+          </span>
+        </Box>
+        <Typography variant="body1mobile" sx={{ textIndent: "0px", mb: 1 }}>
+          i'm a software and video game developer with a passion for math,
+          computer science, art, and music. look around to learn more{" "}
+          <InlineNavLink to="/about">about me</InlineNavLink> and my{" "}
+          <InlineNavLink to="/portfolio">projects</InlineNavLink>!
+        </Typography>
+        <Box
+          height="50px"
+          component="img"
+          src={darkMode ? horizontalBarLight : horizontalBarDark}
+          sx={{ mb: 3 }}
+        />
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <IconButton
+            sx={{
+              backgroundColor: "transparent",
+              color: theme.palette.secondary.main,
+              transition: "color 0.2s ease-in-out",
+              padding: 0,
+              mr: 5,
+              "&:hover": {
+                backgroundColor: "transparent",
+                color: theme.palette.text.primary,
+              },
+            }}
+            href="https://www.linkedin.com/in/mercedes-sandu"
+            target="_blank"
+          >
+            <LinkedInIcon sx={{ width: "30px", height: "30px" }} />
+          </IconButton>
+          <IconButton
+            sx={{
+              backgroundColor: "transparent",
+              color: theme.palette.secondary.main,
+              transition: "color 0.2s ease-in-out",
+              padding: 0,
+              mr: 5,
+              "&:hover": {
+                backgroundColor: "transparent",
+                color: theme.palette.text.primary,
+              },
+            }}
+            href="https://github.com/mercedes-sandu"
+            target="_blank"
+          >
+            <GitHubIcon sx={{ width: "30px", height: "30px" }} />
+          </IconButton>
+          <IconButton
+            sx={{
+              backgroundColor: "transparent",
+              color: theme.palette.secondary.main,
+              transition: "color 0.2s ease-in-out",
+              padding: 0,
+              "&:hover": {
+                backgroundColor: "transparent",
+                color: theme.palette.text.primary,
+              },
+            }}
+            href="mailto:mxrcedes@gmail.com"
+          >
+            <EmailIcon sx={{ width: "30px", height: "30px" }} />
+          </IconButton>
+        </Box>
       </Box>
     </Container>
   );
