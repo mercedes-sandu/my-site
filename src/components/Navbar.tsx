@@ -99,42 +99,55 @@ function Navbar({ darkMode, isMobile, setDarkMode }: NavbarProps) {
     <>
       <Box
         sx={{
-          width: "100%",
-          height: "80px",
           display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
+          flexDirection: "column",
           position: "fixed",
-          top: "40px",
-          pl: "30px",
-          pr: "30px",
+          top: 0,
+          width: "100%",
           backgroundColor: theme.palette.background.default,
-          borderTop: `2px solid ${theme.palette.text.primary}`,
-          borderBottom: `2px solid ${theme.palette.text.primary}`,
           zIndex: 1000,
         }}
       >
-        <IconButton
-          sx={{
-            backgroundColor: "transparent",
-            color: theme.palette.text.primary,
-            transition: "color 0.2s ease-in-out",
-            padding: 0,
-            "&:hover": {
-              backgroundColor: "transparent",
-              color: theme.palette.secondary.main,
-            },
-          }}
-          onClick={handleDrawerToggle}
-          disableRipple
-        >
-          <Box component="img" src={darkMode ? menuIconLight : menuIconDark} />
-        </IconButton>
         <Box
-          component="img"
-          src={darkMode ? logoMobileLight : logoMobileDark}
-        />
-        <Box width="30px" height="26px" />
+          sx={{
+            width: "100%",
+            height: "80px",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            position: "fixed",
+            top: "40px",
+            pl: "30px",
+            pr: "30px",
+            borderTop: `2px solid ${theme.palette.text.primary}`,
+            borderBottom: `2px solid ${theme.palette.text.primary}`,
+          }}
+        >
+          <IconButton
+            sx={{
+              backgroundColor: "transparent",
+              color: theme.palette.text.primary,
+              transition: "color 0.2s ease-in-out",
+              padding: 0,
+              "&:hover": {
+                backgroundColor: "transparent",
+                color: theme.palette.secondary.main,
+              },
+            }}
+            onClick={handleDrawerToggle}
+            disableRipple
+          >
+            <Box
+              component="img"
+              src={darkMode ? menuIconLight : menuIconDark}
+            />
+          </IconButton>
+          <Box
+            component="img"
+            src={darkMode ? logoMobileLight : logoMobileDark}
+          />
+          <Box width="30px" height="26px" />
+        </Box>
       </Box>
       <Box component="nav" sx={{ width: drawerWidth, flexShrink: 0 }}>
         <Drawer

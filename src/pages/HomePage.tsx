@@ -236,7 +236,7 @@ function HomePage({ darkMode, isMobile }: HomePageProps) {
             />
           </span>
         </Box>
-        <Typography variant="body1mobile" sx={{ textIndent: "0px", mb: 1 }}>
+        <Typography variant="descriptionMobile" sx={{ textIndent: "0px", mb: 1 }}>
           i'm a software and video game developer with a passion for math,
           computer science, art, and music. look around to learn more{" "}
           <InlineNavLink to="/about">about me</InlineNavLink> and my{" "}

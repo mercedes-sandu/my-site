@@ -32,6 +32,8 @@ declare module "@mui/material/styles" {
     codeTitle: React.CSSProperties;
     largeImageDescription: React.CSSProperties;
     h1mobile: React.CSSProperties;
+    h2mobile: React.CSSProperties;
+    descriptionMobile: React.CSSProperties;
     body1mobile: React.CSSProperties;
   }
 
@@ -52,6 +54,8 @@ declare module "@mui/material/styles" {
     codeTitle?: React.CSSProperties;
     largeImageDescription?: React.CSSProperties;
     h1mobile?: React.CSSProperties;
+    h2mobile?: React.CSSProperties;
+    descriptionMobile?: React.CSSProperties;
     body1mobile?: React.CSSProperties;
   }
 }
@@ -74,6 +78,8 @@ declare module "@mui/material/Typography" {
     codeTitle: true;
     largeImageDescription: true;
     h1mobile: true;
+    h2mobile: true;
+    descriptionMobile: true;
     body1mobile: true;
   }
 }
@@ -206,13 +212,26 @@ const typography: TypographyOptions = {
     textAlign: "center",
     textIndent: "0px",
   },
-  body1mobile: {
+  h2mobile: {
+    fontFamily: "Meqanor",
+    fontSize: "22px",
+    textAlign: "center",
+    textIndent: "0px",
+  },
+  descriptionMobile: {
     fontFamily: "Cormorant Garamond",
     fontSize: "20px",
     fontWeight: 400,
     textAlign: "center",
     textIndent: "0px",
   },
+  body1mobile: {
+    fontFamily: "Cormorant Garamond",
+    fontSize: "20px",
+    fontWeight: 400,
+    textAlign: "justify",
+    textIndent: "24px",
+  }
 };
 
 const variantMapping = {
@@ -231,6 +250,9 @@ const variantMapping = {
   projectOrganization: "h4",
   codeTitle: "h6",
   largeImageDescription: "p",
+  h1mobile: "h1",
+  descriptionMobile: "p",
+  body1mobile: "p",
 };
 
 export const darkTheme = createTheme({

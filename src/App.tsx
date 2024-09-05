@@ -48,7 +48,10 @@ function App() {
             path="/"
             element={<HomePage darkMode={darkMode} isMobile={isMobile} />}
           />
-          <Route path="about" element={<AboutPage darkMode={darkMode} />} />
+          <Route
+            path="about"
+            element={<AboutPage darkMode={darkMode} isMobile={isMobile} />}
+          />
           <Route
             path="portfolio"
             element={<PortfolioPage darkMode={darkMode} />}
