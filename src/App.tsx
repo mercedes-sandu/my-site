@@ -49,7 +49,7 @@ function App() {
           />
           <Route
             path="/portfolio/:projectId"
-            element={<ProjectPage darkMode={darkMode} />}
+            element={<ProjectPage darkMode={darkMode} isMobile={isMobile} />}
           />
         </Routes>
       </BrowserRouter>

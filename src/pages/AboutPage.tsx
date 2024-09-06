@@ -247,13 +247,13 @@ function AboutPage({ darkMode, isMobile }: AboutPageProps) {
         }}
       >
         <Typography
-          variant="h1mobile"
+          variant="h1Mobile"
           sx={{ color: theme.palette.text.primary, mb: 3 }}
         >
           about me
         </Typography>
         <Typography
-          variant="h2mobile"
+          variant="h2Mobile"
           sx={{ color: theme.palette.secondary.main, mb: 2 }}
         >
           hello world!
@@ -264,7 +264,7 @@ function AboutPage({ darkMode, isMobile }: AboutPageProps) {
           src={darkMode ? horizontalBarLight : horizontalBarDark}
           sx={{ mb: 3 }}
         />
-        <Typography variant="body1mobile" sx={{ mb: 2 }}>
+        <Typography variant="body1Mobile" sx={{ mb: 2 }}>
           i'm a software and video game developer with a passion for math,
           computer science, art, and music. i graduated{" "}
           <InlineLink href="https://www.northwestern.edu/" target="_blank">
@@ -291,7 +291,7 @@ function AboutPage({ darkMode, isMobile }: AboutPageProps) {
             }}
           >
             <ListItemText>
-              <Typography variant="body1mobile" sx={{ textIndent: "0px" }}>
+              <Typography variant="body1Mobile" sx={{ textIndent: "0px" }}>
                 an undergraduate{" "}
                 <InlineNavLink to="/portfolio/polygonal-folding">
                   mathematics researcher
@@ -307,7 +307,7 @@ function AboutPage({ darkMode, isMobile }: AboutPageProps) {
             }}
           >
             <ListItemText>
-              <Typography variant="body1mobile" sx={{ textIndent: "0px" }}>
+              <Typography variant="body1Mobile" sx={{ textIndent: "0px" }}>
                 {/* TODO: add link to catsat page */}a graduate{" "}
                 <InlineLink>computer science researcher</InlineLink> exploring
                 the use of logic programming and traditional AI in
@@ -322,7 +322,7 @@ function AboutPage({ darkMode, isMobile }: AboutPageProps) {
             }}
           >
             <ListItemText>
-              <Typography variant="body1mobile" sx={{ textIndent: "0px" }}>
+              <Typography variant="body1Mobile" sx={{ textIndent: "0px" }}>
                 a frontend lead and software engineer of{" "}
                 <InlineLink>intervallic</InlineLink> at{" "}
                 <InlineLink href="https://www.overture.games/" target="_blank">
@@ -340,7 +340,7 @@ function AboutPage({ darkMode, isMobile }: AboutPageProps) {
             </ListItemText>
           </ListItem>
         </List>
-        <Typography variant="body1mobile" sx={{ mb: 2 }}>
+        <Typography variant="body1Mobile" sx={{ mb: 2 }}>
           currently, i work at{" "}
           <InlineLink href="https://www.abbott.com" target="_blank">
             abbott
@@ -356,13 +356,13 @@ function AboutPage({ darkMode, isMobile }: AboutPageProps) {
           software development and design work for my first rotation of the next
           six months.
         </Typography>
-        <Typography variant="body1mobile" sx={{ mb: 2 }}>
+        <Typography variant="body1Mobile" sx={{ mb: 2 }}>
           aside from my work, i love making video games and working on video
           game AI research. i adore collaborating with peers, participating in
           game jams, and writing about my findings and{" "}
           <InlineNavLink to="/portfolio">projects</InlineNavLink>.
         </Typography>
-        <Typography variant="body1mobile" sx={{ mb: 2 }}>
+        <Typography variant="body1Mobile" sx={{ mb: 2 }}>
           in my free time, i love to play video games (
           <ItalicText>nier: automata</ItalicText>,{" "}
           <ItalicText>persona 5 royal</ItalicText>, and{" "}
@@ -373,7 +373,7 @@ function AboutPage({ darkMode, isMobile }: AboutPageProps) {
           </InlineLink>
           , create art, and read.
         </Typography>
-        <Typography variant="body1mobile">
+        <Typography variant="body1Mobile">
           questions or comments? feel free to{" "}
           <InlineLink href="mailto:mxrcedes@gmail.com">email me</InlineLink>!
         </Typography>

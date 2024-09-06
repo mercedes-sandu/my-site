@@ -31,10 +31,10 @@ declare module "@mui/material/styles" {
     projectOrganization: React.CSSProperties;
     codeTitle: React.CSSProperties;
     largeImageDescription: React.CSSProperties;
-    h1mobile: React.CSSProperties;
-    h2mobile: React.CSSProperties;
+    h1Mobile: React.CSSProperties;
+    h2Mobile: React.CSSProperties;
     descriptionMobile: React.CSSProperties;
-    body1mobile: React.CSSProperties;
+    body1Mobile: React.CSSProperties;
     cardHeaderMobile: React.CSSProperties;
     cardSubheaderMobile: React.CSSProperties;
     cardBodyMobile: React.CSSProperties;
@@ -57,10 +57,10 @@ declare module "@mui/material/styles" {
     projectOrganization?: React.CSSProperties;
     codeTitle?: React.CSSProperties;
     largeImageDescription?: React.CSSProperties;
-    h1mobile?: React.CSSProperties;
-    h2mobile?: React.CSSProperties;
+    h1Mobile?: React.CSSProperties;
+    h2Mobile?: React.CSSProperties;
     descriptionMobile?: React.CSSProperties;
-    body1mobile?: React.CSSProperties;
+    body1Mobile?: React.CSSProperties;
     cardHeaderMobile?: React.CSSProperties;
     cardSubheaderMobile?: React.CSSProperties;
     cardBodyMobile?: React.CSSProperties;
@@ -85,10 +85,10 @@ declare module "@mui/material/Typography" {
     projectOrganization: true;
     codeTitle: true;
     largeImageDescription: true;
-    h1mobile: true;
-    h2mobile: true;
+    h1Mobile: true;
+    h2Mobile: true;
     descriptionMobile: true;
-    body1mobile: true;
+    body1Mobile: true;
     cardHeaderMobile: true;
     cardSubheaderMobile: true;
     cardBodyMobile: true;
@@ -218,13 +218,13 @@ const typography: TypographyOptions = {
     fontWeight: 400,
     textAlign: "center",
   },
-  h1mobile: {
+  h1Mobile: {
     fontFamily: "Meqanor",
     fontSize: "36px",
     textAlign: "center",
     textIndent: "0px",
   },
-  h2mobile: {
+  h2Mobile: {
     fontFamily: "Meqanor",
     fontSize: "22px",
     textAlign: "center",
@@ -237,7 +237,7 @@ const typography: TypographyOptions = {
     textAlign: "center",
     textIndent: "0px",
   },
-  body1mobile: {
+  body1Mobile: {
     fontFamily: "Cormorant Garamond",
     fontSize: "20px",
     fontWeight: 400,
@@ -282,9 +282,9 @@ const variantMapping = {
   projectOrganization: "h4",
   codeTitle: "h6",
   largeImageDescription: "p",
-  h1mobile: "h1",
+  h1Mobile: "h1",
   descriptionMobile: "p",
-  body1mobile: "p",
+  body1Mobile: "p",
   cardHeaderMobile: "h1",
   cardSubheaderMobile: "h2",
   cardBodyMobile: "p",

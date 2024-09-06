@@ -215,13 +215,13 @@ function PortfolioPage({ darkMode, isMobile }: PortfolioPageProps) {
         }}
       >
         <Typography
-          variant="h1mobile"
+          variant="h1Mobile"
           sx={{ color: theme.palette.text.primary, mb: 3 }}
         >
           portfolio
         </Typography>
         <Typography
-          variant="h2mobile"
+          variant="h2Mobile"
           sx={{ color: theme.palette.secondary.main, mb: 2 }}
         >
           my projects
@@ -232,7 +232,7 @@ function PortfolioPage({ darkMode, isMobile }: PortfolioPageProps) {
           src={darkMode ? horizontalBarLight : horizontalBarDark}
           sx={{ mb: 3 }}
         />
-        <Typography variant="body1mobile" sx={{ mb: 4 }}>
+        <Typography variant="body1Mobile" sx={{ mb: 4 }}>
           below you'll find a collection of some projects i have completed and
           others that are still in progress.
         </Typography>
