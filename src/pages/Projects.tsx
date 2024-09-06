@@ -7,6 +7,9 @@ import { InlineLink } from "../components/StyledComponents";
 import LargeImage from "../components/LargeImage";
 import Features from "../components/Features";
 import RepositoryButton from "../components/RepositoryButton";
+import Media from "../components/Media";
+import CodeSnippet from "../components/CodeSnippet";
+import Awards from "../components/Awards";
 
 import nonNegativeNews from "../assets/images/projects/nonnegativenews design.webp";
 import gymCats from "../assets/images/projects/gymcats design.webp";
@@ -44,6 +47,12 @@ import cooker from "../assets/images/projects/cooker.webp";
 import assembler from "../assets/images/projects/assembler.webp";
 import sodaMachine from "../assets/images/projects/soda machine.webp";
 import songlyBotImage from "../assets/images/projects/songlybot.webp";
+import intervallicCoverImage from "../assets/images/projects/intervallic-cover.webp";
+import imaginariumImage from "../assets/images/projects/imaginarium.webp";
+import imaginariumRelationshipsImage from "../assets/images/projects/relationships.webp";
+import { imaginariumCode } from "./CodeSnippets";
+import jmm from "../assets/pdfs/jmm.pdf";
+import polygonalFoldingImage from "../assets/images/projects/polygonal folding.webp";
 
 export interface Project {
   title: string;
@@ -1356,75 +1365,181 @@ export const projects: Record<string, Project> = {
     display: true,
     content: (
       <>
-      <LargeImage
-              src={intervallicCoverImage}
-              alt="intervallic cover art"
-              description="intervallic cover art"
-            />
-            <Typography variant="projectP" sx={{ mb: 2 }}>
-              <ItalicText>intervallic</ItalicText> is{" "}
-              <InlineLink href="https://www.overture.games/" target="_blank">
-                overture games'
-              </InlineLink>{" "}
-              first title. the game itself is a 2d runner that allows users to
-              play their instrument to control an alien-robot-space cat and
-              navigate through a level, dodging obstacles and collecting records
-              and samples. the notes that are played correspond to vertical
-              movement of the cat. for example, playing up on a scale allows the
-              cat to move vertically upward, and playing down on a scale moves
-              the cat vertically downward. this way, by the end of a level, the
-              user has played through an entire song. the game currently allows
-              input from any instrument, midi device, as well as computer
-              keyboard and mouse. you play as starburst, a nerdy music-lover
-              working to explore strange planets with her companion robot cat
-              (who the player controls with their instrument). as you continue
-              playing, you make new friends and play more fun songs, restoring
-              the planet of audius.
-            </Typography>
-            <Typography variant="projectP" sx={{ mb: 2 }}>
-              at overture, i worked as a gameplay software developer and got
-              promoted to lead frontend engineer. during my time there, i
-              learned extensively about many other aspects of game development,
-              such as art, music, design, marketing, and funding. as a software
-              developer, i was primarily in charge of designing and implementing
-              the main game mechanics as well as majority of the frontend
-              aspects (ui/ux). in particular, i programmed things like player
-              movement, the main menu and pause menu, collectibles, obstacles,
-              and in-game ui. i also developed the following systems:
-            </Typography>
-            <Features features={features} />
-            <Typography variant="projectP" sx={{ mt: 4, mb: 2 }}>
-              as frontend lead, i was responsible for doing all ui/ux design and
-              communicating regularly with the art team to get both game assets
-              and ui assets designed, scoped, and completed on time according to
-              sprints and deadlines. i spent a lot of time understanding the
-              digital art process, how long it takes, and how to coordinate
-              better between the team's artists and designers.
-            </Typography>
-            <Typography variant="projectP">
-              working on <ItalicText>intervallic</ItalicText> was a great
-              experience where i learned to work with a small team and undergo a
-              fast-paced development process. i worked there my junior and
-              senior years of university, leading up to the release of{" "}
-              <ItalicText>intervallic</ItalicText> in early access on october
-              6th, 2023. you see the game's steam page{" "}
-              <InlineLink
-                href="https://store.steampowered.com/app/2270460/Intervallic"
-                target="_blank"
-              >
-                here
-              </InlineLink>
-              !
-            </Typography>
-            <Media media={media} />
-            <Box sx={{ mt: 4, width: "100%", height: "auto", display: "flex" }}>
-              <RepositoryButton
-                url="https://overture.games"
-                name="overture games website"
-                showIcon={false}
-              />
-            </Box></>
-    )
+        <LargeImage
+          src={intervallicCoverImage}
+          alt="intervallic cover art"
+          description="intervallic cover art"
+        />
+        <Typography variant="projectP" sx={{ mb: 2 }}>
+          <ItalicText>intervallic</ItalicText> is{" "}
+          <InlineLink href="https://www.overture.games/" target="_blank">
+            overture games'
+          </InlineLink>{" "}
+          first title. the game itself is a 2d runner that allows users to play
+          their instrument to control an alien-robot-space cat and navigate
+          through a level, dodging obstacles and collecting records and samples.
+          the notes that are played correspond to vertical movement of the cat.
+          for example, playing up on a scale allows the cat to move vertically
+          upward, and playing down on a scale moves the cat vertically downward.
+          this way, by the end of a level, the user has played through an entire
+          song. the game currently allows input from any instrument, midi
+          device, as well as computer keyboard and mouse. you play as starburst,
+          a nerdy music-lover working to explore strange planets with her
+          companion robot cat (who the player controls with their instrument).
+          as you continue playing, you make new friends and play more fun songs,
+          restoring the planet of audius.
+        </Typography>
+        <Typography variant="projectP" sx={{ mb: 2 }}>
+          at overture, i worked as a gameplay software developer and got
+          promoted to lead frontend engineer. during my time there, i learned
+          extensively about many other aspects of game development, such as art,
+          music, design, marketing, and funding. as a software developer, i was
+          primarily in charge of designing and implementing the main game
+          mechanics as well as majority of the frontend aspects (ui/ux). in
+          particular, i programmed things like player movement, the main menu
+          and pause menu, collectibles, obstacles, and in-game ui. i also
+          developed the following systems:
+        </Typography>
+        <Features
+          features={[
+            {
+              description:
+                "a key signature and note system to be used with player input and level management/building",
+              id: 0,
+            },
+            {
+              description:
+                "an accuracy and statistics system to be use dfor live feedback during gameplay and musical practice reports",
+              id: 1,
+            },
+            {
+              description:
+                "support for different input processing modes and game modes, such as rhythm mode",
+              id: 2,
+            },
+            {
+              description:
+                "a level selector that displays player data and a level preview, for every available level",
+              id: 3,
+            },
+            {
+              description:
+                "a level generator that takes a midi file as input and places necessary game objects (collectibles and other movement objects) in the correct places to create a level",
+              id: 4,
+            },
+            {
+              description: "an in-level ui vfx and sfx feedback system",
+              id: 5,
+            },
+            {
+              description: "a new card-based main menu",
+              id: 6,
+            },
+            {
+              description:
+                "a campaign system with linear progression and custom ui menus",
+              id: 7,
+            },
+          ]}
+        />
+        <Typography variant="projectP" sx={{ mt: 4, mb: 2 }}>
+          as frontend lead, i was responsible for doing all ui/ux design and
+          communicating regularly with the art team to get both game assets and
+          ui assets designed, scoped, and completed on time according to sprints
+          and deadlines. i spent a lot of time understanding the digital art
+          process, how long it takes, and how to coordinate better between the
+          team's artists and designers.
+        </Typography>
+        <Typography variant="projectP">
+          working on <ItalicText>intervallic</ItalicText> was a great experience
+          where i learned to work with a small team and undergo a fast-paced
+          development process. i worked there my junior and senior years of
+          university, leading up to the release of{" "}
+          <ItalicText>intervallic</ItalicText> in early access on october 6th,
+          2023. you see the game's steam page{" "}
+          <InlineLink
+            href="https://store.steampowered.com/app/2270460/Intervallic"
+            target="_blank"
+          >
+            here
+          </InlineLink>
+          !
+        </Typography>
+        <Media
+          media={[
+            {
+              description:
+                "an announcement about our partnership with techstars",
+              date: "09/11/2023",
+              url: "https://www.linkedin.com/posts/overture-games_techstars-accelerator-startup-activity-7107063944556511232-kasi?utm_source=share&utm_medium=member_desktop",
+              id: 0,
+            },
+            {
+              description: "an announcement about our partnership with ascap",
+              date: "06/13/2023",
+              url: "https://www.linkedin.com/posts/overture-games_music-ai-activity-7075157553386582017-HgEW?utm_source=share&utm_medium=member_desktop",
+              id: 1,
+            },
+            {
+              description: "a podcast in crain's chicago business",
+              date: "05/24/2023",
+              url: "https://www.chicagobusiness.com/crains-daily-gist/checking-startup-progress-northwesterns-garage",
+              id: 2,
+            },
+            {
+              description: "an audio story featured in the daily nu",
+              date: "05/15/2023",
+              url: "https://dailynorthwestern.com/2023/05/14/audio/nu-declassified-built-this-overture-games-aims-to-turn-practice-into-play/",
+              id: 3,
+            },
+            {
+              description: "an article featured on scene + heard",
+              date: "05/05/2023",
+              url: "https://www.sceneandheardnu.com/content/2023/5/5/the-next-generation-of-game-developers-talking-with-overture-games-about-inspiration-and-innovation",
+              id: 4,
+            },
+            {
+              description: "our steam page",
+              date: "uploaded originally on 04/17/2023",
+              url: "https://store.steampowered.com/app/2270460/Intervallic/",
+              id: 5,
+            },
+            {
+              description: "our demo on itch.io",
+              date: "uploaded originally on 02/05/2023",
+              url: "https://overturegames.itch.io/intervallic",
+              id: 6,
+            },
+            {
+              description: "an article featured in the daily nu",
+              date: "11/21/2022",
+              url: "https://dailynorthwestern.com/2022/11/21/photo/captured-glimpse-under-the-hood-the-garages-undergraduate-projects/#modal-photo",
+              id: 7,
+            },
+            {
+              description:
+                "our success with demo day at jumpstart at the garage",
+              date: "08/24/2022",
+              url: "https://thegarage.northwestern.edu/news/jumpstart-2022-demo-day-wrap-up/",
+              id: 8,
+            },
+            {
+              description: "our team interview from jumpstart at the garage",
+              date: "08/15/2022",
+              url: "https://thegarage.northwestern.edu/news/overture-games-team-spotlight/",
+              id: 9,
+            },
+          ]}
+        />
+        <Box sx={{ mt: 4, width: "100%", height: "auto", display: "flex" }}>
+          <RepositoryButton
+            url="https://overture.games"
+            name="overture games website"
+            showIcon={false}
+          />
+        </Box>
+      </>
+    ),
   },
   imaginarium: {
     title: "imaginarium",
@@ -1436,6 +1551,120 @@ export const projects: Record<string, Project> = {
     navTo: "imaginarium",
     mxrkdownUrl: "",
     display: true,
+    content: (
+      <>
+        <LargeImage
+          src={imaginariumImage}
+          alt="a graph showing all types of entities to generate in the unity imaginarium implementation"
+          description="a graph showing all types of entities to generate in the unity imaginarium implementation"
+        />
+        <Typography variant="projectP" sx={{ mb: 2 }}>
+          <ItalicText>imaginarium</ItalicText> is a program created by{" "}
+          <InlineLink
+            href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/horswill-ian.html"
+            target="_blank"
+          >
+            dr. ian horswill
+          </InlineLink>{" "}
+          designed to generate any fictional entity one could imagine for
+          purposes such as (but not limited to) story creation, narrative
+          development, and tabletop roleplaying games. i stumbled upon this
+          project when taking a special topics in computer science class with
+          him that focused on the role of ai in narrative-based games.
+        </Typography>
+        <Typography variant="projectP">
+          in this class, we were asked to use{" "}
+          <ItalicText>imaginarium</ItalicText> to generate some characters and
+          write a quick story. i was immediately hooked and intrigued by the
+          fact that the "code" one writes in{" "}
+          <ItalicText>imaginarium</ItalicText> is basically just structured
+          english. there is no fancy notation or syntax to learn, which is what
+          makes such a tool so powerful; it is accessible to anyone, regardless
+          of coding experience. for reference, here is what an example of my
+          code looks like to generate settings for a narrative-based game:
+        </Typography>
+        <CodeSnippet
+          code={imaginariumCode}
+          darkMode={localStorage.getItem("darkMode") === "true"}
+          title="setting.gen"
+        />
+        <Typography variant="projectP">
+          in addition to generating entities,{" "}
+          <ItalicText>imaginarium</ItalicText> can also be used to generate
+          relationships between said entities. if you were to generate
+          characters, you could write something like "characters can love each
+          other," and then generating at least two characters would result in a
+          graph of characters with edges between them representing the
+          relationship. here's an example of such a relationship graph:
+        </Typography>
+        <LargeImage
+          src={imaginariumRelationshipsImage}
+          alt="a graph showing all relationships between generated cats in the unity imaginarium implementation"
+          description="a graph showing all relationships between generated cats in the unity imaginarium implementation"
+        />
+        <Typography variant="projectP">
+          it happened to be the case that i was also starting to take interest
+          in pursuing a combined degree (b.a. and m.s. in computer science) at
+          northwestern university, and reached out to dr. horswill to see if i
+          could take a graduate-level research projects class with him as my
+          advisor. eventually, i decided i would work on expanding{" "}
+          <ItalicText>imaginarium</ItalicText>'s capabilities, in particular
+          looking at the core of the code and the sat solver that is used to
+          generate constraint-based models.
+        </Typography>
+        <Features
+          features={[
+            {
+              description:
+                'better gerund support (e.g., being able to say something like "happily being married is a way of knowing") for relationships',
+              id: 0,
+            },
+            {
+              description:
+                "expanded domain and codomain for verbs in relationships to allow entities to relate to more than one other kind of entity",
+              id: 1,
+            },
+          ]}
+        />
+        <Features
+          features={[
+            {
+              description: 'an "exists" predicate',
+              id: 0,
+            },
+            {
+              description:
+                "an easier way to generate multiple different kinds of entites at the same time",
+              id: 1,
+            },
+            {
+              description:
+                'negation of verbs (e.g., "cannot," "must not," etc.)',
+              id: 2,
+            },
+            {
+              description: "improved ui of unity implementation",
+              id: 3,
+            },
+            {
+              description: "more robust documentation",
+              id: 4,
+            },
+          ]}
+          toImplement
+        />
+        <Box sx={{ mt: 4, width: "100%", height: "auto", display: "flex" }}>
+          <RepositoryButton
+            url="https://github.com/ianhorswill/ImaginariumCore"
+            name="imaginariumcore"
+          />
+          <RepositoryButton
+            url="https://github.com/ianhorswill/Imaginarium"
+            name="imaginarium"
+          />
+        </Box>
+      </>
+    ),
   },
   "polygonal-folding": {
     title: "polygonal folding",
@@ -1447,6 +1676,148 @@ export const projects: Record<string, Project> = {
     navTo: "polygonal-folding",
     mxrkdownUrl: "",
     display: true,
+    content: (
+      <>
+        <LargeImage
+          src={polygonalFoldingImage}
+          alt="quadrilateral and pentagon drawn using the cap construction algorithm"
+          description="quadrilateral and pentagon drawn using the cap construction algorithm"
+        />
+        <Typography variant="projectP" sx={{ mb: 2 }}>
+          i was first introduced to research in the field of mathematics under
+          the northwestern undergraduate research assistant program (
+          <InlineLink
+            href="https://undergradresearch.northwestern.edu/urap/"
+            target="_blank"
+          >
+            urap
+          </InlineLink>
+          ) during my first year. i saw a prompt to study geometry and
+          paper-folding under guidance of{" "}
+          <InlineLink
+            href="https://sites.google.com/view/shuyi-weng"
+            target="_blank"
+          >
+            dr. shuyi weng
+          </InlineLink>
+          . after submitting my documents and participating in an interview, i
+          heard back that i was accepted and i was going to work on this project
+          with another student,{" "}
+          <InlineLink
+            href="https://www.linkedin.com/in/jade-s-zhang"
+            target="_blank"
+          >
+            jade zhang
+          </InlineLink>
+          . we started by learning the theory and background material with
+          lectures, reading papers, and, of course, folding paper.
+        </Typography>
+        <Typography variant="projectP" sx={{ mb: 2 }}>
+          the research topic studies the relationship between the starting
+          two-dimensional shape and the final three-dimensional shape that it
+          becomes, when glued to a companion shape. how is this companion shape
+          generated? my mentor developed what is called the "cap construction
+          algorithm" to take any polygon, distribute uniform curvature to each
+          vertex, and generate a "polygonal cap curve" with the same number of
+          sides and side lengths. thus, corresponding sides get glued together
+          to create a three-dimensional polyhedron. we are particularly
+          interested in which kinds of starting shapes allow this construction
+          to create a valid, closed polyhedron. my mentor's previous work
+          revelead that equilateral triangles are the only three-sided shapes
+          which work, and parallelograms are the only four-sided shapes which
+          work. thus, it was natural for us to start examining five-sided
+          shapes: pentagons.
+        </Typography>
+        <Typography variant="projectP" sx={{ mb: 2 }}>
+          while exploring test cases in software such as mathematica, we
+          eventually stumbled on quite an interesting phenomenon: it appeared as
+          if, as one moved any of the vertices of the pentagon along a line, the
+          endpoint of the cap curve would also appear to move along a line. this
+          raised suspicion as to whether there was a linear (or affine)
+          relationship regarding dependencies of the points of these curves. for
+          the next school year, dr. weng and i continued to explore this
+          phenomenon and its implications. We found that the endpoint of the
+          polygonal cap curve indeed was affine dependent on any of the vertices
+          of the starting polygon. furthermore, we were able to show that there
+          is a clean linear relation which precisely defines when the closed cap
+          condition is satisfied for a given number of vertices. we spent much
+          of our time formalizing these conclusions in proofs and a paper set
+          for publication.
+        </Typography>
+        <Typography variant="projectP" sx={{ mb: 2 }}>
+          I had a wonderful time presenting these findings at the{" "}
+          <InlineLink
+            href="https://www.jointmathematicsmeetings.org//jmm"
+            target="_blank"
+          >
+            joint mathematics meeting
+          </InlineLink>{" "}
+          in boston, in january 2023. I am so grateful for all of the help I
+          received from jade, my mentor, and my various math professors. it
+          feels so rewarding to see my work come to fruition.
+        </Typography>
+        <Typography>
+          the paper for this research is waiting to be published in{" "}
+          <InlineLink
+            href="https://msp.org/involve/about/journal/about.html"
+            target="_blank"
+          >
+            involve
+          </InlineLink>{" "}
+          in fall 2024.
+        </Typography>
+        <Awards
+          awards={[
+            {
+              description:
+                "aws-pme joint mathematics meeting, 10-minute oral presentation",
+              date: "01/05/2023",
+              id: 0,
+            },
+            {
+              description: "summer undergradute research grant of $4000",
+              date: "04/11/2022",
+              id: 1,
+            },
+            {
+              description:
+                "northwestern undergraduate research exposition, 10-minute oral presentation",
+              date: "05/26/2021",
+              id: 2,
+            },
+            {
+              description:
+                "northwestern undergraduate research assistant program funding up to $1500",
+              date: "winter 2021 to spring 2021",
+              id: 3,
+            },
+          ]}
+        />
+        <Media
+          media={[
+            {
+              description: "my slide deck for my presentation at JMM",
+              date: "01/05/2023",
+              url: `${jmm}`,
+              id: 0,
+            },
+            {
+              description: "our research paper on arXiv",
+              date: "10/01/2022",
+              url: "https://arxiv.org/abs/2210.00198v1",
+              id: 1,
+            },
+            {
+              description:
+                "our presentation at the northwestern undergraduate research exposition",
+              date: "05/27/2021",
+              url: "https://www.youtube.com/watch?v=1_W9MsM-IUc",
+              id: 2,
+            },
+          ]}
+        />
+      </>
+    ),
   },
 };
 

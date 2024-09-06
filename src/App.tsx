@@ -12,6 +12,16 @@ import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const [darkMode, setDarkMode] = useState<boolean>(true);
+
+  if (localStorage.getItem("darkMode") === null) {
+    localStorage.setItem("darkMode", "true");
+  }
+
+  const handleDarkModeToggle = () => {
+    setDarkMode((prev) => !prev);
+    localStorage.setItem("darkMode", JSON.stringify(!darkMode));
+  }
+
   const isMobile = useMobileMediaQuery();
 
   return (
@@ -22,7 +32,7 @@ function App() {
         <Navbar
           darkMode={darkMode}
           isMobile={isMobile}
-          setDarkMode={setDarkMode}
+          setDarkMode={handleDarkModeToggle}
         />
         <Routes>
           <Route
