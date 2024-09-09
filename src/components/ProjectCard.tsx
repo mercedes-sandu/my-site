@@ -6,6 +6,7 @@ import {
   Typography,
   useTheme,
 } from "@mui/material";
+import { getTypographyVariant } from "../utility/responsive";
 
 interface ProjectCardProps {
   title: string;
@@ -64,20 +65,20 @@ function ProjectCard({
           }}
         >
           <Typography
-            variant={isMobile ? "cardSubheaderMobile" : "cardSubheader"}
+            variant={getTypographyVariant("cardSubheader")}
             color={theme.palette.secondary.main}
             sx={{ mb: isMobile ? 2 : 0 }}
           >
             {dates}
           </Typography>
           <Typography
-            variant={isMobile ? "cardHeaderMobile" : "cardHeader"}
+            variant={getTypographyVariant("cardHeader")}
             sx={{ mb: isMobile ? 2 : 0 }}
           >
             {title}
           </Typography>
           <Typography
-            variant={isMobile ? "cardBodyMobile" : "cardBody"}
+            variant={getTypographyVariant("cardBody")}
             sx={{ mb: isMobile ? 2 : 0 }}
           >
             {description}
@@ -107,7 +108,7 @@ function ProjectCard({
                 }}
                 key={tag}
               >
-                <Typography variant={isMobile ? "cardTagMobile" : "cardTag"}>
+                <Typography variant={getTypographyVariant("cardTag")}>
                   {tag}
                 </Typography>
               </Box>

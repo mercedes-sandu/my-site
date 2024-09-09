@@ -15,6 +15,7 @@ import { useState } from "react";
 import ProjectCard from "../components/ProjectCard";
 import { useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
+import { getTypographyVariant } from "../utility/responsive";
 
 interface PortfolioPageProps {
   darkMode: boolean;
@@ -90,24 +91,23 @@ function PortfolioPage({ darkMode, isMobile }: PortfolioPageProps) {
           }}
         >
           <Box sx={{ width: "100%", display: "flex", flexDirection: "column" }}>
-            <Typography variant="h1" sx={{ mb: 1 }}>
+            <Typography variant={getTypographyVariant("h1")} sx={{ mb: 1 }}>
               portfolio
             </Typography>
             <Typography
-              variant="h2"
+              variant={getTypographyVariant("h2")}
               color={theme.palette.secondary.main}
               sx={{ mb: 4 }}
             >
               my projects
             </Typography>
-            <Typography variant="body1" sx={{ mb: 4 }}>
+            <Typography variant={getTypographyVariant("body1")} sx={{ mb: 4 }}>
               below you'll find a collection of some projects i have completed
               and others that are still in progress. feel free to use the
               filters to sort them by programming language or topic.
             </Typography>
             <ToggleButtonGroup
               sx={{
-                // TODO: make flexwrap
                 width: "100%",
                 display: "flex",
                 flexWrap: "wrap",
@@ -215,13 +215,13 @@ function PortfolioPage({ darkMode, isMobile }: PortfolioPageProps) {
         }}
       >
         <Typography
-          variant="h1Mobile"
+          variant={getTypographyVariant("h1")}
           sx={{ color: theme.palette.text.primary, mb: 3 }}
         >
           portfolio
         </Typography>
         <Typography
-          variant="h2Mobile"
+          variant={getTypographyVariant("h2")}
           sx={{ color: theme.palette.secondary.main, mb: 2 }}
         >
           my projects
@@ -232,7 +232,7 @@ function PortfolioPage({ darkMode, isMobile }: PortfolioPageProps) {
           src={darkMode ? horizontalBarLight : horizontalBarDark}
           sx={{ mb: 3 }}
         />
-        <Typography variant="body1Mobile" sx={{ mb: 4 }}>
+        <Typography variant={getTypographyVariant("body1")} sx={{ mb: 4 }}>
           below you'll find a collection of some projects i have completed and
           others that are still in progress.
         </Typography>
