@@ -1,0 +1,27 @@
+p| ///intervallic/// is overture games' first title. the game itself is a 2d runner that allows users to play their instrument to control an alien-robot-space cat and navigate through a level, dodging obstacles and collecting traces and samples. the notes that are played correspond to vertical movement of the cat. for example, playing up on a scale allows the cat to move vertically upward, and playing down on a scale moves the cat vertically downward. this way, by the end of the level, the user has played through an entire song. the game currently allows input from any instrument, midi device, as well as computer keyboard and mouse. you play as starburst, a nerdy music-lover working to explore strange planets with her companion robot cat (who the player controls with their instrument). as you continue playing, you make new friends and play more fun songs.
+
+p| at overture, i worked as a software developer and got promoted to lead frontend engineer. additionally, i learned extensively about the other aspects of game development, such as art, music, design, and marketing. as a software developer, i was primarily in charge of designing and implementing the main game mechanics and features as well as majority of the frontend aspects (ui/ux). in particular, i programmed things like player movement, main menu and pause menu, collectibles, obstacles, and in-game ui. as frontend lead, i was responsible for doing all ui/ux design and communicating regularly with the art team to get both game assets and ui assets designed, scoped, and completed on time according to sprints and deadlines. i spent a lot of time understanding the digital art process, how long it takes, and how to coordinate between the team's artists and designers.
+
+p| working on ///intervallic/// was a great experience where i learned to work with a small team and undergo the fast-paced development process. i worked there my junior and senior years of university, leading up to the release of ///intervallic/// in early access on october 6th, 2023. you can access the steam page [[https://store.steampowered.com/app/2270460/Intervallic here]]!
+
+p| if you'd like to learn more about overture games and ///intervallic///, feel free to check out their [[https://www.overture.games/ website]].
+
+f| A key signature and note system to be used with player input and level management/building
+f| An accuracy and statistics system to be used for live feedback during gameplay and musical practice reports
+f| Support for different input processing modes and game modes, such as rhythm mode
+f| A level selector that displays player data and a level preview, for every available level
+f| A level generator that takes a Midi file as input and places necessary game objects (collectibles and other movement objects) in the correct places to create a level
+f| An in-level UI VFX and SFX feedback system
+f| A new main menu
+f| A campaign system with linear progression and custom UI menus
+
+m| An announcement about our partnership with [[<https://www.linkedin.com/posts/overture-games_techstars-accelerator-startup-activity-7107063944556511232-kasi?utm_source=share&utm_medium=member_desktop> TechStars]], **9/11/2023**
+m| An announcement about our partnership with [[<https://www.linkedin.com/posts/overture-games_music-ai-activity-7075157553386582017-HgEW?utm_source=share&utm_medium=member_desktop> ASCAP]], **6/13/2023**
+m| A podcast in [[<https://www.chicagobusiness.com/crains-daily-gist/checking-startup-progress-northwesterns-garage> Crain's Chicago Business]], **5/24/2023**
+m| An audio story featured in [[<https://dailynorthwestern.com/2023/05/14/audio/nu-declassified-built-this-overture-games-aims-to-turn-practice-into-play/> The Daily NU]], **5/15/2023**
+m| An article featured on [[<https://www.sceneandheardnu.com/content/2023/5/5/the-next-generation-of-game-developers-talking-with-overture-games-about-inspiration-and-innovation> Scene + Heard]], **5/5/2023**
+m| Our [[<https://store.steampowered.com/app/2270460/Intervallic/> Steam page]], **uploaded originally on 4/17/2023**
+m| Our demo on [[<https://overturegames.itch.io/intervallic> itch.io]], **uploaded originally on 2/5/2023**
+m| An article featured in [[<https://dailynorthwestern.com/2022/11/21/photo/captured-glimpse-under-the-hood-the-garages-undergraduate-projects/#modal-photo> The Daily NU]], **11/21/2022**
+m| Our success with [[<https://thegarage.northwestern.edu/news/jumpstart-2022-demo-day-wrap-up/> Demo Day]] at Jumpstart at the Garage, **8/24/2022**
+m| Our [[<https://thegarage.northwestern.edu/news/overture-games-team-spotlight/> team interview]] from Jumpstart at The Garage, **8/15/2022**
