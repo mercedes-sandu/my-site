@@ -1,18 +1,5 @@
-import { createTheme, SimplePaletteColorOptions } from "@mui/material";
-import { ColorPartial } from "@mui/material/styles/createPalette";
+import { createTheme } from "@mui/material";
 import { TypographyOptions } from "@mui/material/styles/createTypography";
-
-declare module "@mui/material/styles" {
-  interface PaletteColorOptions
-    extends SimplePaletteColorOptions,
-      ColorPartial {
-    1?: string;
-  }
-
-  interface PaletteColor extends ColorPartial {
-    1?: string;
-  }
-}
 
 declare module "@mui/material/styles" {
   interface TypographyVariants {
@@ -301,11 +288,11 @@ export const darkTheme = createTheme({
     },
     primary: {
       main: "#322a35",
-      1: "#3d3042",
+      light: "#3d3042",
     },
     secondary: {
       main: "#c993db",
-      1: "#282c34",
+      light: "#282c34",
     },
   },
   breakpoints: {
@@ -332,11 +319,11 @@ export const lightTheme = createTheme({
     },
     primary: {
       main: "#efdcf5",
-      1: "#e0bdeb",
+      light: "#e0bdeb",
     },
     secondary: {
       main: "#ba64d7",
-      1: "#fafafa",
+      light: "#fafafa",
     },
   },
   breakpoints: {

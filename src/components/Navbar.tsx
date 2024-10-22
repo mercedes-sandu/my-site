@@ -163,7 +163,7 @@ function Navbar({ darkMode, isMobile, setDarkMode }: NavbarProps) {
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
-              backgroundColor: theme.palette.primary[1],
+              backgroundColor: theme.palette.primary.light,
             },
           }}
         >

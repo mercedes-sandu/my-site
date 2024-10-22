@@ -54,7 +54,7 @@ function CodeSnippet({
             justifyContent: "center",
             alignItems: "center",
             flexDirection: "column",
-            backgroundColor: theme.palette.secondary[1],
+            backgroundColor: theme.palette.secondary.light,
           }}
         >
           <Typography variant="codeTitle" sx={{ mb: 2 }}>
