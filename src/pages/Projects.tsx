@@ -1757,14 +1757,14 @@ export const projects: Record<string, Project> = {
           feels so rewarding to see my work come to fruition.
         </Typography>
         <Typography>
-          the paper for this research is waiting to be published in{" "}
+          the paper for this research was published in{" "}
           <InlineLink
-            href="https://msp.org/involve/about/journal/about.html"
+            href="https://msp.org/involve/2024/17-5/p01.xhtml"
             target="_blank"
           >
             involve
           </InlineLink>{" "}
-          in fall 2024.
+          in november of 2024.
         </Typography>
         <Awards
           awards={[
@@ -1796,23 +1796,29 @@ export const projects: Record<string, Project> = {
         <Media
           media={[
             {
+              description: "our research paper in involve, a journal of mathematics 17-5 (2024), 723--736. doi 10.2140/involve.2024.17.723",
+              date: "11/21/2024",
+              url: "https://msp.org/involve/2024/17-5/p01.xhtml",
+              id: 0,
+            },
+            {
               description: "my slide deck for my presentation at JMM",
               date: "01/05/2023",
               url: `${jmm}`,
-              id: 0,
+              id: 1,
             },
             {
               description: "our research paper on arXiv",
               date: "10/01/2022",
               url: "https://arxiv.org/abs/2210.00198v1",
-              id: 1,
+              id: 2,
             },
             {
               description:
                 "our presentation at the northwestern undergraduate research exposition",
               date: "05/27/2021",
               url: "https://www.youtube.com/watch?v=1_W9MsM-IUc",
-              id: 2,
+              id: 3,
             },
           ]}
         />
