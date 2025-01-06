@@ -1,4 +1,4 @@
-import { Link, styled } from "@mui/material";
+import { Link, styled, ToggleButton } from "@mui/material";
 import { NavLink } from "react-router-dom";
 
 export const InlineLink = styled(Link)(({ theme }) => ({
@@ -31,4 +31,34 @@ export const ItalicText = styled("span")(({ theme }) => ({
 export const BoldText = styled("span")(({ theme }) => ({
   fontWeight: 700,
   color: theme.palette.secondary.main,
+}));
+
+export const StyledTagButton = styled(ToggleButton)(({ theme }) => ({
+  color: theme.palette.text.primary,
+  outline: `2px solid ${theme.palette.secondary.main}`,
+  borderRadius: 0,
+  textTransform: "none",
+  width: "136px",
+  height: "30px",
+  transition: "outline-color 0.2s ease-in-out",
+  textDecoration: "none",
+  marginLeft: 0,
+  "&.MuiToggleButton-root": {
+    outline: `2px solid ${theme.palette.secondary.main}`,
+    marginLeft: 0,
+  },
+  "&:hover": {
+    outline: `2px solid ${theme.palette.text.primary}`,
+    backgroundColor: "transparent",
+  },
+  "&.Mui-selected": {
+    outline: `2px solid ${theme.palette.secondary.main}`,
+    textDecoration: "underline",
+    backgroundColor: "transparent",
+  },
+  "&.Mui-selected:hover": {
+    outline: `2px solid ${theme.palette.text.primary}`,
+    backgroundColor: "transparent",
+  },
+  // TODO: focus state
 }));

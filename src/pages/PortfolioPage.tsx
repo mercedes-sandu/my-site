@@ -1,7 +1,6 @@
 import {
   Box,
   Container,
-  ToggleButton,
   ToggleButtonGroup,
   Typography,
   useTheme,
@@ -16,6 +15,8 @@ import ProjectCard from "../components/ProjectCard";
 import { useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
 import { getTypographyVariant } from "../utility/responsive";
+import type { Project } from "./Projects";
+import { StyledTagButton } from "../components/StyledComponents";
 
 interface PortfolioPageProps {
   darkMode: boolean;
@@ -26,7 +27,7 @@ function PortfolioPage({ darkMode, isMobile }: PortfolioPageProps) {
   const theme = useTheme();
   const navigate = useNavigate();
 
-  const [cards, setCards] = useState<any>(projects);
+  const [cards, setCards] = useState<Record<string, Project>>(projects);
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
 
   const handleFilterButton = (
@@ -37,11 +38,13 @@ function PortfolioPage({ darkMode, isMobile }: PortfolioPageProps) {
     if (newTags.length === 0) {
       setCards(projects);
     } else {
-      setCards(
-        Object.values(projects).filter((project) => {
-          return project.tags.some((tag: string) => newTags.includes(tag));
-        })
-      );
+      const filteredEntries: [string, Project][] = Object.entries(
+        projects
+      ).filter(([, value]) => {
+        return value.tags.some((tag: string) => newTags.includes(tag));
+      });
+
+      setCards(Object.fromEntries(filteredEntries));
     }
   };
 
@@ -63,20 +66,22 @@ function PortfolioPage({ darkMode, isMobile }: PortfolioPageProps) {
       }}
       maxWidth={false}
     >
+      <Box sx={{ width: "5%" }}>
+        <Box
+          alt="vertical bar"
+          component="img"
+          src={darkMode ? verticalBarLightLong : verticalBarDarkLong}
+          sx={{
+            position: "fixed",
+            top: "200px",
+            width: "auto",
+            maxHeight: "calc((100vh - 150px) * 0.9)",
+          }}
+        />
+      </Box>
       <Box
-        component="img"
-        src={darkMode ? verticalBarLightLong : verticalBarDarkLong}
         sx={{
-          position: "fixed",
-          left: "150px",
-          top: "200px",
-          width: "auto",
-          maxHeight: "calc((100vh - 150px) * 0.9)",
-        }}
-      />
-      <Box
-        sx={{
-          width: "calc(100% - 50px)",
+          width: "95%",
           height: "75%",
           display: "flex",
           pl: 5,
@@ -119,39 +124,11 @@ function PortfolioPage({ darkMode, isMobile }: PortfolioPageProps) {
               onChange={handleFilterButton}
             >
               {tags.map((tag) => (
-                <ToggleButton
+                <StyledTagButton
                   key={tag}
                   value={tag}
-                  sx={{
-                    color: theme.palette.text.primary,
-                    border: `2px solid ${theme.palette.secondary.main}`,
-                    borderRadius: 0,
-                    textTransform: "none",
-                    width: "136px",
-                    height: "30px",
-                    mr: 2,
-                    mb: 2,
-                    transition: "border-color 0.2s ease-in-out",
-                    textDecoration: "none",
-                    "&.MuiToggleButton-root": {
-                      border: `2px solid ${theme.palette.secondary.main}`,
-                    },
-                    "&:hover": {
-                      border: `2px solid ${theme.palette.text.primary}`,
-                      backgroundColor: "transparent",
-                    },
-                    "&.Mui-selected": {
-                      border: `2px solid ${theme.palette.secondary.main}`,
-                      textDecoration: "underline",
-                      backgroundColor: "transparent",
-                    },
-                    "&.Mui-selected:hover": {
-                      border: `2px solid ${theme.palette.text.primary}`,
-                      backgroundColor: "transparent",
-                    },
-                    // TODO: focus state
-                  }}
                   disableRipple
+                  sx={{ mr: 2, mb: 2 }}
                 >
                   <Typography
                     variant="filterLabel"
@@ -159,7 +136,7 @@ function PortfolioPage({ darkMode, isMobile }: PortfolioPageProps) {
                   >
                     {tag}
                   </Typography>
-                </ToggleButton>
+                </StyledTagButton>
               ))}
             </ToggleButtonGroup>
           </Box>
@@ -171,7 +148,7 @@ function PortfolioPage({ darkMode, isMobile }: PortfolioPageProps) {
             }}
           >
             {Object.values(cards).map(
-              (project: any) =>
+              (project: Project) =>
                 project.display && (
                   <ProjectCard
                     key={project.title}
@@ -245,7 +222,7 @@ function PortfolioPage({ darkMode, isMobile }: PortfolioPageProps) {
           }}
         >
           {Object.values(cards).map(
-            (project: any) =>
+            (project: Project) =>
               project.display && (
                 <ProjectCard
                   key={project.title}

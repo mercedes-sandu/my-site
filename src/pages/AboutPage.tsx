@@ -46,20 +46,22 @@ function AboutPage({ darkMode, isMobile }: AboutPageProps) {
       }}
       maxWidth={false}
     >
+      <Box sx={{ width: "5%" }}>
+        <Box
+          alt="vertical bar"
+          component="img"
+          src={darkMode ? verticalBarLightLong : verticalBarDarkLong}
+          sx={{
+            position: "fixed",
+            top: "200px",
+            width: "auto",
+            maxHeight: "calc((100vh - 150px) * 0.9)",
+          }}
+        />
+      </Box>
       <Box
-        component="img"
-        src={darkMode ? verticalBarLightLong : verticalBarDarkLong}
         sx={{
-          position: "fixed",
-          left: "150px",
-          top: "200px",
-          width: "auto",
-          maxHeight: "calc((100vh - 150px) * 0.9)",
-        }}
-      />
-      <Box
-        sx={{
-          width: "calc(100% - 50px)",
+          width: "95%",
           height: "75%",
           display: "flex",
           pl: 5,
