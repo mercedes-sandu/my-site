@@ -4,6 +4,7 @@ import {
   atomOneLight,
 } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { Box, Divider, Typography, useTheme } from "@mui/material";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 interface CodeSnippetProps {
   language?: string;
@@ -21,6 +22,7 @@ function CodeSnippet({
   title,
 }: CodeSnippetProps) {
   const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
     <Box
@@ -37,7 +39,7 @@ function CodeSnippet({
     >
       <Box
         sx={{
-          width: "70%",
+          width: isMobile ? "100%" : "70%",
           height: "auto",
           padding: "12px",
           border: `2px solid ${theme.palette.text.primary}`,

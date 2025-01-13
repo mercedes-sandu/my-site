@@ -7,6 +7,7 @@ import ErrorPage from "./ErrorPage";
 import { useParams } from "react-router-dom";
 import { projects } from "./Projects";
 import Footer from "../components/Footer";
+import { getTypographyVariant } from "../utility/responsive";
 
 interface ProjectPageProps {
   darkMode: boolean;
@@ -70,10 +71,22 @@ function ProjectPage({ darkMode, isMobile }: ProjectPageProps) {
           }}
         >
           <Box sx={{ width: "100%", display: "flex", flexDirection: "column" }}>
-            <Typography variant="projectTitle" sx={{ mb: 4 }}>
+            <Typography
+              variant={getTypographyVariant("projectDates")}
+              sx={{ color: theme.palette.secondary.main }}
+            >
+              {project.dates}
+            </Typography>
+            <Typography
+              variant={getTypographyVariant("projectTitle")}
+              sx={{ mb: 4 }}
+            >
               {project.title}
             </Typography>
-            <Typography variant="projectOrganization" sx={{ mb: 2 }}>
+            <Typography
+              variant={getTypographyVariant("projectOrganization")}
+              sx={{ mb: 2 }}
+            >
               {project.organization}
             </Typography>
             <Box
@@ -100,11 +113,16 @@ function ProjectPage({ darkMode, isMobile }: ProjectPageProps) {
                   }}
                   key={tag}
                 >
-                  <Typography variant="projectTag">{tag}</Typography>
+                  <Typography variant={getTypographyVariant("projectTag")}>
+                    {tag}
+                  </Typography>
                 </Box>
               ))}
             </Box>
-            <Typography variant="projectDescription" sx={{ mb: 4 }}>
+            <Typography
+              variant={getTypographyVariant("projectDescription")}
+              sx={{ mb: 4 }}
+            >
               {project.description}
             </Typography>
             {project.content}
@@ -139,32 +157,34 @@ function ProjectPage({ darkMode, isMobile }: ProjectPageProps) {
         }}
       >
         <Typography
-          variant="h1Mobile"
-          sx={{ color: theme.palette.text.primary, mb: 3 }}
+          variant={getTypographyVariant("projectTitle")}
+          sx={{ color: theme.palette.text.primary, mb: 2 }}
         >
           {project.title}
         </Typography>
-        <Box
-          component="img"
-          height="50px"
-          src={darkMode ? horizontalBarLight : horizontalBarDark}
-        />
         <Typography
-          variant="h2Mobile"
-          sx={{ color: theme.palette.secondary.main }}
+          variant={getTypographyVariant("projectDates")}
+          sx={{ color: theme.palette.secondary.main, mb: 2 }}
         >
           {project.dates}
         </Typography>
-        <Typography variant="body1Mobile">{project.organization}</Typography>
+        <Typography
+          variant={getTypographyVariant("projectOrganization")}
+          sx={{ mb: 2 }}
+        >
+          {project.organization}
+        </Typography>
         <Box
           sx={{
             width: "100%",
             height: "auto",
             display: "flex",
             flexWrap: "wrap",
+            justifyContent: "center",
+            alignItems: "center",
           }}
         >
-          {project.tags.map((tag) => (
+          {project.tags.map((tag, index) => (
             <Box
               sx={{
                 height: "30px",
@@ -175,16 +195,23 @@ function ProjectPage({ darkMode, isMobile }: ProjectPageProps) {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                mr: 2,
+                mr: index == project.tags.length - 1 ? 0 : 2,
                 mb: 2,
               }}
               key={tag}
             >
-              <Typography variant="projectTag">{tag}</Typography>
+              <Typography variant={getTypographyVariant("projectTag")}>
+                {tag}
+              </Typography>
             </Box>
           ))}
         </Box>
-        <Typography variant="body1Mobile">{project.description}</Typography>
+        <Typography
+          variant={getTypographyVariant("projectDescription")}
+          sx={{ mb: 2 }}
+        >
+          {project.description}
+        </Typography>
         <Box
           component="img"
           height="50px"

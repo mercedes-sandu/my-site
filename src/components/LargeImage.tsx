@@ -1,4 +1,5 @@
 import { Box, Typography, useTheme } from "@mui/material";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 interface ImageProps {
   src: string;
@@ -8,6 +9,7 @@ interface ImageProps {
 
 function LargeImage({ src, alt, description }: ImageProps) {
   const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
     <Box
@@ -24,7 +26,7 @@ function LargeImage({ src, alt, description }: ImageProps) {
     >
       <Box
         sx={{
-          maxWidth: "70%",
+          maxWidth: isMobile ? "100%" : "70%",
           maxHeight: "93vh",
           height: "auto",
           border: `2px solid ${theme.palette.text.primary}`,

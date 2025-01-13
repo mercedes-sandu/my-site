@@ -16,6 +16,11 @@ declare module "@mui/material/styles" {
     projectP: React.CSSProperties;
     projectSubheader: React.CSSProperties;
     projectOrganization: React.CSSProperties;
+    projectTitleMobile: React.CSSProperties;
+    projectDatesMobile: React.CSSProperties;
+    projectDescriptionMobile: React.CSSProperties;
+    projectTagMobile: React.CSSProperties;
+    projectOrganizationMobile: React.CSSProperties;
     codeTitle: React.CSSProperties;
     largeImageDescription: React.CSSProperties;
     h1Mobile: React.CSSProperties;
@@ -42,6 +47,11 @@ declare module "@mui/material/styles" {
     projectP?: React.CSSProperties;
     projectSubheader?: React.CSSProperties;
     projectOrganization?: React.CSSProperties;
+    projectTitleMobile?: React.CSSProperties;
+    projectDatesMobile?: React.CSSProperties;
+    projectDescriptionMobile?: React.CSSProperties;
+    projectTagMobile?: React.CSSProperties;
+    projectOrganizationMobile?: React.CSSProperties;
     codeTitle?: React.CSSProperties;
     largeImageDescription?: React.CSSProperties;
     h1Mobile?: React.CSSProperties;
@@ -70,6 +80,13 @@ declare module "@mui/material/Typography" {
     projectP: true;
     projectSubheader: true;
     projectOrganization: true;
+    projectTitleMobile: true;
+    projectDatesMobile: true;
+    projectDescriptionMobile: true;
+    projectTagMobile: true;
+    projectPMobile: true;
+    projectSubheaderMobile: true;
+    projectOrganizationMobile: true;
     codeTitle: true;
     largeImageDescription: true;
     h1Mobile: true;
@@ -250,6 +267,42 @@ const typography: TypographyOptions = {
     fontFamily: "Cormorant Garamond",
     fontSize: "14px",
     fontWeight: 400,
+  },
+  projectTitleMobile: {
+    fontFamily: "Meqanor",
+    fontSize: "40px",
+    textIndent: "0px",
+    textAlign: "center",
+  },
+  projectDatesMobile: {
+    fontFamily: "Cormorant Garamond",
+    fontSize: "20px",
+    fontWeight: 700,
+    letterSpacing: "8px",
+    textIndent: "0px",
+    textAlign: "center",
+  },
+  projectDescriptionMobile: {
+    fontFamily: "Cormorant Garamond",
+    fontSize: "20px",
+    fontWeight: 700,
+    letterSpacing: "1px",
+    textAlign: "center",
+    textIndent: "0px",
+  },
+  projectTagMobile: {
+    fontFamily: "Cormorant Garamond",
+    fontSize: "18px",
+    fontWeight: 400,
+    textIndent: "0px",
+  },
+  projectOrganizationMobile: {
+    fontFamily: "Cormorant Garamond",
+    fontSize: "20px",
+    fontWeight: 400,
+    letterSpacing: "1px",
+    textAlign: "center",
+    textIndent: "0px",
   },
 };
 
