@@ -61,7 +61,7 @@ export interface Project {
   description: string;
   tags: string[];
   navTo: string;
-  mxrkdownUrl: string;
+  mxrkdownUrl?: string;
   display: boolean;
   content?: ReactNode;
 }

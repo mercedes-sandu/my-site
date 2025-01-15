@@ -5,9 +5,10 @@ interface ImageProps {
   src: string;
   alt?: string;
   description?: string;
+  fullWidth?: boolean;
 }
 
-function LargeImage({ src, alt, description }: ImageProps) {
+function LargeImage({ src, alt, description, fullWidth = false }: ImageProps) {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
@@ -26,8 +27,8 @@ function LargeImage({ src, alt, description }: ImageProps) {
     >
       <Box
         sx={{
-          maxWidth: isMobile ? "100%" : "70%",
-          maxHeight: "93vh",
+          maxWidth: isMobile || fullWidth ? "100%" : "70%",
+          maxHeight: fullWidth ? "auto" : "93vh",
           height: "auto",
           border: `2px solid ${theme.palette.text.primary}`,
           padding: "12px",

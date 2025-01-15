@@ -6,17 +6,31 @@ import horizontalBarDark from "../assets/images/horizontal bar dark.svg";
 import ErrorPage from "./ErrorPage";
 import { useParams } from "react-router-dom";
 import { projects } from "./Projects";
+import { designs } from "./Designs";
 import Footer from "../components/Footer";
 import { getTypographyVariant } from "../utility/responsive";
+
+type ProjectType = "project" | "design";
 
 interface ProjectPageProps {
   darkMode: boolean;
   isMobile: boolean;
+  projectType?: ProjectType;
 }
 
-function ProjectPage({ darkMode, isMobile }: ProjectPageProps) {
-  const { projectId } = useParams<{ projectId: string }>();
-  const project = projects[projectId ?? ""];
+function ProjectPage({
+  darkMode,
+  isMobile,
+  projectType = "project",
+}: ProjectPageProps) {
+  const { projectId, designId } = useParams<{
+    projectId: string;
+    designId: string;
+  }>();
+  const project =
+    projectType === "project"
+      ? projects[projectId ?? ""]
+      : designs[designId ?? ""];
 
   const theme = useTheme();
 

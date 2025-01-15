@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import PortfolioPage from "./pages/PortfolioPage";
+import DesignPortfolioPage from "./pages/DesignPortfolioPage";
 import ProjectPage from "./pages/ProjectPage";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -20,7 +21,7 @@ function App() {
   const handleDarkModeToggle = () => {
     setDarkMode((prev) => !prev);
     localStorage.setItem("darkMode", JSON.stringify(!darkMode));
-  }
+  };
 
   const isMobile = useMobileMediaQuery();
 
@@ -50,6 +51,22 @@ function App() {
           <Route
             path="/portfolio/:projectId"
             element={<ProjectPage darkMode={darkMode} isMobile={isMobile} />}
+          />
+          <Route
+            path="design"
+            element={
+              <DesignPortfolioPage darkMode={darkMode} isMobile={isMobile} />
+            }
+          />
+          <Route
+            path="design/:designId"
+            element={
+              <ProjectPage
+                darkMode={darkMode}
+                isMobile={isMobile}
+                projectType="design"
+              />
+            }
           />
         </Routes>
       </BrowserRouter>

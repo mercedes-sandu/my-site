@@ -1,18 +1,32 @@
-import { Button, Typography, useTheme } from "@mui/material";
+import { Button, Icon, Typography, useTheme } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import figma from "../assets/images/figma.svg";
+import { ReactNode } from "react";
+
+type IconType = "github" | "figma";
 
 interface RepositoryButtonProps {
   url: string;
   name: string;
   showIcon?: boolean;
+  type?: IconType;
 }
 
 function RepositoryButton({
   url,
   name,
   showIcon = true,
+  type = "github",
 }: RepositoryButtonProps) {
   const theme = useTheme();
+  const icons: Record<IconType, ReactNode> = {
+    github: <GitHubIcon sx={{ color: theme.palette.text.primary, mr: 2 }} />,
+    figma: (
+      <Icon sx={{ color: theme.palette.text.primary, mr: 2 }}>
+        <img src={figma} alt="figma icon" height="24px" style={{ display: "flex", height: "inherit", width: "inherit" }} />
+      </Icon>
+    ),
+  };
 
   return (
     <Button
@@ -34,9 +48,7 @@ function RepositoryButton({
       href={url}
       target="_blank"
     >
-      {showIcon ? (
-        <GitHubIcon sx={{ color: theme.palette.text.primary, mr: 2 }} />
-      ) : null}
+      {showIcon ? icons[type] : null}
       <Typography variant="projectTag" color={theme.palette.text.primary}>
         {name}
       </Typography>
