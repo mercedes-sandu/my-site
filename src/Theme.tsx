@@ -128,6 +128,11 @@ const typography: TypographyOptions = {
     textAlign: "justify",
     textIndent: "24px",
   },
+  body2: {
+    fontFamily: "Cormorant Garamond",
+    fontSize: "14px",
+    fontWeight: 400,
+  },
   cardHeader: {
     fontFamily: "Meqanor",
     fontSize: "32px",
