@@ -2,6 +2,7 @@ import {
   Box,
   Container,
   IconButton,
+  SvgIcon,
   Typography,
   useTheme,
 } from "@mui/material";
@@ -104,6 +105,9 @@ function HomePage({ darkMode, isMobile }: HomePageProps) {
           </Typography>
           <Box sx={{ display: "flex", mt: 6 }}>
             <IconButton
+              disableRipple
+              disableFocusRipple
+              disableTouchRipple
               sx={{
                 backgroundColor: "transparent",
                 color: theme.palette.secondary.main,
@@ -121,6 +125,9 @@ function HomePage({ darkMode, isMobile }: HomePageProps) {
               <LinkedInIcon sx={{ width: "50px", height: "50px" }} />
             </IconButton>
             <IconButton
+              disableRipple
+              disableFocusRipple
+              disableTouchRipple
               sx={{
                 backgroundColor: "transparent",
                 color: theme.palette.secondary.main,
@@ -138,6 +145,54 @@ function HomePage({ darkMode, isMobile }: HomePageProps) {
               <GitHubIcon sx={{ width: "50px", height: "50px" }} />
             </IconButton>
             <IconButton
+              disableRipple
+              disableFocusRipple
+              disableTouchRipple
+              sx={{
+                backgroundColor: "transparent",
+                padding: 0,
+                mr: 10,
+                "&:hover": {
+                  backgroundColor: "transparent",
+                },
+              }}
+              href="https://bsky.app/profile/mercedessandu.com"
+              target="_blank"
+            >
+              <SvgIcon
+                sx={{
+                  color: theme.palette.secondary.main,
+                  height: "44px",
+                  transition: "color 0.2s ease-in-out",
+                  width: "44px",
+                  "&:hover": { color: theme.palette.text.primary },
+                }}
+              >
+                <svg
+                  width="34"
+                  height="30"
+                  viewBox="0 0 34 30"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_114_2)">
+                    <path
+                      d="M7.36193 2.01934C11.2553 4.95237 15.4437 10.8984 16.981 14.0893C18.5184 10.8984 22.707 4.95237 26.6003 2.01934C29.4102 -0.0964752 33.9622 -1.73403 33.9622 3.476C33.9622 4.51616 33.3678 12.2171 33.0188 13.4676C31.8068 17.8134 27.3889 18.922 23.4595 18.2512C30.3282 19.424 32.0753 23.3083 28.3018 27.1928C21.1352 34.5706 18.0011 25.3418 17.1987 22.9771C16.9672 22.2964 17.0003 22.2808 16.7635 22.9771C15.961 25.3418 12.8271 34.5706 5.66056 27.1928C1.8869 23.3083 3.63403 19.424 10.5028 18.2512C6.5733 18.922 2.15548 17.8134 0.943449 13.4676C0.594473 12.2171 0 4.51616 0 3.476C0 -1.73403 4.55261 -0.0964752 7.36193 2.01934Z"
+                      fill="currentColor"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_114_2">
+                      <rect width="33.9622" height="30" fill="currentColor" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </SvgIcon>
+            </IconButton>
+            <IconButton
+              disableRipple
+              disableFocusRipple
+              disableTouchRipple
               sx={{
                 backgroundColor: "transparent",
                 color: theme.palette.secondary.main,
@@ -263,6 +318,9 @@ function HomePage({ darkMode, isMobile }: HomePageProps) {
           }}
         >
           <IconButton
+            disableRipple
+            disableFocusRipple
+            disableTouchRipple
             sx={{
               backgroundColor: "transparent",
               color: theme.palette.secondary.main,
@@ -280,6 +338,9 @@ function HomePage({ darkMode, isMobile }: HomePageProps) {
             <LinkedInIcon sx={{ width: "30px", height: "30px" }} />
           </IconButton>
           <IconButton
+            disableRipple
+            disableFocusRipple
+            disableTouchRipple
             sx={{
               backgroundColor: "transparent",
               color: theme.palette.secondary.main,
@@ -297,6 +358,54 @@ function HomePage({ darkMode, isMobile }: HomePageProps) {
             <GitHubIcon sx={{ width: "30px", height: "30px" }} />
           </IconButton>
           <IconButton
+            disableRipple
+            disableFocusRipple
+            disableTouchRipple
+            sx={{
+              backgroundColor: "transparent",
+              padding: 0,
+              mr: 5,
+              "&:hover": {
+                backgroundColor: "transparent",
+              },
+            }}
+            href="https://bsky.app/profile/mercedessandu.com"
+            target="_blank"
+          >
+            <SvgIcon
+              sx={{
+                color: theme.palette.secondary.main,
+                height: "24px",
+                transition: "color 0.2s ease-in-out",
+                width: "24px",
+                "&:hover": { color: theme.palette.text.primary },
+              }}
+            >
+              <svg
+                width="34"
+                height="30"
+                viewBox="0 0 34 30"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_114_2)">
+                  <path
+                    d="M7.36193 2.01934C11.2553 4.95237 15.4437 10.8984 16.981 14.0893C18.5184 10.8984 22.707 4.95237 26.6003 2.01934C29.4102 -0.0964752 33.9622 -1.73403 33.9622 3.476C33.9622 4.51616 33.3678 12.2171 33.0188 13.4676C31.8068 17.8134 27.3889 18.922 23.4595 18.2512C30.3282 19.424 32.0753 23.3083 28.3018 27.1928C21.1352 34.5706 18.0011 25.3418 17.1987 22.9771C16.9672 22.2964 17.0003 22.2808 16.7635 22.9771C15.961 25.3418 12.8271 34.5706 5.66056 27.1928C1.8869 23.3083 3.63403 19.424 10.5028 18.2512C6.5733 18.922 2.15548 17.8134 0.943449 13.4676C0.594473 12.2171 0 4.51616 0 3.476C0 -1.73403 4.55261 -0.0964752 7.36193 2.01934Z"
+                    fill="currentColor"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_114_2">
+                    <rect width="33.9622" height="30" fill="currentColor" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </SvgIcon>
+          </IconButton>
+          <IconButton
+            disableRipple
+            disableFocusRipple
+            disableTouchRipple
             sx={{
               backgroundColor: "transparent",
               color: theme.palette.secondary.main,
