@@ -3,7 +3,6 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import { darkTheme, lightTheme } from "./Theme";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useMobileMediaQuery } from "./utility/responsive";
-import Copyright from "./components/Copyright";
 import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
