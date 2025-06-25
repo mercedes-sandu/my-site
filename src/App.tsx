@@ -53,7 +53,7 @@ function App() {
             element={<ProjectPage darkMode={darkMode} isMobile={isMobile} />}
           />
         </Routes>
-        <Copyright isMobile={isMobile} />
+        {/* <Copyright isMobile={isMobile} /> */}
       </BrowserRouter>
     </ThemeProvider>
   );

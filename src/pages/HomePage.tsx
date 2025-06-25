@@ -6,6 +6,7 @@ import {
   Typography,
   useTheme,
 } from "@mui/material";
+import Copyright from "../components/Copyright";
 import portraitLight from "../assets/images/portrait light.webp";
 import portraitDark from "../assets/images/portrait dark.webp";
 import portraitLightMobile from "../assets/images/portrait circle light.webp";
@@ -229,6 +230,7 @@ function HomePage({ darkMode, isMobile }: HomePageProps) {
           alt="sci-fi portrait of me"
         />
       </Box>
+      <Copyright isMobile={isMobile} />
     </Container>
   ) : (
     <Container
@@ -422,6 +424,7 @@ function HomePage({ darkMode, isMobile }: HomePageProps) {
           </IconButton>
         </Box>
       </Box>
+      <Copyright isMobile={isMobile} />
     </Container>
   );
 }
