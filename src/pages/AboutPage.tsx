@@ -202,7 +202,7 @@ function AboutPage({ darkMode, isMobile }: AboutPageProps) {
                   itpdp
                 </InlineLink>{" "}
                 (information technology professional development program). i'm
-                currently a data scientist for my second rotation of six months.
+                currently a project manager for my final rotation of one year.
               </Typography>
               <Typography
                 variant={getTypographyVariant("body1")}
@@ -383,7 +383,7 @@ function AboutPage({ darkMode, isMobile }: AboutPageProps) {
             itpdp
           </InlineLink>{" "}
           (information technology professional development program). i'm
-          currently a data scientist for my second rotation of six months.
+          currently a project manager for my final rotation of one year.
         </Typography>
         <Typography variant={getTypographyVariant("body1")} sx={{ mb: 2 }}>
           aside from my work, i love making video games and working on video
