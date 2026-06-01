@@ -236,16 +236,19 @@ function HomePage({ darkMode, isMobile }: HomePageProps) {
     <Container
       sx={{
         position: "absolute",
-        top: "120px",
+        top: "140px",
         left: 0,
         width: "100%",
         height: "calc(100% - 120px)",
         display: "flex",
+        flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
         "&.MuiContainer-root": {
+          mb: "5vh",
           pl: "10vw",
           pr: "10vw",
+          mt: "5vh"
         },
       }}
       maxWidth={false}
@@ -257,6 +260,7 @@ function HomePage({ darkMode, isMobile }: HomePageProps) {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
+          mb: "5vh"
         }}
       >
         <Typography
