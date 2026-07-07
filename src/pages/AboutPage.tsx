@@ -194,15 +194,8 @@ function AboutPage({ darkMode, isMobile }: AboutPageProps) {
                 <InlineLink href="https://www.abbott.com" target="_blank">
                   abbott
                 </InlineLink>{" "}
-                in{" "}
-                <InlineLink
-                  href="https://www.abbott.com/careers/students/development-programs.html"
-                  target="_blank"
-                >
-                  itpdp
-                </InlineLink>{" "}
-                (information technology professional development program). i'm
-                currently a project manager for my final rotation of one year.
+                as an IT delivery & toolchain analyst, after completing the
+                ITPDP program of two years.
               </Typography>
               <Typography
                 variant={getTypographyVariant("body1")}
@@ -382,8 +375,8 @@ function AboutPage({ darkMode, isMobile }: AboutPageProps) {
           >
             itpdp
           </InlineLink>{" "}
-          (information technology professional development program). i'm
-          currently a project manager for my final rotation of one year.
+          as an IT delivery & toolchain analyst, after completing the ITPDP
+          program of two years.
         </Typography>
         <Typography variant={getTypographyVariant("body1")} sx={{ mb: 2 }}>
           aside from my work, i love making video games and working on video
